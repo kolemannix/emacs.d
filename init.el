@@ -14,24 +14,46 @@
 
 ;; ------------------- Settings -------------------- ;;
 
+; No splash screen
+(setq inhibit-startup-message t)
+
+
+;; Load mah theme
+(load-theme 'solarized-dark t)
+
+;; Line numbers, with a space for padding
+;; (global-linum-mode t)
+;; (setq linum-format "%d ")
+
+; Scrolling behavior
+(setq redisplay-dont-pause t
+      scroll-margin 7
+      scroll-step 1
+      scroll-conservatively 10000
+      scroll-preserve-screen-position 1)
+
+; Reduce clutter
+(tool-bar-mode -1)
+(menu-bar-mode -1)
+
 ;; Font lock mode
 (if (fboundp 'global-font-lock-mode)
     (global-font-lock-mode 1)        ; GNU Emacs
   (setq font-lock-auto-fontify t))   ; XEmacs
 
-; Backups to home folder, no autosave
+					; Backups to home folder, no autosave
 (setq backup-directory-alist `(("." . "~/.backup")))
 (setq auto-save-default nil)
 
 ;; ----------------- Copy / Paste -------------------- ;;
 (defun copy-from-osx ()
-    (shell-command-to-string "pbpaste"))
+  (shell-command-to-string "pbpaste"))
 
 (defun paste-to-osx (text &optional push)
-    (let ((process-connection-type nil))
-          (let ((proc (start-process "pbcopy" "*Messages*" "pbcopy")))
-	          (process-send-string proc text)
-		        (process-send-eof proc))))
+  (let ((process-connection-type nil))
+    (let ((proc (start-process "pbcopy" "*Messages*" "pbcopy")))
+      (process-send-string proc text)
+      (process-send-eof proc))))
 
 (setq interprogram-cut-function 'paste-to-osx)
 (setq interprogram-paste-function 'copy-from-osx)
@@ -43,13 +65,6 @@
 (key-chord-define evil-insert-state-map "jk" 'evil-normal-state)
 
 (key-chord-define evil-normal-state-map ",x" 'execute-extended-command)
-
-;; Load mah theme
-(load-theme 'solarized-dark t)
-
-;; Line numbers, with a space for padding
-(global-linum-mode t)
-(setq linum-format "%d ")
 
 ;; Meta key
 (setq ns-right-alternate-modifier nil)
