@@ -1,14 +1,7 @@
-# Your Old Emacs Config Files
+# This is my emacs setup
 
-This directory contains any Emacs configuration files that had existed prior
-to installing Emacs Live.
+I use Evil mode for vim emulation. Honestly, I think it does Vim better than Vim. Flycheck for C++ syntax checking, smartparens for structured editing, and key-chord for some bindings. 
+I completely avoid using the Meta key in all of my bindings, for 2 reasons: I find it horribly uncomfortable to use,
+and its in different places on different keyboards. All of my bindings are Ctrl- or Leader- based (my leader is comma)
 
-To see which files have been preserved:
-
-    ls -allh /Users/knix/emacs-live-old-config
-
-To revert back to your old Emacs configs simply:
-
-    rm -rf ~/.emacs.d
-    mv /Users/knix/emacs-live-old-config/.emacs* ~/
-    rm -rf /Users/knix/emacs-live-old-config
+If this sounds like your kind of setup, feel free to copy it.
