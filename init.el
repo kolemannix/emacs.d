@@ -2,17 +2,45 @@
 (add-to-list 'package-archives
 	     '("marmalade" .
 	       "http://marmalade-repo.org/packages/"))
+(add-to-list 'load-path "~/.emacs.d/extras/")
 (package-initialize)
 
+(defun enable-my-elisp-settings ()
+  (turn-on-eldoc-mode)
+  (sp-pair "'" nil :actions :rem))
+(add-hook 'emacs-lisp-mode-hook 'enable-my-elisp-settings)
+
 (require 'evil)
+(global-evil-leader-mode)
+(evil-leader/set-leader ",")
 (evil-mode 1)
+
+(define-key evil-normal-state-map (kbd "C-u") 'evil-scroll-page-up)
+(define-key evil-normal-state-map (kbd "C-d") 'evil-scroll-page-down)
+
 (require 'key-chord)
 (key-chord-mode 1)
+(require 'auto-complete)
+(require 'mic-paren)
+(paren-activate)
+
+(load-file "~/.emacs.d/extras/smex-config.el")
+(load-file "~/.emacs.d/extras/smartparens-config.el")
+
+;; Rainbow delimiters in all programming-related files
+(require 'rainbow-delimiters)
+(add-hook 'prog-mode-hook 'rainbow-delimiters-mode)
+
+; Reduce clutter
+(tool-bar-mode -1)
+(menu-bar-mode -1)
 
 ;; Evil Nerd commenter
 (evilnc-default-hotkeys)
 
 ;; ------------------- Settings -------------------- ;;
+
+(key-chord-define evil-normal-state-map "ef" 'eval-defun)
 
 ; No splash screen
 (setq inhibit-startup-message t)
@@ -32,9 +60,8 @@
       scroll-conservatively 10000
       scroll-preserve-screen-position 1)
 
-; Reduce clutter
-(tool-bar-mode -1)
-(menu-bar-mode -1)
+(setq max-specpdl-size 10000) 
+(setq max-lisp-eval-depth 10000)
 
 ;; Font lock mode
 (if (fboundp 'global-font-lock-mode)
@@ -64,25 +91,38 @@
 ;; Map jk -> ESC 
 (key-chord-define evil-insert-state-map "jk" 'evil-normal-state)
 
-(key-chord-define evil-normal-state-map ",x" 'execute-extended-command)
-
 ;; Meta key
 (setq ns-right-alternate-modifier nil)
 
-;; esc as a viable panic button
-(defun minibuffer-keyboard-quit ()
-  "Abort recursive edit.
-In Delete Selection mode, if the mark is active, just deactivate it;
-then it takes a second \\[keyboard-quit] to abort the minibuffer."
-  (interactive)
-  (if (and delete-selection-mode transient-mark-mode mark-active)
-      (setq deactivate-mark  t)
-    (when (get-buffer "*mpletions*") (delete-windows-on "*mpletions*"))
-    (abort-recursive-edit)))
-(define-key evil-normal-state-map [escape] 'keyboard-quit)
-(define-key evil-visual-state-map [escape] 'keyboard-quit)
-(define-key minibuffer-local-map [escape] 'minibuffer-keyboard-quit)
-(define-key minibuffer-local-ns-map [escape] 'minibuffer-keyboard-quit)
-(define-key minibuffer-local-completion-map [escape] 'minibuffer-keyboard-quit)
-(define-key minibuffer-local-must-match-map [escape] 'minibuffer-keyboard-quit)
-(define-key minibuffer-local-isearch-map [escape] 'minibuffer-keyboard-quit)
+;; Clojure
+; Cider preferences
+
+(define-key evil-normal-state-map (kbd "<SPC>") 'cider-eval-expression-at-point)
+(define-key evil-normal-state-map (kbd "C-c j") 'cider-jack-in)
+(setq nrepl-hide-special-buffers t)
+(setq cider-repl-pop-to-buffer-on-connect nil)
+(setq cider-popup-stacktraces nil)
+
+; Cider hooks
+(add-hook 'cider-mode-hook 'cider-turn-on-eldoc-mode)
+
+;; highlight expression on eval
+(require 'highlight)
+(require 'cider-eval-sexp-fu)
+(setq cider-eval-sexp-fu-flash-duration 0.2)
+
+
+;; Set up Clojure auto-complete
+(require 'ac-nrepl)
+(add-hook 'cider-repl-mode-hook 'ac-nrepl-setup)
+(add-hook 'cider-mode-hook 'ac-nrepl-setup)
+(eval-after-load "auto-complete"
+  '(add-to-list 'ac-modes 'cider-repl-mode))
+(eval-after-load "cider"
+  '(define-key cider-mode-map (kbd "C-c C-d") 'ac-nrepl-popup-doc))
+(print "hello")
+
+(global-auto-complete-mode t)
+(define-key ac-completing-map (kbd "C-n") 'ac-next)
+(define-key ac-completing-map (kbd "C-p") 'ac-previous)
+(define-key ac-completing-map "\t" 'ac-complete)

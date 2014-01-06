@@ -1,0 +1,5 @@
+;;; -*- coding: utf-8 -*-
+(("/Users/knix/.emacs.d/init.el" . 3236)
+ ("/Users/knix/programming/fishtest/src/fishtest/core.clj" . 550)
+ ("/Users/knix/programming/ttt/src/ttt/definitions.clj" . 270)
+ ("/Users/knix/programming/ttt/src/ttt/solve.clj" . 294))
