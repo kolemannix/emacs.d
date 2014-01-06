@@ -11,9 +11,12 @@
 (add-hook 'emacs-lisp-mode-hook 'enable-my-elisp-settings)
 
 (require 'evil)
+(evil-mode 1)
+(evilnc-default-hotkeys)
+(setq evilnc-hotkey-comment-operator nil)
 (global-evil-leader-mode)
 (evil-leader/set-leader ",")
-(evil-mode 1)
+(evil-leader/set-key "," 'evilnc-comment-operator)
 
 (define-key evil-normal-state-map (kbd "C-u") 'evil-scroll-page-up)
 (define-key evil-normal-state-map (kbd "C-d") 'evil-scroll-page-down)
@@ -34,9 +37,6 @@
 ; Reduce clutter
 (tool-bar-mode -1)
 (menu-bar-mode -1)
-
-;; Evil Nerd commenter
-(evilnc-default-hotkeys)
 
 ;; ------------------- Settings -------------------- ;;
 
@@ -60,8 +60,8 @@
       scroll-conservatively 10000
       scroll-preserve-screen-position 1)
 
-(setq max-specpdl-size 10000) 
-(setq max-lisp-eval-depth 10000)
+;; (setq max-specpdl-size 10000) 
+;; (setq max-lisp-eval-depth 10000)
 
 ;; Font lock mode
 (if (fboundp 'global-font-lock-mode)
@@ -91,14 +91,26 @@
 ;; Map jk -> ESC 
 (key-chord-define evil-insert-state-map "jk" 'evil-normal-state)
 
+
 ;; Meta key
+(global-set-key (kbd "M-x") 'smex)
 (setq ns-right-alternate-modifier nil)
+
 
 ;; Clojure
 ; Cider preferences
 
+;; (defun my-cider-start () "Jacks in to a REPL and loads the current buffer" 
+;;   (interactive)
+;;   (cider-jack-in)
+;;   (cider-load-current-buffer))
+;; Unfortunately, the above function doesn't work because it doesn't wait for the REPL to finish launching.
+
 (define-key evil-normal-state-map (kbd "<SPC>") 'cider-eval-expression-at-point)
+;; (define-key evil-normal-state-map (kbd "C-c j") 'my-cider-start)
 (define-key evil-normal-state-map (kbd "C-c j") 'cider-jack-in)
+(define-key evil-normal-state-map (kbd "C-c l") 'cider-load-current-buffer)
+
 (setq nrepl-hide-special-buffers t)
 (setq cider-repl-pop-to-buffer-on-connect nil)
 (setq cider-popup-stacktraces nil)

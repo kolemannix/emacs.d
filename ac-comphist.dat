@@ -1,4 +1,14 @@
-((("sp-kill-sexp" .
+((("my-cider-start" .
+   [0 0 0 0 0 1 0 0 0 0 0 0 0 0])
+  ("cider-load-current-buffer" .
+   [0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("cider-jack-in" .
+   [1 0 0 0 0 0 0 0 0 1 0 0 0])
+  ("interactive" .
+   [1 0 0 0 0 0 0 0 0 0 0])
+  ("defun" .
+   [1 0 0 0 0])
+  ("sp-kill-sexp" .
    [0 0 0 1 1 0 0 0 0 0 0 0])
   ("def" .
    [3 0 0])
