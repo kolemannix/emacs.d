@@ -1,20 +1,158 @@
-((("my-cider-start" .
-   [0 0 0 0 0 1 0 0 0 0 0 0 0 0])
-  ("cider-load-current-buffer" .
-   [0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("cider-jack-in" .
-   [1 0 0 0 0 0 0 0 0 1 0 0 0])
-  ("interactive" .
+((("make_change" .
    [1 0 0 0 0 0 0 0 0 0 0])
-  ("defun" .
-   [1 0 0 0 0])
-  ("sp-kill-sexp" .
-   [0 0 0 1 1 0 0 0 0 0 0 0])
-  ("def" .
-   [3 0 0])
-  ("println" .
-   [0 0 0 2 0 0 0])
+  ("latex-mode-hook" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("lambda" .
+   [1 0 0 0 0 0])
+  ("evil-normal-state-map" .
+   [0 0 0 0 0 1 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0])
   ("key-chord-define" .
    [0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0])
-  ("evil-normal-state-map" .
-   [0 0 0 0 0 1 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0])))
+  ("println" .
+   [0 0 0 2 0 0 0])
+  ("def" .
+   [3 0 0])
+  ("sp-kill-sexp" .
+   [0 0 0 1 1 0 0 0 0 0 0 0])
+  ("defun" .
+   [1 0 0 0 0])
+  ("interactive" .
+   [1 0 0 0 0 0 0 0 0 0 0])
+  ("cider-jack-in" .
+   [1 0 0 0 0 0 0 0 0 1 0 0 0])
+  ("cider-load-current-buffer" .
+   [0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("my-cider-start" .
+   [0 0 0 0 0 1 0 0 0 0 0 0 0 0])
+  ("asdfasdasdfasdff" .
+   [0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0])
+  ("java.awt.Container" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("String" .
+   [1 0 0 0 0 0])
+  ("javax.swing.JFrame" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0])
+  ("fishtest.DynaFrame" .
+   [0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0])
+  ("thing" .
+   [1 0 0 0 0])
+  ("->" .
+   [1 0])
+  ("pack!" .
+   [1 0 0 0 0])
+  ("show!" .
+   [2 0 0 0 0])
+  ("300" .
+   [4 0 0])
+  ("config!" .
+   [3 0 0 0 0 0 0])
+  (":size" .
+   [1 0 0 0 0])
+  ("canvas" .
+   [1 0 0 0 0 0])
+  ("config" .
+   [2 0 0 0 0 0])
+  ("seesaw.graphics" .
+   [2 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  (":refer" .
+   [1 0 0 0 0 0])
+  (":all" .
+   [1 0 0 0])
+  ("do-paint" .
+   [2 0 0 0 0 0 0 0])
+  ("rect" .
+   [2 0 0 0])
+  ("style" .
+   [2 0 0 0 0])
+  ("small-square" .
+   [1 0 0 0 0 0 0 0 0 0 0 0])
+  ("red-on-black" .
+   [1 0 0 0 0 0 0 1 0 0 0 0])
+  (":content" .
+   [2 0 0 0 0 0 0 0])
+  ("border-panel" .
+   [0 0 0 0 0 0 0 1 0 0 0 0])
+  ("ellipse" .
+   [1 0 0 0 0 0 0])
+  ("draw" .
+   [3 0 0 0])
+  ("big-circle" .
+   [0 0 0 0 0 0 0 1 0 0])
+  ("show-options" .
+   [1 0 0 0 0 0 0 0 0 0 0 0])
+  (":resizable?" .
+   [0 0 0 0 1 0 0 0 0 0 0])
+  ("buffered-image" .
+   [1 0 0 0 0 0 1 0 0 0 0 0 0 0])
+  ("label" .
+   [1 0 0 0 0])
+  ("blue-fish-icon" .
+   [0 0 0 0 1 0 0 0 0 0 0 0 0 0])
+  ("path" .
+   [3 0 0 0])
+  ("gfx" .
+   [2 0 0])
+  ("JFrame" .
+   [2 0 0 0 0 0])
+  ("Graphics" .
+   [0 0 0 1 0 0 0 0])
+  ("java" .
+   [2 0 0 0])
+  ("awt" .
+   [1 0 0])
+  ("BufferedImage" .
+   [0 0 0 0 0 0 1 0 0 0 0 0 0])
+  ("javax" .
+   [3 0 0 0 0])
+  ("ImageIO" .
+   [3 0 1 0 0 0 2])
+  ("JLabel" .
+   [1 0 0 0 0 0])
+  ("imageio" .
+   [1 0 0 0 0 0 0])
+  ("null" .
+   [2 0 0 0])
+  ("blueFish" .
+   [2 0 0 0 0 1 0 0])
+  ("System/exit" .
+   [1 0 0 0 0 0 0 0 0 0 0])
+  ("add-hook" .
+   [3 0 0 0 0 0 0 0])
+  ("require" .
+   [1 0 0 0 0 0 0])
+  ("setq" .
+   [1 0 0 0])
+  ("forall" .
+   [2 0 0 0 0 0])
+  ("emptyset" .
+   [4 0 0 0 0 0 0 0])
+  ("exists" .
+   [3 0 0 0 0 0])
+  ("cap" .
+   [2 0 0])
+  ("section*" .
+   [1 0 0 0 0 0 0 1])
+  ("Koleman" .
+   [1 0 0 0 0 0 0])
+  ("Nix" .
+   [1 0 0])
+  ("usepackage" .
+   [1 0 0 0 0 0 0 0 0 0])
+  ("LaTeX" .
+   [1 0 0 0 0])
+  ("Practice" .
+   [1 0 0 0 0 0 0 0])
+  ("input" .
+   [4 0 0 0 0])
+  ("formatted" .
+   [1 0 0 0 0 0 0 0 0])
+  ("cents" .
+   [2 0 0 0 0])
+  ("greedy" .
+   [1 0 0 0 0 0])
+  ("result" .
+   [1 0 0 0 0 0])
+  ("evil-leader/set-key" .
+   [1 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0])
+  ("kbd" .
+   [1 0 0])))

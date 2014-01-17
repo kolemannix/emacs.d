@@ -1,19 +1,20 @@
 (require 'package)
 (add-to-list 'package-archives
-	     '("marmalade" .
-	       "http://marmalade-repo.org/packages/"))
+	       '("melpa" . "http://melpa.milkbox.net/packages/") t)
+(add-to-list 'package-archives
+	     '("marmalade" . "http://marmalade-repo.org/packages/"))
+
 (add-to-list 'load-path "~/.emacs.d/extras/")
 (package-initialize)
 
 (defun enable-my-elisp-settings ()
-  (turn-on-eldoc-mode)
-  (sp-pair "'" nil :actions :rem))
+  (turn-on-eldoc-mode))
 (add-hook 'emacs-lisp-mode-hook 'enable-my-elisp-settings)
+(add-hook 'after-init-hook #'global-flycheck-mode)
 
 (require 'evil)
 (evil-mode 1)
 (evilnc-default-hotkeys)
-(setq evilnc-hotkey-comment-operator nil)
 (global-evil-leader-mode)
 (evil-leader/set-leader ",")
 (evil-leader/set-key "," 'evilnc-comment-operator)
@@ -24,11 +25,11 @@
 (require 'key-chord)
 (key-chord-mode 1)
 (require 'auto-complete)
+(require 'paredit)
 (require 'mic-paren)
 (paren-activate)
 
 (load-file "~/.emacs.d/extras/smex-config.el")
-(load-file "~/.emacs.d/extras/smartparens-config.el")
 
 ;; Rainbow delimiters in all programming-related files
 (require 'rainbow-delimiters)
@@ -39,6 +40,10 @@
 (menu-bar-mode -1)
 
 ;; ------------------- Settings -------------------- ;;
+
+(require 'ido)
+(ido-mode t)
+(setq ido-enable-flex-matching t)
 
 (key-chord-define evil-normal-state-map "ef" 'eval-defun)
 
@@ -96,9 +101,26 @@
 (global-set-key (kbd "M-x") 'smex)
 (setq ns-right-alternate-modifier nil)
 
+;; LaTeX
+(require 'smartparens-config)
+(add-hook 'latex-mode-hook 'smartparens-mode)
+(add-hook 'latex-mode-hook 'flycheck-mode)
+(setq TeX-PDF-mode t)
+
+(require 'ac-math)
+(add-to-list 'ac-modes 'latex-mode)
+
+(defun ac-LaTeX-mode-setup () ; add ac-sources to default ac-sources
+     (setq ac-sources
+	            (append '(ac-source-math-unicode ac-source-math-latex ac-source-latex-commands)
+			                     ac-sources)))
+
+(add-hook 'LaTeX-mode-hook 'ac-LaTeX-mode-setup)
 
 ;; Clojure
 ; Cider preferences
+(setq package-archive-exclude-alist '("marmalade" . cider))
+(load-file "~/.emacs.d/extras/paredit-config.el")
 
 ;; (defun my-cider-start () "Jacks in to a REPL and loads the current buffer" 
 ;;   (interactive)
@@ -113,7 +135,7 @@
 
 (setq nrepl-hide-special-buffers t)
 (setq cider-repl-pop-to-buffer-on-connect nil)
-(setq cider-popup-stacktraces nil)
+;; (setq cider-popup-stacktraces nil)
 
 ; Cider hooks
 (add-hook 'cider-mode-hook 'cider-turn-on-eldoc-mode)
@@ -132,6 +154,9 @@
   '(add-to-list 'ac-modes 'cider-repl-mode))
 (eval-after-load "cider"
   '(define-key cider-mode-map (kbd "C-c C-d") 'ac-nrepl-popup-doc))
+(eval-after-load "cider"
+  '(define-key cider-mode-map (kbd "C-c q") 'ac-nrepl-popup-doc))
+
 (print "hello")
 
 (global-auto-complete-mode t)
