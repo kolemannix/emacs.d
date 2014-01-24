@@ -54,6 +54,7 @@
 ;; Load mah theme
 (load-theme 'solarized-dark t)
 
+
 ;; Line numbers, with a space for padding
 ;; (global-linum-mode t)
 ;; (setq linum-format "%d ")
@@ -93,6 +94,7 @@
 ;; ----------------- Key bindings -------------------- ;;
 (define-key evil-insert-state-map (kbd "C-s") (lambda () (interactive) (save-buffer) (evil-normal-state)))
 (define-key evil-normal-state-map (kbd "C-s") 'save-buffer)
+(define-key evil-insert-state-map (kbd "RET") 'evil-ret-and-indent)
 ;; Map jk -> ESC 
 (key-chord-define evil-insert-state-map "jk" 'evil-normal-state)
 
@@ -131,6 +133,7 @@
 (define-key evil-normal-state-map (kbd "<SPC>") 'cider-eval-expression-at-point)
 ;; (define-key evil-normal-state-map (kbd "C-c j") 'my-cider-start)
 (define-key evil-normal-state-map (kbd "C-c j") 'cider-jack-in)
+(define-key evil-normal-state-map (kbd "C-c b") 'cider-jump)
 (define-key evil-normal-state-map (kbd "C-c l") 'cider-load-current-buffer)
 
 (setq nrepl-hide-special-buffers t)
@@ -145,7 +148,6 @@
 (require 'cider-eval-sexp-fu)
 (setq cider-eval-sexp-fu-flash-duration 0.2)
 
-
 ;; Set up Clojure auto-complete
 (require 'ac-nrepl)
 (add-hook 'cider-repl-mode-hook 'ac-nrepl-setup)
@@ -154,6 +156,8 @@
   '(add-to-list 'ac-modes 'cider-repl-mode))
 (eval-after-load "cider"
   '(define-key cider-mode-map (kbd "C-c C-d") 'ac-nrepl-popup-doc))
+(eval-after-load "cider"
+  '(define-key cider-mode-map (kbd "C-c b") 'cider-jump))
 (eval-after-load "cider"
   '(define-key cider-mode-map (kbd "C-c q") 'ac-nrepl-popup-doc))
 
