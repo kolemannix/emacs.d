@@ -28,7 +28,7 @@
   '(add-to-list 'ac-modes 'cider-repl-mode))
 
 ;; highlight expression on eval
-(require highlight)
+(require 'highlight)
 (require 'cider-eval-sexp-fu)
 (setq cider-eval-sexp-fu-flash-duration 0.2)
 

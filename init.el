@@ -18,9 +18,13 @@
 (global-evil-leader-mode)
 (evil-leader/set-leader ",")
 (evil-leader/set-key "," 'evilnc-comment-operator)
+(evil-leader/set-key "f" 'ido-find-file)
 
 (define-key evil-normal-state-map (kbd "C-u") 'evil-scroll-page-up)
 (define-key evil-normal-state-map (kbd "C-d") 'evil-scroll-page-down)
+(defun classic-vim-paste () (interactive) (evil-next-line) (evil-paste-after nil))
+
+(define-key evil-normal-state-map (kbd "p") 'classic-vim-paste)
 
 (require 'key-chord)
 (key-chord-mode 1)
@@ -41,6 +45,12 @@
 ;; ------------------- Settings -------------------- ;;
 
 (require 'knix-ido)
+
+; Allow mouse clicks for emurjinsees
+(require 'mouse)
+(xterm-mouse-mode t)
+(defun track-mouse (e))
+(setq mouse-sel-mode t)
 
 (key-chord-define evil-normal-state-map "ef" 'eval-defun)
 
