@@ -5,6 +5,7 @@
 	     '("marmalade" . "http://marmalade-repo.org/packages/"))
 
 (add-to-list 'load-path "~/.emacs.d/knix/")
+
 (package-initialize)
 
 (defun enable-my-elisp-settings ()
@@ -19,7 +20,9 @@
 (evil-leader/set-leader ",")
 (evil-leader/set-key "," 'evilnc-comment-operator)
 (evil-leader/set-key "f" 'ido-find-file)
+(evil-leader/set-key "b" 'ido-switch-buffer)
 
+(setq ido-ignore-buffers '("*Completions*" "*Help*" "*Minibuf-0*" "*Minibuf-2*" "*Minibuf-1*" "*Buffer List*" "*Messages*"))
 (define-key evil-normal-state-map (kbd "C-u") 'evil-scroll-page-up)
 (define-key evil-normal-state-map (kbd "C-d") 'evil-scroll-page-down)
 (defun classic-vim-paste () (interactive) (evil-next-line) (evil-paste-after nil))
@@ -58,7 +61,10 @@
 (setq inhibit-startup-message t)
 
 ;; Load mah theme
-(load-theme 'solarized-dark t)
+;; (load-theme 'base16-eighties t)
+;; (load-theme 'base16-tomorrow t)
+;; (load-theme 'base16-monokai t)
+;; (load-theme 'base16-solarized)
 
 ;; Scrolling behavior
 (setq redisplay-dont-pause t
@@ -70,6 +76,21 @@
 ;; Backups to home folder, no autosave
 (setq backup-directory-alist `(("." . "~/.backup")))
 (setq auto-save-default nil)
+
+(defun pretty-print-xml-region (begin end)
+  "Pretty format XML markup in region. You need to have nxml-mode
+http://www.emacswiki.org/cgi-bin/wiki/NxmlMode installed to do
+this.  The function inserts linebreaks to separate tags that have
+nothing but whitespace between them.  It then indents the markup
+by using nxml's indentation rules."
+  (interactive "r")
+  (save-excursion
+      (nxml-mode)
+      (goto-char begin)
+      (while (search-forward-regexp "\>[ \\t]*\<" nil t) 
+        (backward-char) (insert "\n"))
+      (indent-region begin end))
+    (message "Ah, much better!"))
 
 ;; ----------------- Copy / Paste in OSX -------------------- ;;
 (defun copy-from-osx ()
@@ -121,3 +142,15 @@
 (require 'knix-clojure)
 
 (require 'knix-ac)
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(custom-safe-themes (quote ("e53cc4144192bb4e4ed10a3fa3e7442cae4c3d231df8822f6c02f1220a0d259a" "51bea7765ddaee2aac2983fac8099ec7d62dff47b708aa3595ad29899e9e9e44" default))))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
