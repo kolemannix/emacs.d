@@ -32,6 +32,10 @@
 (require 'cider-eval-sexp-fu)
 (setq cider-eval-sexp-fu-flash-duration 0.2)
 
+
+;; Clojurescript jack-in
+(defun cljs-jack-in () (insert "(cemerick.piggieback/cljs-repl :repl-env (cemerick.austin/exec-env))"))
+
 (require 'midje-mode)
 (add-hook 'clojure-mode-hook 'midje-mode)
 (provide 'knix-clojure)

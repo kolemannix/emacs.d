@@ -25,9 +25,6 @@
 (setq ido-ignore-buffers '("*Completions*" "*Help*" "*Minibuf-0*" "*Minibuf-2*" "*Minibuf-1*" "*Buffer List*" "*Messages*"))
 (define-key evil-normal-state-map (kbd "C-u") 'evil-scroll-page-up)
 (define-key evil-normal-state-map (kbd "C-d") 'evil-scroll-page-down)
-(defun classic-vim-paste () (interactive) (evil-next-line) (evil-paste-after nil))
-
-(define-key evil-normal-state-map (kbd "p") 'classic-vim-paste)
 
 (require 'key-chord)
 (key-chord-mode 1)
