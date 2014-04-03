@@ -34,7 +34,11 @@
 
 
 ;; Clojurescript jack-in
-(defun cljs-jack-in () (insert "(cemerick.piggieback/cljs-repl :repl-env (cemerick.austin/exec-env))"))
+(defun insert-cljs-jack-in ()
+  (interactive)
+  (insert "(cemerick.piggieback/cljs-repl :repl-env (cemerick.austin/exec-env))"))
+
+(define-key evil-normal-state-map (kbd "C-c C-j s") 'insert-cljs-jack-in)
 
 (require 'midje-mode)
 (add-hook 'clojure-mode-hook 'midje-mode)
