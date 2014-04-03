@@ -29,8 +29,8 @@
 (require 'key-chord)
 (key-chord-mode 1)
 (require 'auto-complete)
-(require 'mic-paren)
-(paren-activate)
+;; (require 'mic-paren)
+;; (paren-activate)
 
 (require 'knix-smex)
 
