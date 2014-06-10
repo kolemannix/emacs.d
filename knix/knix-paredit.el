@@ -7,19 +7,16 @@
 (add-hook 'clojure-mode-hook 'enable-paredit-mode)
 (add-hook 'emacs-lisp-mode-hook 'enable-paredit-mode)
 
-; Bindings
-(global-set-key (kbd "C-k") nil) ; clear up C-k so it can be used as paredit-kill
-
 (evil-leader/set-key
+  "{" 'paredit-wrap-curly
   "w" 'paredit-wrap-round
-  "<RET>" 'paredit-close-round-and-newline
+  "[" 'paredit-wrap-square
   "h" 'paredit-backward-slurp-sexp
-  "j" 'paredit-backward-barf-sexp
-  "k" 'paredit-forward-barf-sexp
   "l" 'paredit-forward-slurp-sexp
   "S" 'paredit-split-sexp
   "s" 'paredit-splice-sexp
-  "x" 'paredit-kill
+  "j" 'paredit-splice-sexp-killing-backward
+  "k" 'paredit-splice-sexp-killing-forward
   )
 
 (provide 'knix-paredit)

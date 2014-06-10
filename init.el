@@ -1,3 +1,8 @@
+;;; package --- Summary
+;;; Commentary:
+; Welcome to my Emacs moving castle
+
+;;; Code:
 (require 'package)
 (add-to-list 'package-archives
 	       '("melpa" . "http://melpa.milkbox.net/packages/") t)
@@ -57,12 +62,6 @@
 ; No splash screen
 (setq inhibit-startup-message t)
 
-;; Load mah theme
-;; (load-theme 'base16-eighties t)
-;; (load-theme 'base16-tomorrow t)
-;; (load-theme 'base16-monokai t)
-;; (load-theme 'base16-solarized)
-
 ;; Scrolling behavior
 (setq redisplay-dont-pause t
       scroll-margin 7
@@ -106,17 +105,12 @@ by using nxml's indentation rules."
 (define-key evil-insert-state-map (kbd "C-s") (lambda () (interactive) (save-buffer) (evil-normal-state)))
 (define-key evil-normal-state-map (kbd "C-s") 'save-buffer)
 (define-key evil-insert-state-map (kbd "RET") 'evil-ret-and-indent)
+
 ;; Map jk -> ESC 
 (key-chord-define evil-insert-state-map "jk" 'evil-normal-state)
 
 ;; Meta key
 (setq ns-right-alternate-modifier nil)
-
-(global-auto-complete-mode t)
-(define-key ac-completing-map (kbd "C-n") 'ac-next)
-(define-key ac-completing-map (kbd "C-p") 'ac-previous)
-(define-key ac-completing-map "\t" 'ac-complete)
-
 
 ;; LaTeX
 (require 'smartparens-config)
@@ -124,21 +118,19 @@ by using nxml's indentation rules."
 (add-hook 'latex-mode-hook 'flycheck-mode)
 (setq TeX-PDF-mode t)
 
-(require 'ac-math)
-(add-to-list 'ac-modes 'latex-mode)
+;; ----------------- Completion Engine -------------------- ;;
 
-(defun ac-LaTeX-mode-setup () ; add ac-sources to default ac-sources
-     (setq ac-sources
-	            (append '(ac-source-math-unicode ac-source-math-latex ac-source-latex-commands)
-			                     ac-sources)))
+(add-hook 'after-init-hook 'global-company-mode)
+(define-key evil-insert-state-map (kbd "C-n") 'company-select-next)
+(define-key evil-insert-state-map (kbd "C-p") 'company-select-previous)
 
-(add-hook 'LaTeX-mode-hook 'ac-LaTeX-mode-setup)
+;; ----------------- My Packages -------------------- ;;
+(require 'knix-go)
 
 (require 'knix-paredit)
 
 (require 'knix-clojure)
 
-(require 'knix-ac)
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -151,3 +143,5 @@ by using nxml's indentation rules."
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  )
+
+;;; init.el ends here!

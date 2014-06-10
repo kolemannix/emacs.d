@@ -3,18 +3,20 @@
 ;;; GG no comminteareeez
 ;;; Code:
 
-(setq nrepl-hide-special-buffers t)
+(setq nrepl-hide-special-buffers nil)
 (setq cider-repl-pop-to-buffer-on-connect nil)
 (setq cider-popup-stacktraces nil)
+(setq cider-repl-print-length 100)
+(setq cider-prompt-save-file-on-load nil)
 
-(define-key evil-normal-state-map (kbd "C-c j") 'cider-jack-in)
+(setq cider-repl-result-prefix "-> ")
+(setq cider-interactive-eval-result-prefix "-> ")
 
-(define-key evil-normal-state-map (kbd "<SPC>") 'cider-eval-expression-at-point)
+(define-key evil-normal-state-map (kbd "<SPC>") 'cider-eval-defun-at-point)
 (define-key evil-normal-state-map (kbd "C-c j") 'cider-jack-in)
 (define-key evil-normal-state-map (kbd "C-c b") 'cider-jump)
 (define-key evil-normal-state-map (kbd "C-c l") 'cider-load-current-buffer)
 (define-key evil-normal-state-map (kbd "C-c q") 'ac-nrepl-popup-doc)
-(define-key evil-normal-state-map (kbd "C-c b") 'cider-jump)
 
 (eval-after-load "cider"
   '(add-to-list 'ac-modes 'cider-repl-mode))
@@ -26,6 +28,11 @@
 (add-hook 'cider-mode-hook 'ac-nrepl-setup)
 (eval-after-load "auto-complete"
   '(add-to-list 'ac-modes 'cider-repl-mode))
+
+
+;; In the repl
+(add-hook 'cider-repl-mode-hook 'rainbow-delimiters-mode)
+(add-hook 'cider-repl-mode-hook 'paredit-mode)
 
 ;; highlight expression on eval
 (require 'highlight)
