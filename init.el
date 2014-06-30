@@ -16,7 +16,8 @@
 (defun enable-my-elisp-settings ()
   (turn-on-eldoc-mode))
 (add-hook 'emacs-lisp-mode-hook 'enable-my-elisp-settings)
-(add-hook 'after-init-hook #'global-flycheck-mode)
+
+;; ------------------- Evil Bindings -------------------- ;;
 
 (require 'evil)
 (evil-mode 1)
@@ -33,7 +34,6 @@
 
 (require 'key-chord)
 (key-chord-mode 1)
-(require 'auto-complete)
 ;; (require 'mic-paren)
 ;; (paren-activate)
 
@@ -115,7 +115,6 @@ by using nxml's indentation rules."
 ;; LaTeX
 (require 'smartparens-config)
 (add-hook 'latex-mode-hook 'smartparens-mode)
-(add-hook 'latex-mode-hook 'flycheck-mode)
 (setq TeX-PDF-mode t)
 
 ;; ----------------- Completion Engine -------------------- ;;
@@ -125,23 +124,10 @@ by using nxml's indentation rules."
 (define-key evil-insert-state-map (kbd "C-p") 'company-select-previous)
 
 ;; ----------------- My Packages -------------------- ;;
-(require 'knix-go)
+; (require 'knix-go)
 
 (require 'knix-paredit)
 
 (require 'knix-clojure)
-
-(custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(custom-safe-themes (quote ("e53cc4144192bb4e4ed10a3fa3e7442cae4c3d231df8822f6c02f1220a0d259a" "51bea7765ddaee2aac2983fac8099ec7d62dff47b708aa3595ad29899e9e9e44" default))))
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- )
 
 ;;; init.el ends here!

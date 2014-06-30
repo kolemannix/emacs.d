@@ -16,19 +16,8 @@
 (define-key evil-normal-state-map (kbd "C-c j") 'cider-jack-in)
 (define-key evil-normal-state-map (kbd "C-c b") 'cider-jump)
 (define-key evil-normal-state-map (kbd "C-c l") 'cider-load-current-buffer)
-(define-key evil-normal-state-map (kbd "C-c q") 'ac-nrepl-popup-doc)
-
-(eval-after-load "cider"
-  '(add-to-list 'ac-modes 'cider-repl-mode))
 
 (add-hook 'cider-mode-hook 'cider-turn-on-eldoc-mode)
-;; Set up auto-complete
-(require 'ac-nrepl)
-(add-hook 'cider-repl-mode-hook 'ac-nrepl-setup)
-(add-hook 'cider-mode-hook 'ac-nrepl-setup)
-(eval-after-load "auto-complete"
-  '(add-to-list 'ac-modes 'cider-repl-mode))
-
 
 ;; In the repl
 (add-hook 'cider-repl-mode-hook 'rainbow-delimiters-mode)
@@ -47,7 +36,5 @@
 
 (define-key evil-normal-state-map (kbd "C-c C-j s") 'insert-cljs-jack-in)
 
-(require 'midje-mode)
-(add-hook 'clojure-mode-hook 'midje-mode)
 (provide 'knix-clojure)
 ;;; knix-clojure.el ends here
