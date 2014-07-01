@@ -32,10 +32,12 @@
 (define-key evil-normal-state-map (kbd "C-u") 'evil-scroll-page-up)
 (define-key evil-normal-state-map (kbd "C-d") 'evil-scroll-page-down)
 
+;; ------------------- General -------------------- ;;
+
 (require 'key-chord)
 (key-chord-mode 1)
-;; (require 'mic-paren)
-;; (paren-activate)
+
+(remove-hook 'find-file-hooks 'vc-find-file-hook)
 
 (require 'knix-smex)
 
