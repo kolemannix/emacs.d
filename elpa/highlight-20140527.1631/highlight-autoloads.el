@@ -13,7 +13,7 @@
 ;;;;;;  hlt-eraser-mouse hlt-highlighter-mouse hlt-eraser hlt-highlighter
 ;;;;;;  hlt-previous-face hlt-next-face hlt-choose-default-face hlt-default-copy/yank-props
 ;;;;;;  hlt-use-overlays-flag hlt-max-region-no-warning) "highlight"
-;;;;;;  "highlight.el" (21425 35066 0 0))
+;;;;;;  "highlight.el" (21427 12176 0 0))
 ;;; Generated autoloads from highlight.el
 
 (defvar hlt-max-region-no-warning 100000 "\
@@ -382,7 +382,7 @@ With a negative prefix arg, you are prompted for the properties to
 
 ;;;***
 
-;;;### (autoloads nil nil ("highlight-pkg.el") (21425 35066 135589
+;;;### (autoloads nil nil ("highlight-pkg.el") (21427 12176 554807
 ;;;;;;  0))
 
 ;;;***

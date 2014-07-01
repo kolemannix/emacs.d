@@ -3,6 +3,9 @@
 ; Welcome to my Emacs moving castle
 
 ;;; Code:
+(require 'cl)
+
+
 (require 'package)
 (add-to-list 'package-archives
 	       '("melpa" . "http://melpa.milkbox.net/packages/") t)
@@ -10,8 +13,8 @@
 	     '("marmalade" . "http://marmalade-repo.org/packages/"))
 
 (add-to-list 'load-path "~/.emacs.d/knix/")
-
 (package-initialize)
+(require 'knix-packages)
 
 (defun enable-my-elisp-settings ()
   (turn-on-eldoc-mode))
@@ -115,8 +118,6 @@ by using nxml's indentation rules."
 (setq ns-right-alternate-modifier nil)
 
 ;; LaTeX
-(require 'smartparens-config)
-(add-hook 'latex-mode-hook 'smartparens-mode)
 (setq TeX-PDF-mode t)
 
 ;; ----------------- Completion Engine -------------------- ;;

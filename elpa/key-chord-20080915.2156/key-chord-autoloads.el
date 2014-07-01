@@ -4,7 +4,7 @@
 
 
 ;;;### (autoloads (key-chord-define key-chord-define-global key-chord-mode)
-;;;;;;  "key-chord" "key-chord.el" (21214 53424 0 0))
+;;;;;;  "key-chord" "key-chord.el" (21427 12176 0 0))
 ;;; Generated autoloads from key-chord.el
 
 (autoload 'key-chord-mode "key-chord" "\
@@ -41,7 +41,7 @@ If COMMAND is nil, the key-chord is removed.
 
 ;;;***
 
-;;;### (autoloads nil nil ("key-chord-pkg.el") (21214 53424 53079
+;;;### (autoloads nil nil ("key-chord-pkg.el") (21427 12176 978962
 ;;;;;;  0))
 
 ;;;***

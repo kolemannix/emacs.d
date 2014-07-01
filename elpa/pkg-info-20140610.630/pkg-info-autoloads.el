@@ -6,7 +6,7 @@
 ;;;### (autoloads (pkg-info-version-info pkg-info-package-version
 ;;;;;;  pkg-info-defining-library-version pkg-info-defining-library-original-version
 ;;;;;;  pkg-info-library-version pkg-info-library-original-version)
-;;;;;;  "pkg-info" "pkg-info.el" (21425 35869 0 0))
+;;;;;;  "pkg-info" "pkg-info.el" (21427 12157 0 0))
 ;;; Generated autoloads from pkg-info.el
 
 (autoload 'pkg-info-library-original-version "pkg-info" "\
@@ -116,7 +116,7 @@ version.
 
 ;;;***
 
-;;;### (autoloads nil nil ("pkg-info-pkg.el") (21425 35869 616985
+;;;### (autoloads nil nil ("pkg-info-pkg.el") (21427 12157 545678
 ;;;;;;  0))
 
 ;;;***
