@@ -3,6 +3,8 @@
 ;;; GG no comminteareeez
 ;;; Code:
 
+(show-paren-mode 1)
+
 (setq nrepl-hide-special-buffers nil)
 (setq cider-repl-pop-to-buffer-on-connect nil)
 (setq cider-popup-stacktraces nil)
