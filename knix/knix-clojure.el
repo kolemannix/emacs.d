@@ -7,7 +7,10 @@
 
 (setq nrepl-hide-special-buffers nil)
 (setq cider-repl-pop-to-buffer-on-connect nil)
+; quiet errors
 (setq cider-popup-stacktraces nil)
+(setq cider-show-error-buffer nil)
+
 (setq cider-repl-print-length 100)
 (setq cider-prompt-save-file-on-load nil)
 
@@ -18,8 +21,18 @@
 (define-key evil-normal-state-map (kbd "C-c j") 'cider-jack-in)
 (define-key evil-normal-state-map (kbd "C-c b") 'cider-jump)
 (define-key evil-normal-state-map (kbd "C-c l") 'cider-load-current-buffer)
+(define-key evil-normal-state-map (kbd "C-c q") 'cider-quit)
+
 
 (add-hook 'cider-mode-hook 'cider-turn-on-eldoc-mode)
+
+(defun print-line-in-repl ()
+  (interactive)
+  (cider-switch-to-repl-buffer)
+  (cider-repl-return)
+  (cider-switch-to-last-clojure-buffer))
+
+(define-key evil-normal-state-map (kbd "C-c RET") 'print-line-in-repl)
 
 ;; In the repl
 (add-hook 'cider-repl-mode-hook 'rainbow-delimiters-mode)

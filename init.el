@@ -41,6 +41,7 @@
 (key-chord-mode 1)
 
 (remove-hook 'find-file-hooks 'vc-find-file-hook)
+;; TODO find out how to disable vc-find-file on save
 
 (require 'knix-smex)
 
