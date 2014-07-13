@@ -1,3 +1,4 @@
+(require 'cl)
 (defvar package-list
   '(dash cider clojure-mode company evil evil-leader evil-nerd-commenter highlight
 	  key-chord paredit smartparens rainbow-delimiters smex)

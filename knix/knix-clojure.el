@@ -7,7 +7,6 @@
 
 (setq nrepl-hide-special-buffers nil)
 (setq cider-repl-pop-to-buffer-on-connect nil)
-; quiet errors
 (setq cider-popup-stacktraces nil)
 (setq cider-show-error-buffer nil)
 
@@ -16,6 +15,7 @@
 
 (setq cider-repl-result-prefix "-> ")
 (setq cider-interactive-eval-result-prefix "-> ")
+(setq cider-words-of-inspiration '(""))
 
 (define-key evil-normal-state-map (kbd "<SPC>") 'cider-eval-defun-at-point)
 (define-key evil-normal-state-map (kbd "C-c j") 'cider-jack-in)
@@ -23,6 +23,7 @@
 (define-key evil-normal-state-map (kbd "C-c l") 'cider-load-current-buffer)
 (define-key evil-normal-state-map (kbd "C-c q") 'cider-quit)
 
+(evil-leader/set-key "r" 'cider-switch-to-repl-buffer)
 
 (add-hook 'cider-mode-hook 'cider-turn-on-eldoc-mode)
 
@@ -32,7 +33,18 @@
   (cider-repl-return)
   (cider-switch-to-last-clojure-buffer))
 
-(define-key evil-normal-state-map (kbd "C-c RET") 'print-line-in-repl)
+(defun cider-repl-newline ()
+  (interactive)
+  (cider-switch-to-repl-buffer)
+  (cider-repl-return)
+  (cider-switch-to-last-clojure-buffer))
+
+(global-unset-key (kbd "C-@"))
+(define-key evil-normal-state-map (kbd "C-@") 'cider-eval-print-last-sexp)
+
+(define-key evil-normal-state-map (kbd "C-c RET") 'cider-repl-newline)
+
+(define-key evil-insert-state-map (kbd "C-c RET") 'cider-repl-return)
 
 ;; In the repl
 (add-hook 'cider-repl-mode-hook 'rainbow-delimiters-mode)

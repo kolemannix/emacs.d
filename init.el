@@ -3,9 +3,6 @@
 ; Welcome to my Emacs moving castle
 
 ;;; Code:
-(require 'cl)
-
-
 (require 'package)
 (add-to-list 'package-archives
 	       '("melpa" . "http://melpa.milkbox.net/packages/") t)
@@ -34,6 +31,9 @@
 (setq ido-ignore-buffers '("*Completions*" "*Help*" "*Minibuf-0*" "*Minibuf-2*" "*Minibuf-1*" "*Buffer List*" "*Messages*"))
 (define-key evil-normal-state-map (kbd "C-u") 'evil-scroll-page-up)
 (define-key evil-normal-state-map (kbd "C-d") 'evil-scroll-page-down)
+(define-key evil-normal-state-map (kbd "C-d") 'evil-scroll-page-down)
+(define-key evil-normal-state-map (kbd "C-w x") 'evil-window-delete)
+
 
 ;; ------------------- General -------------------- ;;
 
@@ -108,7 +108,9 @@ by using nxml's indentation rules."
 (setq interprogram-paste-function 'copy-from-osx)
 
 ;; ----------------- Core bindings -------------------- ;;
-(define-key evil-insert-state-map (kbd "C-s") (lambda () (interactive) (save-buffer) (evil-normal-state)))
+(define-key evil-insert-state-map (kbd "C-s") (lambda () (interactive)
+						(save-buffer)
+						(evil-normal-state)))
 (define-key evil-normal-state-map (kbd "C-s") 'save-buffer)
 (define-key evil-insert-state-map (kbd "RET") 'evil-ret-and-indent)
 
@@ -128,7 +130,7 @@ by using nxml's indentation rules."
 (define-key evil-insert-state-map (kbd "C-p") 'company-select-previous)
 
 ;; ----------------- My Packages -------------------- ;;
-; (require 'knix-go)
+					; (require 'knix-go)
 
 (require 'knix-paredit)
 
