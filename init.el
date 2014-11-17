@@ -10,6 +10,7 @@
 	     '("marmalade" . "http://marmalade-repo.org/packages/"))
 
 (add-to-list 'load-path "~/.emacs.d/knix/")
+
 (package-initialize)
 (require 'knix-packages)
 
@@ -136,4 +137,12 @@ by using nxml's indentation rules."
 
 (require 'knix-clojure)
 
+;; Temporary convenience fns for graphics class
+(defun go-gfx (ray w h rlimit)
+ (interactive)
+ (shell-command (format "~/gfx/assignments/ray_tracer/go.zsh %s %s %s %s" ray w h rlimit)))
+
+;; COQ
+(add-to-list 'load-path "~/.emacs.d/coq/")
+(require 'knix-coq)
 ;;; init.el ends here!
