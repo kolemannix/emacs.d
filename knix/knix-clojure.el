@@ -42,10 +42,6 @@
 (global-unset-key (kbd "C-@"))
 (define-key evil-normal-state-map (kbd "C-@") 'cider-eval-print-last-sexp)
 
-(define-key evil-normal-state-map (kbd "C-c RET") 'cider-repl-newline)
-
-(define-key evil-insert-state-map (kbd "C-c RET") 'cider-repl-return)
-
 ;; In the repl
 (add-hook 'cider-repl-mode-hook 'rainbow-delimiters-mode)
 (add-hook 'cider-repl-mode-hook 'paredit-mode)

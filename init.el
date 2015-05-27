@@ -10,6 +10,8 @@
 	     '("marmalade" . "http://marmalade-repo.org/packages/"))
 
 (add-to-list 'load-path "~/.emacs.d/knix/")
+;; (add-to-list 'load-path "~/.emacs.d/ProofGeneral/")
+
 
 (package-initialize)
 (require 'knix-packages)
@@ -142,7 +144,23 @@ by using nxml's indentation rules."
  (interactive)
  (shell-command (format "~/gfx/assignments/ray_tracer/go.zsh %s %s %s %s" ray w h rlimit)))
 
-;; COQ
-(add-to-list 'load-path "~/.emacs.d/coq/")
-(require 'knix-coq)
+;; Coq
+(load-file "~/lib/ProofGeneral/generic/proof-site.el")
+; remove that stupid '=>' from margin 
+(add-hook 'proof-mode-hook
+          (lambda () (set (make-local-variable 'overlay-arrow-string) nil)))
+
 ;;; init.el ends here!
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(coq-compile-auto-save (quote ask-coq))
+ '(proof-splash-enable nil))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(proof-locked-face ((t (:background "color-233" :box (:line-width 2 :color "grey75" :style released-button) :slant italic :weight ultra-bold)))))
