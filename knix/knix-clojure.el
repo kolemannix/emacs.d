@@ -3,6 +3,7 @@
 ;;; GG no comminteareeez
 ;;; Code:
 
+
 (show-paren-mode 1)
 
 (setq nrepl-hide-special-buffers nil)
@@ -25,7 +26,6 @@
 
 (evil-leader/set-key "r" 'cider-switch-to-repl-buffer)
 
-(add-hook 'cider-mode-hook 'cider-turn-on-eldoc-mode)
 
 (defun print-line-in-repl ()
   (interactive)

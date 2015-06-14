@@ -133,11 +133,14 @@ by using nxml's indentation rules."
 (define-key evil-insert-state-map (kbd "C-p") 'company-select-previous)
 
 ;; ----------------- My Packages -------------------- ;;
-					; (require 'knix-go)
 
 (require 'knix-paredit)
 
-(require 'knix-clojure)
+;; Clojure
+(add-hook 'cider-mode-hook
+	  (lambda ()
+	    (interactive)
+	    (require 'knix-clojure)))
 
 ;; Temporary convenience fns for graphics class
 (defun go-gfx (ray w h rlimit)
@@ -149,6 +152,24 @@ by using nxml's indentation rules."
 ; remove that stupid '=>' from margin 
 (add-hook 'proof-mode-hook
           (lambda () (set (make-local-variable 'overlay-arrow-string) nil)))
+(set-variable 'show-paren-mode nil)
+
+;; Idris
+(add-hook 'idris-mode-hook
+	  (lambda ()
+	    (interactive)
+	    (idris-define-evil-keys)))
+
+(add-hook 'idris-repl-mode-hook
+	  (lambda ()
+	    (interactive)
+	    (define-key evil-insert-state-map (kbd "C-c <RET>") 'idris-repl-return)
+	    (define-key evil-insert-state-map (kbd "<up>") 'idris-repl-backward-history)
+	    (define-key evil-insert-state-map (kbd "<down>") 'idris-repl-forward-history)))
+
+(add-to-list 'completion-ignored-extensions ".ibc")
+
+
 
 ;;; init.el ends here!
 (custom-set-variables
@@ -163,4 +184,4 @@ by using nxml's indentation rules."
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(proof-locked-face ((t (:background "color-233" :box (:line-width 2 :color "grey75" :style released-button) :slant italic :weight ultra-bold)))))
+ '(proof-locked-face ((t (:box (:line-width 2 :color "grey75" :style released-button) :slant italic :weight ultra-bold)))))
