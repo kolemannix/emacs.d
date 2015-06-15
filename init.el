@@ -178,6 +178,7 @@ by using nxml's indentation rules."
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(coq-compile-auto-save (quote ask-coq))
+ '(coq-one-command-per-line nil)
  '(proof-splash-enable nil))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
