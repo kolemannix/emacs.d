@@ -120,9 +120,6 @@ by using nxml's indentation rules."
 ;; Map jk -> ESC 
 (key-chord-define evil-insert-state-map "jk" 'evil-normal-state)
 
-;; Meta key
-(setq ns-right-alternate-modifier nil)
-
 ;; LaTeX
 (setq TeX-PDF-mode t)
 
@@ -150,9 +147,13 @@ by using nxml's indentation rules."
 ;; Coq
 (load-file "~/lib/ProofGeneral/generic/proof-site.el")
 ; remove that stupid '=>' from margin 
-(add-hook 'proof-mode-hook
-          (lambda () (set (make-local-variable 'overlay-arrow-string) nil)))
-(set-variable 'show-paren-mode nil)
+; enable Clement's coq-company mode
+(require 'proof-site)
+(add-hook 'coq-mode-hook #'company-coq-initialize)
+;; (add-hook 'coq-mode-hook
+;;           (lambda () (set (make-local-variable 'overlay-arrow-string) nil)))
+;; (set-variable 'show-paren-mode nil)
+
 
 ;; Idris
 (add-hook 'idris-mode-hook

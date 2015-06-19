@@ -19,7 +19,6 @@
 (setq cider-words-of-inspiration '(""))
 
 (define-key evil-normal-state-map (kbd "<SPC>") 'cider-eval-defun-at-point)
-(define-key evil-normal-state-map (kbd "C-c j") 'cider-jack-in)
 (define-key evil-normal-state-map (kbd "C-c b") 'cider-jump-to-var)
 (define-key evil-normal-state-map (kbd "C-c l") 'cider-load-buffer)
 (define-key evil-normal-state-map (kbd "C-c q") 'cider-quit)
@@ -46,10 +45,6 @@
 (add-hook 'cider-repl-mode-hook 'rainbow-delimiters-mode)
 (add-hook 'cider-repl-mode-hook 'paredit-mode)
 
-;; highlight expression on eval
-(require 'highlight)
-(require 'cider-eval-sexp-fu)
-(setq cider-eval-sexp-fu-flash-duration 0.2)
 
 
 ;; Clojurescript jack-in

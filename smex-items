@@ -1,0 +1,68 @@
+
+;; ----- smex-history -----
+(
+ customize-face
+ delete-window
+ vc-pull
+ vc-diff
+ proof-goto-point
+ proof-retract-buffer
+ load-theme
+)
+
+;; ----- smex-data -----
+(
+ (package-list-packages . 5)
+ (proof-mode . 7)
+ (proof-goals-mode . 4)
+ (proof-cd . 1)
+ (proof-shell-start . 1)
+ (proof-toolbar-goto . 13)
+ (proof-goto-command-start . 3)
+ (proof-goto-command-end . 1)
+ (proof-assert-next-command-interactive . 1)
+ (proof-backward-command . 2)
+ (proof-electric-terminator-toggle . 4)
+ (proof-undo-last-successful-command . 3)
+ (coq-mode . 3)
+ (cider-quit . 1)
+ (nyan-mode . 7)
+ (mkdir . 1)
+ (proof-unicode-tokens-toggle . 2)
+ (proof-unicode-tokens-enable . 2)
+ (company-coq-tutorial . 3)
+ (prettify-symbols-mode . 5)
+ (company-coq-initialize . 1)
+ (list-faces-display . 3)
+ (load-theme . 16)
+ (yas-minor-mode . 2)
+ (set-keyboard-coding-system . 1)
+ (eval-expression . 2)
+ (customize-group . 1)
+ (load-file . 14)
+ (nyan-start-animation . 1)
+ (nyan-stop-animation . 1)
+ (electric-indent-mode . 2)
+ (evil-ret-and-indent . 4)
+ (eval-defun . 2)
+ (evil-ret . 2)
+ (shell . 2)
+ (toggle-debug-on-error . 9)
+ (rainbow-delimiters-mode . 5)
+ (evil-insert-line . 4)
+ (find-variable . 1)
+ (shell-command . 4)
+ (proof-goto-point . 2)
+ (proof-toolbar-restart . 3)
+ (ido-find-file . 6)
+ (yank . 1)
+ (describe-font . 1)
+ (customize-face . 10)
+ (set-default-font . 1)
+ (set-frame-font . 1)
+ (company-coq-show-definition-overlay-under-pointer . 1)
+ (proof-retract-buffer . 1)
+ (vc-diff . 3)
+ (vc-pull . 2)
+ (delete-window . 1)
+)
