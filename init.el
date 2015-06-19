@@ -1,19 +1,17 @@
-;;; package --- Summary
-;;; Commentary:
 ; Welcome to my Emacs moving castle
 
-;;; Code:
 (require 'package)
 (add-to-list 'package-archives
-	       '("melpa" . "http://melpa.milkbox.net/packages/") t)
-(add-to-list 'package-archives
-	     '("marmalade" . "http://marmalade-repo.org/packages/"))
+	       '("melpa" . "http://melpa.milkbox.net/packages/")
+	       '("marmalade" . "http://marmalade-repo.org/packages/"))
 
 (add-to-list 'load-path "~/.emacs.d/knix/")
-;; (add-to-list 'load-path "~/.emacs.d/ProofGeneral/")
-
 
 (package-initialize)
+
+(when (memq window-system '(mac ns))
+  (exec-path-from-shell-initialize))
+
 (require 'knix-packages)
 
 (defun enable-my-elisp-settings ()
@@ -30,13 +28,10 @@
 (evil-leader/set-key "," 'evilnc-comment-operator)
 (evil-leader/set-key "f" 'ido-find-file)
 (evil-leader/set-key "b" 'ido-switch-buffer)
+(evil-leader/set-key "x" 'evil-window-delete)
 
-(setq ido-ignore-buffers '("*Completions*" "*Help*" "*Minibuf-0*" "*Minibuf-2*" "*Minibuf-1*" "*Buffer List*" "*Messages*"))
 (define-key evil-normal-state-map (kbd "C-u") 'evil-scroll-page-up)
 (define-key evil-normal-state-map (kbd "C-d") 'evil-scroll-page-down)
-(define-key evil-normal-state-map (kbd "C-d") 'evil-scroll-page-down)
-(define-key evil-normal-state-map (kbd "C-w x") 'evil-window-delete)
-
 
 ;; ------------------- General -------------------- ;;
 
@@ -52,24 +47,27 @@
 (require 'rainbow-delimiters)
 (add-hook 'prog-mode-hook 'rainbow-delimiters-mode)
 
-; Reduce clutter
+;; Appearance
 (tool-bar-mode -1)
 (menu-bar-mode -1)
+(setq inhibit-startup-message t)
+(set-frame-font "DejaVu Sans Mono 12")
+(setq sml/no-confirm-load-theme t)
 
-;; ------------------- Settings -------------------- ;;
+(defun switch-to-light-theme () (interactive)
+       (load-theme 'tango t)
+       (sml/setup))
+(defun switch-to-dark-theme () (interactive)
+       (load-theme 'tango-dark t)
+       (setq sml/no-confirm-load-theme t)
+       (sml/setup))
+
+(switch-to-dark-theme)
+;; (switch-to-light-theme)
 
 (require 'knix-ido)
 
-; Allow mouse clicks for emurjinsees
-(require 'mouse)
-(xterm-mouse-mode t)
-(defun track-mouse (e))
-(setq mouse-sel-mode t)
-
 (key-chord-define evil-normal-state-map "ef" 'eval-defun)
-
-; No splash screen
-(setq inhibit-startup-message t)
 
 ;; Scrolling behavior
 (setq redisplay-dont-pause t
@@ -82,33 +80,6 @@
 (setq backup-directory-alist `(("." . "~/.backup")))
 (setq auto-save-default nil)
 
-(defun pretty-print-xml-region (begin end)
-  "Pretty format XML markup in region. You need to have nxml-mode
-http://www.emacswiki.org/cgi-bin/wiki/NxmlMode installed to do
-this.  The function inserts linebreaks to separate tags that have
-nothing but whitespace between them.  It then indents the markup
-by using nxml's indentation rules."
-  (interactive "r")
-  (save-excursion
-      (nxml-mode)
-      (goto-char begin)
-      (while (search-forward-regexp "\>[ \\t]*\<" nil t) 
-        (backward-char) (insert "\n"))
-      (indent-region begin end))
-    (message "Ah, much better!"))
-
-;; ----------------- Copy / Paste in OSX -------------------- ;;
-(defun copy-from-osx ()
-  (shell-command-to-string "pbpaste"))
-
-(defun paste-to-osx (text &optional push)
-  (let ((process-connection-type nil))
-    (let ((proc (start-process "pbcopy" "*Messages*" "pbcopy")))
-      (process-send-string proc text)
-      (process-send-eof proc))))
-
-(setq interprogram-cut-function 'paste-to-osx)
-(setq interprogram-paste-function 'copy-from-osx)
 
 ;; ----------------- Core bindings -------------------- ;;
 (define-key evil-insert-state-map (kbd "C-s") (lambda () (interactive)
@@ -134,31 +105,28 @@ by using nxml's indentation rules."
 (require 'knix-paredit)
 
 ;; Clojure
+(define-key evil-normal-state-map (kbd "C-c j") 'cider-jack-in)
 (add-hook 'cider-mode-hook
 	  (lambda ()
 	    (interactive)
 	    (require 'knix-clojure)))
 
-;; Temporary convenience fns for graphics class
-(defun go-gfx (ray w h rlimit)
- (interactive)
- (shell-command (format "~/gfx/assignments/ray_tracer/go.zsh %s %s %s %s" ray w h rlimit)))
-
 ;; Coq
 (load-file "~/lib/ProofGeneral/generic/proof-site.el")
-; remove that stupid '=>' from margin 
-; enable Clement's coq-company mode
-(require 'proof-site)
-(add-hook 'coq-mode-hook #'company-coq-initialize)
-;; (add-hook 'coq-mode-hook
-;;           (lambda () (set (make-local-variable 'overlay-arrow-string) nil)))
-;; (set-variable 'show-paren-mode nil)
 
+					; enable Clement's coq-company mode
+(require 'proof-site)
+(add-hook 'coq-mode-hook (lambda ()
+			   (interactive)
+			   (switch-to-light-theme)
+			   (show-paren-mode)
+			   (company-coq-initialize)))
 
 ;; Idris
 (add-hook 'idris-mode-hook
 	  (lambda ()
 	    (interactive)
+	    (add-to-list 'completion-ignored-extensions ".ibc")
 	    (idris-define-evil-keys)))
 
 (add-hook 'idris-repl-mode-hook
@@ -168,9 +136,20 @@ by using nxml's indentation rules."
 	    (define-key evil-insert-state-map (kbd "<up>") 'idris-repl-backward-history)
 	    (define-key evil-insert-state-map (kbd "<down>") 'idris-repl-forward-history)))
 
-(add-to-list 'completion-ignored-extensions ".ibc")
-
-
+(defun pretty-print-xml-region (begin end)
+  "Pretty format XML markup in region. You need to have nxml-mode
+http://www.emacswiki.org/cgi-bin/wiki/NxmlMode installed to do
+this.  The function inserts linebreaks to separate tags that have
+nothing but whitespace between them.  It then indents the markup
+by using nxml's indentation rules."
+  (interactive "r")
+  (save-excursion
+    (nxml-mode)
+    (goto-char begin)
+    (while (search-forward-regexp "\>[ \\t]*\<" nil t) 
+      (backward-char) (insert "\n"))
+    (indent-region begin end))
+  (message "Ah, much better!"))
 
 ;;; init.el ends here!
 (custom-set-variables
@@ -178,12 +157,12 @@ by using nxml's indentation rules."
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(coq-compile-auto-save (quote ask-coq))
- '(coq-one-command-per-line nil)
- '(proof-splash-enable nil))
+ '(custom-safe-themes
+   (quote
+    ("3c83b3676d796422704082049fc38b6966bcad960f896669dfc21a7a37a748fa" "a27c00821ccfd5a78b01e4f35dc056706dd9ede09a8b90c6955ae6a390eb1c1e" "d677ef584c6dfc0697901a44b885cc18e206f05114c8a3b7fde674fce6180879" "8aebf25556399b58091e533e455dd50a6a9cba958cc4ebb0aab175863c25b9a4" "a8245b7cc985a0610d71f9852e9f2767ad1b852c2bdea6f4aadc12cce9c4d6d0" default))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(proof-locked-face ((t (:box (:line-width 2 :color "grey75" :style released-button) :slant italic :weight ultra-bold)))))
+ )

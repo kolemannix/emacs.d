@@ -1,18 +1,18 @@
 
 ;; ----- smex-history -----
 (
- customize-face
- delete-window
- vc-pull
- vc-diff
- proof-goto-point
- proof-retract-buffer
+ package-list-packages
+ package-install
+ rainbow-delimiters-mode
+ switch-to-dark-theme
+ switch-to-light-theme
  load-theme
+ ido-find-file
 )
 
 ;; ----- smex-data -----
 (
- (package-list-packages . 5)
+ (package-list-packages . 8)
  (proof-mode . 7)
  (proof-goals-mode . 4)
  (proof-cd . 1)
@@ -25,7 +25,7 @@
  (proof-electric-terminator-toggle . 4)
  (proof-undo-last-successful-command . 3)
  (coq-mode . 3)
- (cider-quit . 1)
+ (cider-quit . 4)
  (nyan-mode . 7)
  (mkdir . 1)
  (proof-unicode-tokens-toggle . 2)
@@ -34,27 +34,27 @@
  (prettify-symbols-mode . 5)
  (company-coq-initialize . 1)
  (list-faces-display . 3)
- (load-theme . 16)
+ (load-theme . 21)
  (yas-minor-mode . 2)
  (set-keyboard-coding-system . 1)
  (eval-expression . 2)
- (customize-group . 1)
+ (customize-group . 3)
  (load-file . 14)
  (nyan-start-animation . 1)
  (nyan-stop-animation . 1)
- (electric-indent-mode . 2)
+ (electric-indent-mode . 4)
  (evil-ret-and-indent . 4)
  (eval-defun . 2)
  (evil-ret . 2)
  (shell . 2)
  (toggle-debug-on-error . 9)
- (rainbow-delimiters-mode . 5)
+ (rainbow-delimiters-mode . 8)
  (evil-insert-line . 4)
  (find-variable . 1)
  (shell-command . 4)
- (proof-goto-point . 2)
+ (proof-goto-point . 6)
  (proof-toolbar-restart . 3)
- (ido-find-file . 6)
+ (ido-find-file . 7)
  (yank . 1)
  (describe-font . 1)
  (customize-face . 10)
@@ -65,4 +65,20 @@
  (vc-diff . 3)
  (vc-pull . 2)
  (delete-window . 1)
+ (package-install . 4)
+ (magit-status . 2)
+ (magit-diff . 2)
+ (magit-diff-mode . 3)
+ (cider-restart . 2)
+ (magit-show . 1)
+ (powerline-reset . 1)
+ (magit-pull . 2)
+ (magit-stash . 1)
+ (show-paren-mode . 1)
+ (undo-tree-mode . 2)
+ (undo-tree-visualize . 1)
+ (package-menu-mark-delete . 1)
+ (smart-mode-line-enable . 1)
+ (switch-to-light-theme . 1)
+ (switch-to-dark-theme . 1)
 )

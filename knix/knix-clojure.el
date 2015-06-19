@@ -45,8 +45,6 @@
 (add-hook 'cider-repl-mode-hook 'rainbow-delimiters-mode)
 (add-hook 'cider-repl-mode-hook 'paredit-mode)
 
-
-
 ;; Clojurescript jack-in
 (defun insert-cljs-jack-in ()
   (interactive)

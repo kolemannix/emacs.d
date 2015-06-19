@@ -2,9 +2,11 @@
 
 ;; ----- ido-last-directory-list -----
 (
+ ("/Users/knix/res/" . "ibcm/")
+ ("/Users/" . "knix/")
  ("/Users/knix/.emacs.d/" . "knix/")
  ("/Users/knix/" . "res/")
- ("/Users/knix/Dropbox/UVA/" . "oplss/")
+ ("/Users/knix/Dropbox/UVA/" . "cs6501/")
  ("/Users/knix/Dropbox/" . "UVA/")
  ("/Users/knix/edu-/api/dev/" . "clj/")
  ("/Users/knix/edu-/tools/" . "demo_data/")
@@ -15,12 +17,15 @@
 
 ;; ----- ido-work-directory-list -----
 (
- "/Users/knix/"
- "/Users/knix/.emacs.d/"
- "/Users/knix/Boehm/"
- "/Users/knix/edu-/api/src/edudash/"
- "/Users/knix/.emacs.d/knix/"
  "/Users/knix/res/"
+ "/Users/knix/.emacs.d/"
+ "/Users/knix/.emacs.d/knix/"
+ "/Users/knix/edu-/api/src/edudash/"
+ "/Users/knix/Dropbox/UVA/cs6501/"
+ "/Users/knix/res/ibcm/"
+ "/Users/knix/Boehm/"
+ "/Users/knix/.lein/"
+ "/Users/knix/"
  "/Users/knix/.emacs.d/url/"
  "/Users/knix/Dropbox/UVA/sullivan_research/IBCM/"
  "/Users/knix/edu-/tools/demo_data/"
@@ -30,35 +35,54 @@
 
 ;; ----- ido-work-file-list -----
 (
- "s.v"
+ "peano.v"
  "init.el"
- "Example_Parnas.v"
- "System.v"
- "Changeable.v"
+ "knix-smex.el"
  "server.clj"
- "knix-clojure.el"
+ "Peano_Nat.v"
  "progtest.v"
- "budget.clj"
- "knix-paredit.el"
+ "Binary.v"
+ "texture-noise.png"
+ "sig.v"
+ "Example_Car_Changeable.v"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
- ("/Users/knix/.emacs.d/" (21891 42862 0 0) "url/" "smex-items" "README.md" "knix/" "init.el" "ido.last" "elpa/" "auto-save-list/" ".gitignore" ".git/" ".DS_Store" "#init.el#" "../" "./")
+ ("/Users/knix/.emacs.d/" (21892 36293 0 0) "url/" "smex-items" "README.md" "knix/" "init.el~" "init.el" "ido.last" "elpa/" "auto-save-list/" ".gitignore" ".git/" ".DS_Store" "../" "./")
 
- ("/Users/knix/" (21891 42369 0 0) "test.v" "s.v" "res/" "Public/" "Pictures/" "oplss/" "Music/" "Movies/" "Library/" "lib/" "edu-/" "Dropbox/" "Downloads/" "Documents/" "Desktop/" "data/" "Boehm/" "Applications/" ".zshrc-e" ".zshrc" ".zsh_history" ".zsh-update" ".zcompdump-Koleman’s MacBook Pro-5.0.5" ".viminfo" ".Trash/" ".tmux.conf" ".ssh/" ".oh-my-zsh/" ".npm/" ".node-gyp/" ".mongorc.js" ".matplotlib/" ".m2/" ".lein/" ".gitconfig" ".gem/" ".emacs.d/" ".DS_Store" ".dropbox/" ".dbshell" ".CFUserTextEncoding" ".bash_history" ".backup/" "../" "./")
+ ("/Users/knix/Dropbox/UVA/sullivan_research/IBCM/" (21892 32810 0 0) "scratch.v" "IBCM_spec.pdf" "IBCM.v" "Hex.v" "dep.v" "CpdtTactics.vo" "CpdtTactics.v" "CpdtTactics.glob" "coqasm.pdf" "CoInductive.v" "Binary2.v" "Binary.vo" "Binary.v" "Binary.glob" "../" "./")
 
- ("/Users/knix/Boehm/" (21891 42493 0 0) "Value.v" "texture-noise.png" "System.vo" "System.v" "System.glob" "style.css" "slides_draft/" "Relation.v" "README.md" "Quality.v" "paper_draft/" "old/" "Makefile" "index.html" "Graph/" "Example_Parnas_Changeable.v" "Example_Parnas.vo" "Example_Parnas.v" "Example_Parnas.glob" "Example_Car_Changeable.v" "Example_Car.v" "Example.v" "data.json" "d3.layout.js" "d3.js" "Changeable_Ross.v" "Changeable_new.v" "Changeable.vo" "Changeable.v" "Changeable.glob" "Changeability/" "boehmviz/" "ASE 2015/" "_CoqProject" ".gitignore" ".git/" "../" "./")
+ ("/Users/knix/Boehm/" (21892 32923 0 0) "Value.vo" "Value.v" "Value.glob" "System.vo" "System.v" "System.glob" "README.md" "Quality.vo" "Quality.v" "Quality.glob" "oldFiles/" "Makefile" "LibTactics.vo" "LibTactics.v" "LibTactics.glob" "Example_Parnas_Changeable.v" "Example_Parnas.vo" "Example_Parnas.v" "Example_Parnas.glob" "Example_Car_Changeable.vo" "Example_Car_Changeable.v" "Example_Car_Changeable.glob" "Example_Car.vo" "Example_Car.v" "Example_Car.glob" "Changeable.vo" "Changeable.v" "Changeable.glob" "_CoqProject" ".gitignore" ".git/" "../" "./")
+
+ ("/Users/knix/res/ibcm/" (21892 32810 0 0) "scratch.v" "IBCM_spec.pdf" "IBCM.v" "Hex.v" "dep.v" "CpdtTactics.vo" "CpdtTactics.v" "CpdtTactics.glob" "coqasm.pdf" "CoInductive.v" "Binary2.v" "Binary.vo" "Binary.v" "Binary.glob" "../" "./")
+
+ ("/Users/knix/res/" (21892 34077 0 0) "Ross_Changeability.pdf" "progtest.v" "peano.v" "Library.pdf" "ibcm/" "cs1/" "coq2haskell/" "Boehm ideas.txt" "asdf.html" "../" "./")
+
+ ("/Users/knix/Dropbox/UVA/cs6501/" (21848 11400 0 0) "Typeclasses.v" "Sullivan_Monad.rtf" "Sullivan_Monad.jpg" "SigmaTypes.v" "Sig.v" "sf/" "Peano_Nat.v" "NQueens.v" "MoreDep.v" "Monad.v" "Ind.v" "ibcm/" "haskell_monad_guide/" "Functional_Extensionality" "Factorial_Hoare.v" "2_16_Typeclasses.v" "../" "./")
+
+ ("/Users/knix/Dropbox/" (21888 26862 0 0) "UVA/" "Types_and_programming_languages.pdf" "TODO.rtf" "summer_todo.text" "sullivan_quotes.rtf" "Scores/" "Red Flags.rtf" "Public/" "Programming/" "pictures/" "movies/" "Movie List.text" "Math_LaTeX.pdf" "Lay Linear Algebra and Its Applications 4e Solutions Manual.pdf" "Icon
+" "high_school/" "Hacking/" "GodProof-Coq.pdf" "fonts/" "dotfiles/" "cpdt.pdf" "cpdt/" "cloudatcostip.txt" "12388174363-322417421-ticket.pdf" ".DS_Store" ".dropbox.cache/" ".dropbox" "../" "./")
+
+ ("/Users/knix/" (21892 28414 0 0) "res/" "Public/" "Pictures/" "oplss/" "Music/" "Movies/" "Library/" "lib/" "fizzbuzz.clj" "edu-/" "Dropbox/" "Downloads/" "Documents/" "Desktop/" "data/" "Boehm/" "Applications/" ".zshrc-e" ".zshrc" ".zsh_history" ".zsh-update" ".zcompdump-Koleman’s MacBook Pro-5.0.5" ".viminfo" ".Trash/" ".tmux.conf" ".ssh/" ".oh-my-zsh/" ".npm/" ".node-gyp/" ".mongorc.js" ".matplotlib/" ".m2/" ".lein/" ".gitconfig" ".gem/" ".emacs.d/" ".DS_Store" ".dropbox/" ".dbshell" ".CFUserTextEncoding" ".bash_history" ".backup/" "../" "./")
+
+ ("/Users/knix/edu-/frontend/app/js/" (21889 9167 0 0) "vendor/" "util/" "tuition/" "settings/" "session/" "scenario/" "prod/" "nw-config.js" "navigation/" "models.js" "inspector/" "input/" "graphs/" "footer/" "diff.js" "dashboard/" "config.js" "compiled/" "budget-collection/" "auth/" "app.js" "api.js" ".jsbeautifyrc" "../" "./")
+
+ ("/Users/knix/edu-/api/dev/clj/" (21888 34751 0 0) "control.clj" ".#control.clj" "../" "./")
+
+ ("/Users/knix/edu-/tools/demo_data/" (21888 34752 0 0) "demo_users.json" "demo_scenarios.json" "../" "./")
+
+ ("/Users/knix/edu-/api/src/edudash/" (21891 40602 0 0) "util.clj" "util/" "system_instance.clj" "stripe.clj" "session.clj" "server.clj" "main.clj" "database.clj" "crypto/" "budget.clj" "../" "./")
+
+ ("/Users/knix/.lein/" (21892 23912 0 0) "repl-port" "profiles.clj" "../" "./")
+
+ ("/Users/knix/Desktop/" (21890 3134 0 0) "pred_vs_impred.txt" "leblanc.tiff" "Don't Starve Together Beta.app/" "bunched_up.tiff" ".localized" ".DS_Store" "../" "./")
+
+ ("/Users/knix/.emacs.d/knix/" (21892 20700 0 0) "knix-smex.el" "knix-paredit.el" "knix-packages.el" "knix-ido.el" "knix-clojure.el" "cider-eval-sexp-fu.el" "../" "./")
 
  ("/Users/knix/oplss/" (21891 12454 0 0) "notes/" "intro_categorical_semantics.pdf" "08-seqcalc.pdf" "03-harmony.pdf" "02-pap.pdf" "01-judgments.pdf" "../" "./")
 
  ("/Users/" (21622 18134 0 0) "Shared/" "knix/" ".localized" "../" "./")
-
- ("/Users/knix/.emacs.d/knix/" (21891 37554 0 0) "knix-smex.el" "knix-paredit.el" "knix-packages.el" "knix-ido.el" "knix-clojure.el" "cider-eval-sexp-fu.el" "../" "./")
-
- ("/Users/knix/res/" (21891 37505 0 0) "Ross_Changeability.pdf" "progtest.v" "Library.pdf" "ibcm/" "cs1/" "coq2haskell/" "Boehm ideas.txt" "asdf.html" "../" "./")
-
- ("/Users/knix/edu-/api/src/edudash/" (21888 34751 0 0) "util.clj" "util/" "system_instance.clj" "stripe.clj" "session.clj" "server.clj" "main.clj" "database.clj" "crypto/" "budget.clj" "../" "./")
 
  ("/Users/knix/edu-/api/" (21888 34751 0 0) "test/" "target/" "src/" "README.md" "project.clj" "LICENSE" "dev/" "api-deploy.sh" ".nrepl-port" ".gitignore" "../" "./")
 
@@ -74,24 +98,13 @@
 
  ("/Users/knix/Dropbox/UVA/" (21886 63785 0 0) "uva acceptance.jpeg" "university_and_god/" "sullivan_research/" "sis_planning.rtf" "phil3310/" "phil2420/" "oplss/" "math3351/" "ital3775/" "ital2010/" "ITAL1020/" "Ital1010/" "hieu2162/" "HIEU2061/" "fsa/" "econ2010/" "cs6501/" "cs4810/" "cs4710/" "cs4240/" "cs4102/" "cs3330/" "CS2330/" "CS2150/" "CS2110/" "cs2102/" "bacs_flowchart" "application/" "anth2400/" "ANTH2153/" "../" "./")
 
- ("/Users/knix/Dropbox/" (21886 20641 0 0) "UVA/" "Types_and_programming_languages.pdf" "TODO.rtf" "summer_todo.text" "sullivan_quotes.rtf" "Scores/" "Red Flags.rtf" "Public/" "Programming/" "pictures/" "movies/" "Movie List.text" "Math_LaTeX.pdf" "Lay Linear Algebra and Its Applications 4e Solutions Manual.pdf" "Icon
-" "high_school/" "Hacking/" "GodProof-Coq.pdf" "fonts/" "dotfiles/" "cpdt.pdf" "cpdt/" "cloudatcostip.txt" "12388174363-322417421-ticket.pdf" ".DS_Store" ".dropbox.cache/" ".dropbox" "../" "./")
-
  ("/Users/knix/Dropbox/UVA/sullivan_research/" (21886 28857 0 0) "Ross_Changeability.pdf" "progtest.v" "Library.pdf" "IBCM/" "cs1/" "coq2haskell/" "Boehm ideas.txt" "asdf.html" "../" "./")
 
- ("/Users/knix/Dropbox/UVA/sullivan_research/IBCM/" (21886 20641 0 0) "scratch.v" "IBCM_spec.pdf" "IBCM.v" "Hex.v" "dep.v" "CpdtTactics.vo" "CpdtTactics.v" "CpdtTactics.glob" "coqasm.pdf" "CoInductive.v" "Binary2.v" "Binary.vo" "Binary.v" "Binary.glob" "../" "./")
-
- ("/Users/knix/edu-/tools/demo_data/" (21625 25420 0 0) "demo_users.json" "demo_scenarios.json" "../" "./")
-
  ("/Users/knix/edu-/tools/" (21625 25420 0 0) "veritas_data/" "restore-demo-data.sh" "generate-demo-data.sh" "demo_data/" "default_tabs.json" "backup-script.sh" "../" "./")
-
- ("/Users/knix/edu-/api/dev/clj/" (21625 29569 0 0) "control.clj" ".#control.clj" "../" "./")
 
  ("/Users/knix/edu-/api/dev/" (21623 42747 0 0) "clj/" "../" "./")
 
  ("/Users/knix/edu-/tools/veritas_data/" (21623 42748 0 0) "veritas_users.json" "veritas_scenarios.json" "../" "./")
-
- ("/Users/knix/edu-/frontend/app/js/" (21624 44624 0 0) "vendor/" "util/" "tuition/" "session/" "scenario/" "prod/" "pages/" "navigation/" "models.js" "inspector/" "input/" "graphs/" "format.js" "footer/" "diff.js" "budget-collection/" "auth/" "app.js" "api.js" "../" "./")
 
  ("/Users/knix/edu-/frontend/app/js/session/" (21623 42747 0 0) "service.js" "save.js" "controller.js" "../" "./")
 
