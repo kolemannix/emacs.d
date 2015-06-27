@@ -2,89 +2,198 @@
 
 ;; ----- ido-last-directory-list -----
 (
+ ("/Users/knix/Dropbox/UVA/cs6501/" . "sf/")
+ ("/Users/knix/Downloads/fiat-20141031/src/Computation/" . "Refinements/")
+ ("/Users/knix/Downloads/fiat-20141031/src/" . "Computation/")
+ ("/Users/knix/edu-/frontend/src/edudash/" . "budget/")
+ ("/Users/knix/edu-/frontend/src/" . "edudash/")
+ ("/Users/knix/edu-/frontend/" . "src/")
+ ("/Users/knix/edu-/api/src/edudash/" . "util/")
+ ("/Users/knix/res/cs1/" . "idris/")
+ ("/Users/knix/oplss/dybjer/agda/" . "Semantics/")
+ ("/Users/knix/Dropbox/UVA/oplss/dybjer/" . "LF/")
+ ("/Users/knix/oplss/dybjer/" . "agda/")
+ ("/Users/knix/oplss/" . "chlipala/")
  ("/Users/knix/res/" . "ibcm/")
  ("/Users/" . "knix/")
  ("/Users/knix/.emacs.d/" . "knix/")
- ("/Users/knix/" . "res/")
+ ("/Users/knix/" . ".emacs.d/")
  ("/Users/knix/Dropbox/UVA/" . "cs6501/")
  ("/Users/knix/Dropbox/" . "UVA/")
  ("/Users/knix/edu-/api/dev/" . "clj/")
  ("/Users/knix/edu-/tools/" . "demo_data/")
  ("/Users/knix/edu-/api/src/" . "edudash/")
- ("/Users/knix/edu-/api/" . "src/")
- ("/Users/knix/edu-/" . "api/")
+ ("/Users/knix/edu-/api/" . "dev/")
+ ("/Users/knix/edu-/" . "frontend/")
 )
 
 ;; ----- ido-work-directory-list -----
 (
- "/Users/knix/res/"
- "/Users/knix/.emacs.d/"
- "/Users/knix/.emacs.d/knix/"
+ "/Users/knix/edu-/frontend/src/edudash/"
+ "/Users/knix/edu-/frontend/src/edudash/budget/"
+ "/Users/knix/edu-/frontend/src/edudash/projection/"
  "/Users/knix/edu-/api/src/edudash/"
- "/Users/knix/Dropbox/UVA/cs6501/"
- "/Users/knix/res/ibcm/"
- "/Users/knix/Boehm/"
+ "/Users/knix/.emacs.d/knix/"
+ "/Users/knix/.emacs.d/"
+ "/Users/knix/edu-/api/dev/clj/"
+ "/Users/knix/oplss/chlipala/"
  "/Users/knix/.lein/"
+ "/Users/knix/oplss/"
+ "/Users/knix/Dropbox/UVA/cs6501/sf/"
+ "/Users/knix/res/ibcm/"
+ "/Users/knix/oplss/dybjer/agda/Semantics/"
+ "/Users/knix/Desktop/"
+ "/Users/knix/oplss/dybjer/"
+ "/Users/knix/Dropbox/dotfiles/"
+ "/Users/knix/oplss/dybjer/agda/IR/"
+ "/Users/knix/Downloads/fiat-20141031/src/Computation/"
+ "/Users/knix/Downloads/fiat-20141031/src/ADT/"
+ "/Users/knix/Downloads/fiat-20141031/src/ADTNotation/"
+ "/Users/knix/oplss/dybjer/agda/MLTT/"
+ "/Users/knix/edu-/api/src/"
+ "/Users/knix/edu-/api/src/edudash/util/"
+ "/Users/knix/edu-/frontend/"
+ "/Users/knix/edu-/api/src/edudash/crypto/"
+ "/Users/knix/oplss/dybjer/agda/IType/"
+ "/Users/knix/res/cs1/idris/"
+ "/Users/knix/oplss/dybjer/agda/SmallProofs/"
+ "/Users/knix/Dropbox/UVA/oplss/dybjer/LF/"
+ "/Users/knix/oplss/dybjer/LF/"
+ "/Users/knix/res/"
+ "/Users/knix/Downloads/lolli/src/interpreter/"
+ "/Users/knix/Dropbox/UVA/cs6501/"
+ "/Users/knix/Boehm/"
  "/Users/knix/"
  "/Users/knix/.emacs.d/url/"
  "/Users/knix/Dropbox/UVA/sullivan_research/IBCM/"
  "/Users/knix/edu-/tools/demo_data/"
- "/Users/knix/edu-/api/dev/clj/"
  "/Users/knix/edu-/frontend/app/js/"
 )
 
 ;; ----- ido-work-file-list -----
 (
- "peano.v"
- "init.el"
- "knix-smex.el"
+ "projection.cljs"
+ "tuition.cljs"
+ "transform.cljs"
+ "stripe.clj"
+ "database.clj"
+ "budget.cljs"
+ "metrics.cljs"
  "server.clj"
- "Peano_Nat.v"
- "progtest.v"
- "Binary.v"
- "texture-noise.png"
- "sig.v"
- "Example_Car_Changeable.v"
+ "knix-clojure.el"
+ "init.el"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
- ("/Users/knix/.emacs.d/" (21892 36293 0 0) "url/" "smex-items" "README.md" "knix/" "init.el~" "init.el" "ido.last" "elpa/" "auto-save-list/" ".gitignore" ".git/" ".DS_Store" "../" "./")
+ ("/Users/knix/edu-/frontend/src/edudash/" (21902 58491 0 0) "projection.cljs" "projection/" "metrics.cljs" "dashboard.cljs" "budget.cljs" "budget/" "../" "./")
 
- ("/Users/knix/Dropbox/UVA/sullivan_research/IBCM/" (21892 32810 0 0) "scratch.v" "IBCM_spec.pdf" "IBCM.v" "Hex.v" "dep.v" "CpdtTactics.vo" "CpdtTactics.v" "CpdtTactics.glob" "coqasm.pdf" "CoInductive.v" "Binary2.v" "Binary.vo" "Binary.v" "Binary.glob" "../" "./")
+ ("/Users/knix/edu-/frontend/" (21902 58491 0 0) "test/" "target/" "src/" "README.txt" "project.clj" "package.json" "out/" "node_modules/" "Gruntfile.js" "frontend-deploy.sh" "config.rb" "assets/" "app/" ".sass-cache/" ".repl/" ".gitignore" ".DS_Store" "../" "./")
 
- ("/Users/knix/Boehm/" (21892 32923 0 0) "Value.vo" "Value.v" "Value.glob" "System.vo" "System.v" "System.glob" "README.md" "Quality.vo" "Quality.v" "Quality.glob" "oldFiles/" "Makefile" "LibTactics.vo" "LibTactics.v" "LibTactics.glob" "Example_Parnas_Changeable.v" "Example_Parnas.vo" "Example_Parnas.v" "Example_Parnas.glob" "Example_Car_Changeable.vo" "Example_Car_Changeable.v" "Example_Car_Changeable.glob" "Example_Car.vo" "Example_Car.v" "Example_Car.glob" "Changeable.vo" "Changeable.v" "Changeable.glob" "_CoqProject" ".gitignore" ".git/" "../" "./")
+ ("/Users/knix/edu-/api/src/edudash/" (21902 62047 0 0) "util.clj" "util/" "system_instance.clj" "stripe.clj" "session.clj" "server.clj" "personnel.clj" "main.clj" "database.clj" "crypto/" "comparison.clj" "budget.clj" ".#personnel.clj" "../" "./")
 
- ("/Users/knix/res/ibcm/" (21892 32810 0 0) "scratch.v" "IBCM_spec.pdf" "IBCM.v" "Hex.v" "dep.v" "CpdtTactics.vo" "CpdtTactics.v" "CpdtTactics.glob" "coqasm.pdf" "CoInductive.v" "Binary2.v" "Binary.vo" "Binary.v" "Binary.glob" "../" "./")
+ ("/Users/knix/edu-/frontend/src/edudash/projection/" (21902 9896 0 0) "transform.cljs" "../" "./")
 
- ("/Users/knix/res/" (21892 34077 0 0) "Ross_Changeability.pdf" "progtest.v" "peano.v" "Library.pdf" "ibcm/" "cs1/" "coq2haskell/" "Boehm ideas.txt" "asdf.html" "../" "./")
+ ("/Users/knix/" (21902 5749 0 0) "VirtualBox VMs/" "res/" "Public/" "Pictures/" "oplss/" "Music/" "Movies/" "Library/" "lib/" "fizzbuzz.clj" "edu-/" "Dropbox/" "Downloads/" "Documents/" "Desktop/" "data/" "Boehm/" "Applications/" ".zshrc-e" ".zshrc" ".zsh_history" ".zsh-update" ".zcompdump-Koleman’s MacBook Pro-5.0.5" ".vnc/" ".viminfo" ".Trash/" ".tmux.conf" ".ssh/" ".oh-my-zsh/" ".npm/" ".node-gyp/" ".mongorc.js" ".matplotlib/" ".m2/" ".lein/" ".gitconfig" ".gem/" ".emacs.d/" ".DS_Store" ".dropbox/" ".dbshell" ".CFUserTextEncoding" ".bash_history" ".backup/" "../" "./")
+
+ ("/Users/knix/edu-/api/dev/clj/" (21902 8532 0 0) "control.clj" ".#control.clj" "../" "./")
+
+ ("/Users/knix/Dropbox/dotfiles/" (21901 51064 0 0) "zshrc" "tmuxconf" "README.md" "profiles.clj" "com.googlecode.iterm2.plist" "colorscheme.itermcolors" "../" "./")
+
+ ("/Users/knix/.lein/" (21901 49862 0 0) "repl-port" "profiles.clj" "../" "./")
+
+ ("/Users/knix/oplss/chlipala/" (21901 54756 0 0) "TypeSystems.v" "RelationsAuto.v" "Peterson_Algorithm.v" "Peterson.v" "InductionAndRecursion.v" "HoareLogic.v" "Exercises1.v" "Exercise1_adam_solution.v" "dybjer_exercises.v" "../" "./")
+
+ ("/Users/knix/edu-/api/" (21895 20840 0 0) "test/" "target/" "src/" "README.md" "project.clj" "LICENSE" "dev/" "api-deploy.sh" ".nrepl-port" ".gitignore" "../" "./")
+
+ ("/Users/knix/.emacs.d/" (21901 50874 0 0) "url/" "smex-items" "README.md" "knix/" "init.el~" "init.el" "ido.last" "elpa/" "auto-save-list/" ".gitignore" ".git/" ".DS_Store" "../" "./")
+
+ ("/Users/knix/oplss/" (21901 52132 0 0) "SystemF.v" "notes/" "j_rule.v" "intro_categorical_semantics.pdf" "fiat-popl2015.pdf" "dybjer/" "chlipala/" "08-seqcalc.pdf" "03-harmony.pdf" "02-pap.pdf" "01-judgments.pdf" "../" "./")
+
+ ("/Users/knix/Dropbox/UVA/" (21898 14531 0 0) "uva acceptance.jpeg" "university_and_god/" "sullivan_research/" "sis_planning.rtf" "phil3310/" "phil2420/" "oplss/" "math3351/" "ital3775/" "ital2010/" "ITAL1020/" "Ital1010/" "hieu2162/" "HIEU2061/" "fsa/" "econ2010/" "cs6501/" "cs4810/" "cs4710/" "cs4240/" "cs4102/" "cs3330/" "CS2330/" "CS2150/" "CS2110/" "cs2102/" "bacs_flowchart" "application/" "anth2400/" "ANTH2153/" ".DS_Store" "../" "./")
+
+ ("/Users/knix/Dropbox/" (21898 56870 0 0) "UVA/" "Types_and_programming_languages.pdf" "TODO.rtf" "summer_todo.text" "sullivan_quotes.rtf" "Scores/" "Red Flags.rtf" "Public/" "Programming/" "pictures/" "movies/" "Movie List.text" "Math_LaTeX.pdf" "Lay Linear Algebra and Its Applications 4e Solutions Manual.pdf" "Icon
+" "high_school/" "Hacking/" "GodProof-Coq.pdf" "FullSizeRender.jpg" "fonts/" "dotfiles/" "cs_papers/" "cpdt.pdf" "cpdt/" "combine_images.jpg" "cloudatcostip.txt" "CkBhalbBtB2TyM9czbtieVKKVK6tapNC2313PrZr9ds.jpg" "12388174363-322417421-ticket.pdf" ".DS_Store" ".dropbox.cache/" ".dropbox" "../" "./")
+
+ ("/Users/knix/Dropbox/UVA/sullivan_research/IBCM/" (21899 8750 0 0) "summation.ibcm" "sumation.sibcm" "scratch.v" "papers/" "IBCM_spec.pdf" "ibcm_paper.pdf" "IBCM.v" "Hex.v" "dep.v" "CpdtTactics.vo" "CpdtTactics.v" "CpdtTactics.glob" "coqasm.pdf" "CoInductive.v" "Binary2.v" "Binary.vo" "Binary.v" "Binary.glob" "assembler_optimizations.txt" "add_four.sibcm" "../" "./")
+
+ ("/Users/knix/res/ibcm/" (21899 8750 0 0) "summation.ibcm" "sumation.sibcm" "scratch.v" "papers/" "IBCM_spec.pdf" "ibcm_paper.pdf" "IBCM.v" "Hex.v" "dep.v" "CpdtTactics.vo" "CpdtTactics.v" "CpdtTactics.glob" "coqasm.pdf" "CoInductive.v" "Binary2.v" "Binary.vo" "Binary.v" "Binary.glob" "assembler_optimizations.txt" "add_four.sibcm" "../" "./")
+
+ ("/Users/knix/res/" (21898 14552 0 0) "Ross_Changeability.pdf" "progtest.v" "peano.v" "Library.pdf" "ibcm/" "cs1/" "coq2haskell/" "Boehm ideas.txt" ".DS_Store" "../" "./")
+
+ ("/Users/knix/Desktop/" (21898 56870 0 0) "pred_vs_impred.txt" "leblanc.tiff" "Icon1024.png" "EmacsClean.icns" "Emacs_Logo.png" "emacs-icon.png" "Don't Starve Together Beta.app/" "CreateICNS.src" ".localized" ".DS_Store" "../" "./")
+
+ ("/Users/knix/oplss/dybjer/" (21898 17700 0 0) "IntuitionisticTypeTheory150505.pdf" "Exercises.agda" "AgdaExercises.pdf" "agda/" ".DS_Store" "../" "./")
+
+ ("/Users/knix/oplss/dybjer/agda/MLTT/" (21897 909 0 0) "PropositionalLogic.agdai" "PropositionalLogic.agda" "PredicateLogic.agda" "PeanoAxioms.agda" "MLTT.agdai" "MLTT.agda" "IdentityEliminationVariations.agda" "Identity.agda" "../" "./")
+
+ ("/Users/knix/oplss/dybjer/agda/IR/" (21897 37615 0 0) "SortedListIR.agda" "McCarthy91.agda" "HigherInfinite.agda" "../" "./")
+
+ ("/Users/knix/Dropbox/UVA/cs6501/sf/" (21890 2566 0 0) "UseTactics.vo" "UseTactics.v.d" "UseTactics.v" "UseTactics.html" "UseTactics.glob" "UseAuto.vo" "UseAuto.v.d" "UseAuto.v" "UseAuto.html" "UseAuto.glob" "Types.vo" "Types.v.d" "Types.v" "Types.html" "Types.glob" "Typechecking.vo" "Typechecking.v.d" "Typechecking.v" "Typechecking.html" "Typechecking.glob" "toc.html" "Symbols.vo" "Symbols.v.d" "Symbols.v" "Symbols.html" "Symbols.glob" "Sub.vo" "Sub.v.d" "Sub.v" "Sub.html" "Sub.glob" "StlcProp.vo" "StlcProp.v.d" "StlcProp.v" "StlcProp.html" "StlcProp.glob" "Stlc.vo" "Stlc.v.d" "Stlc.v" "Stlc.html" "Stlc.glob" "Smallstep.vo" "Smallstep.v.d" "Smallstep.v" "Smallstep.html" "Smallstep.glob" "slides.js" "SfLib.vo" "SfLib.v.d" "SfLib.v" "SfLib.html" "SfLib.glob" "Rel.vo" "Rel.v.d" "Rel.v" "Rel.html" "Rel.glob" "References.vo" "References.v.d" "References.v" "References.html" "References.glob" "RecordSub.vo" "RecordSub.v.d" "RecordSub.v" "RecordSub.html" "RecordSub.glob" "Records.vo" "Records.v.d" "Records.v" "Records.html" "Records.glob" "Prop.vo" "Prop.v.d" "Prop.v" "Prop.html" "Prop.glob" "ProofObjects.vo" "ProofObjects.v.d" "ProofObjects.v" "ProofObjects.html" "ProofObjects.glob" "Preface.vo" "Preface.v.d" "Preface.v" "Preface.html" "Preface.glob" "Postscript.vo" "Postscript.v.d" "Postscript.v" "Postscript.html" "Postscript.glob" "Poly.vo" "Poly.v.d" "Poly.v" "Poly.html" "Poly.glob" "PE.vo" "PE.v.d" "PE.v" "PE.html" "PE.glob" "normdriver.ml" "Norm.vo" "Norm.v.d" "Norm.v" "Norm.html" "Norm.glob" "MoreStlc.vo" "MoreStlc.v.d" "MoreStlc.v" "MoreStlc.html" "MoreStlc.glob" "MoreLogic.vo" "MoreLogic.v.d" "MoreLogic.v" "MoreLogic.html" "MoreLogic.glob" "MoreInd.vo" "MoreInd.v.d" "MoreInd.v" "MoreInd.html" "MoreInd.glob" "MoreCoq.vo" "MoreCoq.v.d" "MoreCoq.v" "MoreCoq.html" "MoreCoq.glob" "Makefile" "main.js" "Logic.vo" "Logic.v.d" "Logic.v" "Logic.html" "Logic.glob" "Lists.vo" "Lists.v.d" "Lists.v" "Lists.html" "Lists.glob" "LICENSE" "LibTactics.vo" "LibTactics.v.d" "LibTactics.v" "LibTactics.html" "LibTactics.glob" "jquery.maphilight.min.js" "jquery-1.8.3.js" "Induction.vo" "Induction.v.d" "Induction.v" "Induction.html" "Induction.glob" "index.html" "index-bg.jpg" "ImpParser.vo" "ImpParser.v.d" "ImpParser.v" "ImpParser.html" "ImpParser.glob" "impdriver.ml" "ImpCEvalFun.vo" "ImpCEvalFun.v.d" "ImpCEvalFun.v" "ImpCEvalFun.html" "ImpCEvalFun.glob" "imp2.mli" "imp2.ml" "imp1.mli" "imp1.ml" "Imp.vo" "Imp.v.d" "Imp.v" "imp.mli" "imp.ml" "Imp.html" "Imp.glob" "HoareAsLogic.vo" "HoareAsLogic.v.d" "HoareAsLogic.v" "HoareAsLogic.html" "HoareAsLogic.glob" "Hoare2.vo" "Hoare2.v.d" "Hoare2.v" "Hoare2.html" "Hoare2.glob" "Hoare.vo" "Hoare.v.d" "Hoare.v" "Hoare.html" "Hoare.glob" "Extraction.vo" "Extraction.v.d" "Extraction.v" "Extraction.html" "Extraction.glob" "Equiv.vo" "Equiv.v.d" "Equiv.v" "Equiv.html" "Equiv.glob" "deps.map" "deps.html" "deps.gif" "coqindex.html" "coqdoc.css" "Basics.vo" "Basics.v.d" "Basics.v" "Basics.html" "Basics.glob" "Auto.vo" "Auto.v.d" "Auto.v" "Auto.html" "Auto.glob" ".depend" "../" "./")
+
+ ("/Users/knix/Downloads/fiat-20141031/src/Computation/" (21896 62872 0 0) "SetoidMorphisms.v" "ReflectiveMonad.v" "Refinements/" "Notations.v" "Monad.v" "LogicLemmas.v" "Core.v" "ApplyMonad.v" "../" "./")
+
+ ("/Users/knix/Downloads/fiat-20141031/src/Computation/Refinements/" (21896 30274 0 0) "Tactics.v" "General.v" "../" "./")
+
+ ("/Users/knix/Downloads/fiat-20141031/src/ADT/" (21896 30273 0 0) "Core.v" "ComputationalADT.v" "ADTSig.v" "ADTHide.v" "../" "./")
+
+ ("/Users/knix/Downloads/fiat-20141031/src/ADTNotation/" (21896 30274 0 0) "StringBound.v" "ilist.v" "BuildADTSig.v" "BuildADTReplaceMethods.v" "BuildADT.v" "../" "./")
+
+ ("/Users/knix/Downloads/fiat-20141031/src/" (21896 30274 0 0) "QueryStructure/" "Computation.v" "Computation/" "Common.v" "ADTRefinement.v" "ADTRefinement/" "ADTNotation.v" "ADTNotation/" "ADT.v" "ADT/" "../" "./")
+
+ ("/Users/knix/Boehm/" (21896 22122 0 0) "Value.vo" "Value.v" "Value.glob" "System.vo" "System.v" "System.glob" "README.md" "Quality.vo" "Quality.v" "Quality.glob" "oldFiles/" "Makefile" "LibTactics.vo" "LibTactics.v" "LibTactics.glob" "Example_Parnas_Changeable.v" "Example_Parnas.vo" "Example_Parnas.v" "Example_Parnas.glob" "Example_Car_Changeable.vo" "Example_Car_Changeable.v" "Example_Car_Changeable.glob" "Example_Car.vo" "Example_Car.v" "Example_Car.glob" "Changeable.vo" "Changeable.v" "Changeable.glob" "_CoqProject" ".gitignore" ".git/" "../" "./")
+
+ ("/Users/knix/edu-/frontend/app/js/" (21895 20012 0 0) "vendor/" "util/" "tuition/" "settings/" "session/" "scenario/" "prod/" "nw-config.js" "navigation/" "models.js" "inspector/" "input/" "header/" "graphs/" "footer/" "diff.js" "dashboard/" "config.js" "compiled/" "budget-collection/" "auth/" "app.js" "api.js" ".jsbeautifyrc" "../" "./")
+
+ ("/Users/knix/edu-/api/src/edudash/util/" (21895 12671 0 0) "schema.clj" "demo.clj" "../" "./")
+
+ ("/Users/knix/oplss/dybjer/agda/Cwf/" (21893 58953 0 0) "Ecwf.agda" "../" "./")
+
+ ("/Users/knix/edu-/api/src/" (21895 17997 0 0) "log4j.properties" "edudash/" "../" "./")
+
+ ("/Users/knix/edu-/frontend/src/edudash/budget/" (21888 34752 0 0) "tuition.cljs" "../" "./")
+
+ ("/Users/knix/edu-/frontend/src/" (21623 42748 0 0) "edudash/" "../" "./")
+
+ ("/Users/knix/edu-/api/src/edudash/crypto/" (21888 34751 0 0) "hash.clj" "aes.clj" "../" "./")
+
+ ("/Users/knix/oplss/dybjer/agda/IType/" (21894 6142 0 0) "WithExamples.agda" "Product.agda" "PatternMatching.agda" "NegativeDataType.agda" "NegativeData.agda" "Nat.agdai" "Nat.agda" "MaybeP.agda" "ListP.agda" "ListNat.agda" "List.agda" "BrouwerOrdinals.agda" "Bool.agdai" "Bool.agda" "../" "./")
+
+ ("/Users/knix/oplss/dybjer/agda/Id/" (21893 58957 0 0) "Setoid.agda" "Int.agda" "Groupoid.agda" "../" "./")
+
+ ("/Users/knix/oplss/dybjer/agda/IFam/" (21893 58954 0 0) "Vector.agda" "PartialFunction.agda" "Fin.agda" "EvenOdd.agda" "../" "./")
+
+ ("/Users/knix/oplss/dybjer/agda/CZF/" (21893 58952 0 0) "AczelV.agda" "../" "./")
+
+ ("/Users/knix/oplss/dybjer/agda/Semantics/" (21893 58960 0 0) "TypingJudgments.agda" "SystemT.agda" "SyntaxComputationRulesITT79.agda" "SyntaxComputationRulesITT.agda" "SoundnessOfRules.agda" "IdentityReflection.agda" "EqualityJudgments1.agda" "EqualityJudgments.agda" "../" "./")
+
+ ("/Users/knix/oplss/dybjer/agda/LF/" (21893 58958 0 0) "ZF.agda" "HOL.agda" "Combinators.agda" "ChurchEncodings.agda" "../" "./")
+
+ ("/Users/knix/res/cs1/idris/" (21884 52391 0 0) "World.idr" "Prims.idr" "pluscomm.idr" "nat.idr" "nat.ibc" "hello.idr" "card.idr" "bexp.idr" "bexp.ibc" ".gitignore" "../" "./")
+
+ ("/Users/knix/res/cs1/" (21884 52387 0 0) "sort.idr" "sort.ibc" "README.md" "idris/" ".git/" "../" "./")
+
+ ("/Users/knix/oplss/dybjer/agda/SmallProofs/" (21893 58961 0 0) "NatProofs.agda" "BoolProofs.agda" "../" "./")
+
+ ("/Users/knix/oplss/dybjer/agda/" (21893 58907 0 0) "SmallProofs/" "Semantics/" "Record/" "MLTT/" "LF/" "IType/" "IR/" "IFam/" "Id/" "FiniteSubsets/" "CZF/" "Cwf/" "../" "./")
+
+ ("/Users/knix/Dropbox/UVA/oplss/" (21893 43424 0 0) "notes/" "j_rule.v" "intro_categorical_semantics.pdf" "dybjer/" "chlipala/" "08-seqcalc.pdf" "03-harmony.pdf" "02-pap.pdf" "01-judgments.pdf" "../" "./")
+
+ ("/Users/knix/Dropbox/UVA/oplss/dybjer/" (21893 59003 0 0) "IntuitionisticTypeTheory150505.pdf" "agda/" ".DS_Store" "../" "./")
+
+ ("/Users/knix/Dropbox/UVA/oplss/dybjer/LF/" (21893 56405 0 0) "ZF.agda" "Natt.agda" "Introduction.agdai" "Introduction.agda" "HOL.agda" "Combinators.agdai" "Combinators.agda" "ChurchEncodings.agda" ".#Natt.agda" ".#Combinators.agda" ".#ChurchEncodings.agda" "../" "./")
+
+ ("/Users/knix/oplss/dybjer/LF/" (21893 55897 0 0) "ZF.agda" "Natt.agda" "Introduction.agdai" "Introduction.agda" "HOL.agda" "Combinators.agdai" "Combinators.agda" "ChurchEncodings.agda" ".#Combinators.agda" ".#ChurchEncodings.agda" "../" "./")
+
+ ("/Users/knix/Downloads/lolli/src/interpreter/" (12289 35037 0 0) "terms_to_props.sml" "terms.sml" "propositions.sml" "interpreter.sml" "../" "./")
 
  ("/Users/knix/Dropbox/UVA/cs6501/" (21848 11400 0 0) "Typeclasses.v" "Sullivan_Monad.rtf" "Sullivan_Monad.jpg" "SigmaTypes.v" "Sig.v" "sf/" "Peano_Nat.v" "NQueens.v" "MoreDep.v" "Monad.v" "Ind.v" "ibcm/" "haskell_monad_guide/" "Functional_Extensionality" "Factorial_Hoare.v" "2_16_Typeclasses.v" "../" "./")
 
- ("/Users/knix/Dropbox/" (21888 26862 0 0) "UVA/" "Types_and_programming_languages.pdf" "TODO.rtf" "summer_todo.text" "sullivan_quotes.rtf" "Scores/" "Red Flags.rtf" "Public/" "Programming/" "pictures/" "movies/" "Movie List.text" "Math_LaTeX.pdf" "Lay Linear Algebra and Its Applications 4e Solutions Manual.pdf" "Icon
-" "high_school/" "Hacking/" "GodProof-Coq.pdf" "fonts/" "dotfiles/" "cpdt.pdf" "cpdt/" "cloudatcostip.txt" "12388174363-322417421-ticket.pdf" ".DS_Store" ".dropbox.cache/" ".dropbox" "../" "./")
-
- ("/Users/knix/" (21892 28414 0 0) "res/" "Public/" "Pictures/" "oplss/" "Music/" "Movies/" "Library/" "lib/" "fizzbuzz.clj" "edu-/" "Dropbox/" "Downloads/" "Documents/" "Desktop/" "data/" "Boehm/" "Applications/" ".zshrc-e" ".zshrc" ".zsh_history" ".zsh-update" ".zcompdump-Koleman’s MacBook Pro-5.0.5" ".viminfo" ".Trash/" ".tmux.conf" ".ssh/" ".oh-my-zsh/" ".npm/" ".node-gyp/" ".mongorc.js" ".matplotlib/" ".m2/" ".lein/" ".gitconfig" ".gem/" ".emacs.d/" ".DS_Store" ".dropbox/" ".dbshell" ".CFUserTextEncoding" ".bash_history" ".backup/" "../" "./")
-
- ("/Users/knix/edu-/frontend/app/js/" (21889 9167 0 0) "vendor/" "util/" "tuition/" "settings/" "session/" "scenario/" "prod/" "nw-config.js" "navigation/" "models.js" "inspector/" "input/" "graphs/" "footer/" "diff.js" "dashboard/" "config.js" "compiled/" "budget-collection/" "auth/" "app.js" "api.js" ".jsbeautifyrc" "../" "./")
-
- ("/Users/knix/edu-/api/dev/clj/" (21888 34751 0 0) "control.clj" ".#control.clj" "../" "./")
-
  ("/Users/knix/edu-/tools/demo_data/" (21888 34752 0 0) "demo_users.json" "demo_scenarios.json" "../" "./")
-
- ("/Users/knix/edu-/api/src/edudash/" (21891 40602 0 0) "util.clj" "util/" "system_instance.clj" "stripe.clj" "session.clj" "server.clj" "main.clj" "database.clj" "crypto/" "budget.clj" "../" "./")
-
- ("/Users/knix/.lein/" (21892 23912 0 0) "repl-port" "profiles.clj" "../" "./")
-
- ("/Users/knix/Desktop/" (21890 3134 0 0) "pred_vs_impred.txt" "leblanc.tiff" "Don't Starve Together Beta.app/" "bunched_up.tiff" ".localized" ".DS_Store" "../" "./")
 
  ("/Users/knix/.emacs.d/knix/" (21892 20700 0 0) "knix-smex.el" "knix-paredit.el" "knix-packages.el" "knix-ido.el" "knix-clojure.el" "cider-eval-sexp-fu.el" "../" "./")
 
- ("/Users/knix/oplss/" (21891 12454 0 0) "notes/" "intro_categorical_semantics.pdf" "08-seqcalc.pdf" "03-harmony.pdf" "02-pap.pdf" "01-judgments.pdf" "../" "./")
-
  ("/Users/" (21622 18134 0 0) "Shared/" "knix/" ".localized" "../" "./")
-
- ("/Users/knix/edu-/api/" (21888 34751 0 0) "test/" "target/" "src/" "README.md" "project.clj" "LICENSE" "dev/" "api-deploy.sh" ".nrepl-port" ".gitignore" "../" "./")
 
  ("/Users/knix/edu-/" (21888 34752 0 0) "tools/" "sync-tools.sh" "homepage/" "frontend/" "deploy.sh" "archive/" "api/" ".gitignore" ".git/" "../" "./")
 
@@ -93,10 +202,6 @@
  ("/Users/knix/.backup/" (21891 34206 0 0) "!Users!knix!res!ibcm!IBCM.v~" "!Users!knix!res!ibcm!Binary.v~" "!Users!knix!edu-!tools!restore-demo-data.sh~" "!Users!knix!edu-!tools!generate-demo-data.sh~" "!Users!knix!edu-!tools!demo_data!demo_users.json~" "!Users!knix!edu-!tools!default_tabs.json~" "!Users!knix!edu-!homepage!signup-form.html~" "!Users!knix!edu-!homepage!index.html~" "!Users!knix!edu-!frontend!app!js!auth!service.js~" "!Users!knix!edu-!frontend!app!js!api.js~" "!Users!knix!edu-!frontend!app!index.html~" "!Users!knix!edu-!api!src!edudash!server.clj~" "!Users!knix!edu-!api!src!edudash!schools.clj~" "!Users!knix!edu-!api!src!edudash!database.clj~" "!Users!knix!edu-!api!src!edudash!crypto.clj~" "!Users!knix!edu-!api!src!edudash!budget.clj~" "!Users!knix!edu-!api!dev!clj!control.clj~" "!Users!knix!Dropbox!UVA!oplss!notes!harper_1.txt~" "!Users!knix!Dropbox!UVA!cs6501!sf!Imp.v~" "!Users!knix!Dropbox!cpdt!ch1.v~" "!Users!knix!Boehm!Example_Parnas.v~" "!Users!knix!Boehm!Changeable.v~" "!Users!knix!.lein!profiles.clj~" "!Users!knix!.emacs.d!init.el~" "!Users!knix!.emacs.d!ido.last~" "!Users!knix!.emacs.d!elpa!yasnippet-20150415.244!yasnippet-autoloads.el~" "!Users!knix!.emacs.d!elpa!smex-20141210.1422!smex-autoloads.el~" "!Users!knix!.emacs.d!elpa!smartparens-20150603.948!smartparens-autoloads.el~" "!Users!knix!.emacs.d!elpa!rainbow-delimiters-20150320.17!rainbow-delimiters-autoloads.el~" "!Users!knix!.emacs.d!elpa!pkg-info-20150517.443!pkg-info-autoloads.el~" "!Users!knix!.emacs.d!elpa!paredit-20150217.713!paredit-autoloads.el~" "!Users!knix!.emacs.d!elpa!nyan-mode-20150128.1218!nyan-mode-autoloads.el~" "!Users!knix!.emacs.d!elpa!math-symbol-lists-20141126.1508!math-symbol-lists-autoloads.el~" "!Users!knix!.emacs.d!elpa!highlight-20150617.2149!highlight-autoloads.el~" "!Users!knix!.emacs.d!elpa!evil-nerd-commenter-20150615.2102!evil-nerd-commenter-autoloads.el~" "!Users!knix!.emacs.d!elpa!evil-20150511.146!evil-autoloads.el~" "!Users!knix!.emacs.d!elpa!evil-20141119.205!evil-commands.el~" "!Users!knix!.emacs.d!elpa!epl-20150517.433!epl-autoloads.el~" "!Users!knix!.emacs.d!elpa!dash-20150611.922!dash-autoloads.el~" "!Users!knix!.emacs.d!elpa!company-math-20150528.1733!company-math-autoloads.el~" "!Users!knix!.emacs.d!elpa!company-coq-20150602.2240!company-coq-autoloads.el~" "!Users!knix!.emacs.d!elpa!company-20150617.1350!company-autoloads.el~" "!Users!knix!.emacs.d!elpa!clojure-mode-20150614.1628!clojure-mode-autoloads.el~" "!Users!knix!.emacs.d!elpa!cider-20150617.753!cider-autoloads.el~" "../" "./")
 
  ("/Users/knix/Dropbox/UVA/oplss/notes/" (21886 64584 0 0) "harper_1.txt" ".#harper_1.txt" "../" "./")
-
- ("/Users/knix/Dropbox/UVA/oplss/" (21886 63785 0 0) "../" "./")
-
- ("/Users/knix/Dropbox/UVA/" (21886 63785 0 0) "uva acceptance.jpeg" "university_and_god/" "sullivan_research/" "sis_planning.rtf" "phil3310/" "phil2420/" "oplss/" "math3351/" "ital3775/" "ital2010/" "ITAL1020/" "Ital1010/" "hieu2162/" "HIEU2061/" "fsa/" "econ2010/" "cs6501/" "cs4810/" "cs4710/" "cs4240/" "cs4102/" "cs3330/" "CS2330/" "CS2150/" "CS2110/" "cs2102/" "bacs_flowchart" "application/" "anth2400/" "ANTH2153/" "../" "./")
 
  ("/Users/knix/Dropbox/UVA/sullivan_research/" (21886 28857 0 0) "Ross_Changeability.pdf" "progtest.v" "Library.pdf" "IBCM/" "cs1/" "coq2haskell/" "Boehm ideas.txt" "asdf.html" "../" "./")
 
@@ -107,8 +212,6 @@
  ("/Users/knix/edu-/tools/veritas_data/" (21623 42748 0 0) "veritas_users.json" "veritas_scenarios.json" "../" "./")
 
  ("/Users/knix/edu-/frontend/app/js/session/" (21623 42747 0 0) "service.js" "save.js" "controller.js" "../" "./")
-
- ("/Users/knix/edu-/api/src/" (21623 42747 0 0) "log4j.properties" "edudash/" "../" "./")
 )
 
 ;; ----- ido-unc-hosts-cache -----

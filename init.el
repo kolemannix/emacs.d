@@ -51,19 +51,19 @@
 (tool-bar-mode -1)
 (menu-bar-mode -1)
 (setq inhibit-startup-message t)
-(set-frame-font "DejaVu Sans Mono 12")
+(set-frame-font "Source Code Pro 10")
 (setq sml/no-confirm-load-theme t)
+(when window-system (set-frame-size (selected-frame) 132 55))
 
 (defun switch-to-light-theme () (interactive)
        (load-theme 'tango t)
        (sml/setup))
 (defun switch-to-dark-theme () (interactive)
        (load-theme 'tango-dark t)
-       (setq sml/no-confirm-load-theme t)
        (sml/setup))
 
-(switch-to-dark-theme)
-;; (switch-to-light-theme)
+;; (switch-to-dark-theme)
+(switch-to-light-theme)
 
 (require 'knix-ido)
 
@@ -114,14 +114,16 @@
 ;; Coq
 (load-file "~/lib/ProofGeneral/generic/proof-site.el")
 
-					; enable Clement's coq-company mode
+;; enable Clement's coq-company mode
 (require 'proof-site)
+(setq proof-splash-enable nil)
+(set-fontset-font t 'greek (font-spec :name "DejaVu Sans Mono") nil)
 (add-hook 'coq-mode-hook (lambda ()
 			   (interactive)
-			   (switch-to-light-theme)
-			   (show-paren-mode)
-			   (company-coq-initialize)))
-
+			   (company-coq-initialize)
+			   (define-key evil-normal-state-map (kbd "<SPC>")
+			     'company-coq-proof-goto-point)
+			   (setq show-paren-mode nil)))
 ;; Idris
 (add-hook 'idris-mode-hook
 	  (lambda ()
@@ -165,4 +167,7 @@ by using nxml's indentation rules."
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- )
+ '(proof-locked-face ((t (:background "gray29")))))
+
+(load-file (let ((coding-system-for-read 'utf-8))
+                (shell-command-to-string "agda-mode locate")))

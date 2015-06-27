@@ -1,18 +1,18 @@
 
 ;; ----- smex-history -----
 (
- package-list-packages
- package-install
- rainbow-delimiters-mode
- switch-to-dark-theme
- switch-to-light-theme
- load-theme
- ido-find-file
+ cider-quit
+ eldoc-mode
+ nyan-mode
+ show-paren-mode
+ customize-group
+ company-coq-show-definition-overlay-under-pointer
+ 2048-game
 )
 
 ;; ----- smex-data -----
 (
- (package-list-packages . 8)
+ (package-list-packages . 10)
  (proof-mode . 7)
  (proof-goals-mode . 4)
  (proof-cd . 1)
@@ -22,23 +22,23 @@
  (proof-goto-command-end . 1)
  (proof-assert-next-command-interactive . 1)
  (proof-backward-command . 2)
- (proof-electric-terminator-toggle . 4)
+ (proof-electric-terminator-toggle . 5)
  (proof-undo-last-successful-command . 3)
  (coq-mode . 3)
- (cider-quit . 4)
- (nyan-mode . 7)
- (mkdir . 1)
+ (cider-quit . 24)
+ (nyan-mode . 8)
+ (mkdir . 3)
  (proof-unicode-tokens-toggle . 2)
  (proof-unicode-tokens-enable . 2)
  (company-coq-tutorial . 3)
  (prettify-symbols-mode . 5)
  (company-coq-initialize . 1)
  (list-faces-display . 3)
- (load-theme . 21)
+ (load-theme . 26)
  (yas-minor-mode . 2)
  (set-keyboard-coding-system . 1)
  (eval-expression . 2)
- (customize-group . 3)
+ (customize-group . 5)
  (load-file . 14)
  (nyan-start-animation . 1)
  (nyan-stop-animation . 1)
@@ -53,32 +53,49 @@
  (find-variable . 1)
  (shell-command . 4)
  (proof-goto-point . 6)
- (proof-toolbar-restart . 3)
+ (proof-toolbar-restart . 10)
  (ido-find-file . 7)
  (yank . 1)
  (describe-font . 1)
  (customize-face . 10)
  (set-default-font . 1)
  (set-frame-font . 1)
- (company-coq-show-definition-overlay-under-pointer . 1)
+ (company-coq-show-definition-overlay-under-pointer . 3)
  (proof-retract-buffer . 1)
  (vc-diff . 3)
  (vc-pull . 2)
  (delete-window . 1)
  (package-install . 4)
- (magit-status . 2)
+ (magit-status . 3)
  (magit-diff . 2)
  (magit-diff-mode . 3)
- (cider-restart . 2)
+ (cider-restart . 3)
  (magit-show . 1)
  (powerline-reset . 1)
  (magit-pull . 2)
  (magit-stash . 1)
- (show-paren-mode . 1)
+ (show-paren-mode . 6)
  (undo-tree-mode . 2)
  (undo-tree-visualize . 1)
  (package-menu-mark-delete . 1)
  (smart-mode-line-enable . 1)
  (switch-to-light-theme . 1)
  (switch-to-dark-theme . 1)
+ (magit-commit . 2)
+ (company-coq-end-of-proof . 1)
+ (eldoc-mode . 8)
+ (cider-repl-return . 5)
+ (cider-mode . 1)
+ (split-window-right . 2)
+ (agda2-compute-normalised . 5)
+ (proof-interrupt-process . 41)
+ (agda2-next-goal . 1)
+ (agda2-infer-type . 3)
+ (agda2-quit . 2)
+ (coq-shell-mode . 2)
+ (proof-shell-exit . 2)
+ (emacs-lisp-mode . 1)
+ (TeX-mode . 2)
+ (company-coq-proof-goto-point . 1)
+ (2048-game . 1)
 )
