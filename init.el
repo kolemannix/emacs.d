@@ -18,7 +18,7 @@
   (turn-on-eldoc-mode))
 (add-hook 'emacs-lisp-mode-hook 'enable-my-elisp-settings)
 
-;; ------------------- Evil Bindings -------------------- ;;
+;; ------------------- Evil Settings -------------------- ;;
 
 (require 'evil)
 (evil-mode 1)
@@ -33,45 +33,48 @@
 (define-key evil-normal-state-map (kbd "C-u") 'evil-scroll-page-up)
 (define-key evil-normal-state-map (kbd "C-d") 'evil-scroll-page-down)
 
+(evil-set-initial-state 'eshell-mode 'insert)
+
 ;; ------------------- General -------------------- ;;
 
 (require 'key-chord)
 (key-chord-mode 1)
-
 (remove-hook 'find-file-hooks 'vc-find-file-hook)
-;; TODO find out how to disable vc-find-file on save
 
 (require 'knix-smex)
+
+(global-flycheck-mode)
 
 ;; Rainbow delimiters in all programming-related files
 (require 'rainbow-delimiters)
 (add-hook 'prog-mode-hook 'rainbow-delimiters-mode)
+(show-paren-mode)
 
 ;; Appearance
 (tool-bar-mode -1)
-(menu-bar-mode -1)
 (setq inhibit-startup-message t)
-(set-frame-font "Source Code Pro 10")
+(set-frame-font "Source Code Pro 12")
 (setq sml/no-confirm-load-theme t)
 (when window-system (set-frame-size (selected-frame) 132 55))
 
 (defun switch-to-light-theme () (interactive)
-       (load-theme 'tango t)
+       (load-theme 'solarized-light t)
        (sml/setup))
 (defun switch-to-dark-theme () (interactive)
-       (load-theme 'tango-dark t)
+       (load-theme 'solarized-dark t)
        (sml/setup))
 
-;; (switch-to-dark-theme)
-(switch-to-light-theme)
+(switch-to-dark-theme)
+;; (switch-to-light-theme)
 
 (require 'knix-ido)
 
 (key-chord-define evil-normal-state-map "ef" 'eval-defun)
+(key-chord-define evil-normal-state-map "sh" 'eshell)
 
 ;; Scrolling behavior
 (setq redisplay-dont-pause t
-      scroll-margin 7
+      scroll-margin 14
       scroll-step 1
       scroll-conservatively 10000
       scroll-preserve-screen-position 1)
@@ -80,13 +83,11 @@
 (setq backup-directory-alist `(("." . "~/.backup")))
 (setq auto-save-default nil)
 
-
 ;; ----------------- Core bindings -------------------- ;;
 (define-key evil-insert-state-map (kbd "C-s") (lambda () (interactive)
 						(save-buffer)
 						(evil-normal-state)))
 (define-key evil-normal-state-map (kbd "C-s") 'save-buffer)
-(define-key evil-insert-state-map (kbd "RET") 'evil-ret-and-indent)
 
 ;; Map jk -> ESC 
 (key-chord-define evil-insert-state-map "jk" 'evil-normal-state)
@@ -99,6 +100,9 @@
 (add-hook 'after-init-hook 'global-company-mode)
 (define-key evil-insert-state-map (kbd "C-n") 'company-select-next)
 (define-key evil-insert-state-map (kbd "C-p") 'company-select-previous)
+
+;; ----------------- Org Mode -------------------- ;;
+(require 'org)
 
 ;; ----------------- My Packages -------------------- ;;
 
@@ -124,6 +128,35 @@
 			   (define-key evil-normal-state-map (kbd "<SPC>")
 			     'company-coq-proof-goto-point)
 			   (setq show-paren-mode nil)))
+
+;; JS
+(add-to-list 'auto-mode-alist '("\\.json$" . js2-mode))
+(add-to-list 'auto-mode-alist '("\\.js$" . js2-mode))
+(add-hook 'js2-mode-hook
+	  (lambda ()
+	    (interactive)
+	    (require 'knix-js)))
+
+
+;; C/C++
+(add-hook 'c++-mode-hook 'irony-mode)
+(add-hook 'c-mode-hook 'irony-mode)
+(add-hook 'objc-mode-hook 'irony-mode)
+
+;; replace the `completion-at-point' and `complete-symbol' bindings in
+;; irony-mode's buffers by irony-mode's function
+(defun my-irony-mode-hook ()
+  (define-key irony-mode-map [remap completion-at-point]
+    'irony-completion-at-point-async)
+  (define-key irony-mode-map [remap complete-symbol]
+    'irony-completion-at-point-async))
+(add-hook 'irony-mode-hook 'my-irony-mode-hook)
+(add-hook 'irony-mode-hook 'irony-cdb-autosetup-compile-options)
+(add-hook 'irony-mode-hook 'flycheck-mode)
+
+;; Python
+(require 'knix-python)
+
 ;; Idris
 (add-hook 'idris-mode-hook
 	  (lambda ()
@@ -161,7 +194,8 @@ by using nxml's indentation rules."
  ;; If there is more than one, they won't work right.
  '(custom-safe-themes
    (quote
-    ("3c83b3676d796422704082049fc38b6966bcad960f896669dfc21a7a37a748fa" "a27c00821ccfd5a78b01e4f35dc056706dd9ede09a8b90c6955ae6a390eb1c1e" "d677ef584c6dfc0697901a44b885cc18e206f05114c8a3b7fde674fce6180879" "8aebf25556399b58091e533e455dd50a6a9cba958cc4ebb0aab175863c25b9a4" "a8245b7cc985a0610d71f9852e9f2767ad1b852c2bdea6f4aadc12cce9c4d6d0" default))))
+    ("3c83b3676d796422704082049fc38b6966bcad960f896669dfc21a7a37a748fa" "a27c00821ccfd5a78b01e4f35dc056706dd9ede09a8b90c6955ae6a390eb1c1e" "d677ef584c6dfc0697901a44b885cc18e206f05114c8a3b7fde674fce6180879" "8aebf25556399b58091e533e455dd50a6a9cba958cc4ebb0aab175863c25b9a4" "a8245b7cc985a0610d71f9852e9f2767ad1b852c2bdea6f4aadc12cce9c4d6d0" default)))
+ '(js2-highlight-external-variables nil))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -170,4 +204,4 @@ by using nxml's indentation rules."
  '(proof-locked-face ((t (:background "gray29")))))
 
 (load-file (let ((coding-system-for-read 'utf-8))
-                (shell-command-to-string "agda-mode locate")))
+	     (shell-command-to-string "agda-mode locate")))
