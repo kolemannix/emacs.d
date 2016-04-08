@@ -23,10 +23,6 @@
 (setq-default js2-strict-trailing-comma-warning t) ;; jshint does not warn about this now for some reason
 
 (add-hook 'js2-mode-hook (lambda () (flycheck-mode 1)))
-(skewer-setup)
-(setq httpd-port 7000)
-
-(run-skewer)
 
 (define-key evil-normal-state-map (kbd "<SPC>") 'skewer-eval-defun)
 (define-key evil-normal-state-map (kbd "C-c l") 'skewer-load-buffer)

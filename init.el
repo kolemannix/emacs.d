@@ -1,9 +1,7 @@
 ; Welcome to my Emacs moving castle
 
 (require 'package)
-(add-to-list 'package-archives
-	       '("melpa" . "http://melpa.milkbox.net/packages/")
-	       '("marmalade" . "http://marmalade-repo.org/packages/"))
+(add-to-list 'package-archives '("melpa-stable" . "https://stable.melpa.org/packages/") t)
 
 (add-to-list 'load-path "~/.emacs.d/knix/")
 
