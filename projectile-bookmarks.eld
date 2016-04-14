@@ -1,0 +1,1 @@
+("~/livesafe/jkn/lvsf-backend/" "~/edu-/" "~/.emacs.d/")

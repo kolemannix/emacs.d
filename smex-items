@@ -1,18 +1,18 @@
 
 ;; ----- smex-history -----
 (
- eldoc-mode
- undo-tree-mode
- load-theme
+ ensime
+ customize-mode
+ projectile-grep
  customize-group
- iedit-mode
- package-list-packages
- mkdir
+ indent-region
+ describe-face
+ eldoc-mode
 )
 
 ;; ----- smex-data -----
 (
- (package-list-packages . 25)
+ (package-list-packages . 38)
  (proof-mode . 7)
  (proof-goals-mode . 4)
  (proof-cd . 1)
@@ -38,7 +38,7 @@
  (yas-minor-mode . 2)
  (set-keyboard-coding-system . 1)
  (eval-expression . 5)
- (customize-group . 11)
+ (customize-group . 15)
  (load-file . 14)
  (nyan-start-animation . 1)
  (nyan-stop-animation . 1)
@@ -64,8 +64,8 @@
  (proof-retract-buffer . 1)
  (vc-diff . 3)
  (vc-pull . 2)
- (delete-window . 1)
- (package-install . 15)
+ (delete-window . 2)
+ (package-install . 16)
  (magit-status . 3)
  (magit-diff . 2)
  (magit-diff-mode . 3)
@@ -79,11 +79,11 @@
  (undo-tree-visualize . 1)
  (package-menu-mark-delete . 2)
  (smart-mode-line-enable . 1)
- (switch-to-light-theme . 2)
- (switch-to-dark-theme . 2)
+ (switch-to-light-theme . 4)
+ (switch-to-dark-theme . 4)
  (magit-commit . 2)
  (company-coq-end-of-proof . 1)
- (eldoc-mode . 133)
+ (eldoc-mode . 135)
  (cider-repl-return . 5)
  (cider-mode . 1)
  (split-window-right . 2)
@@ -109,7 +109,7 @@
  (read-only-mode . 6)
  (cider-find-and-clear-repl-buffer . 3)
  (delete-trailing-whitespace . 1)
- (iedit-mode . 27)
+ (iedit-mode . 28)
  (capitalize-word . 1)
  (doc-view-mode . 16)
  (auto-revert-mode . 10)
@@ -122,13 +122,13 @@
  (org-insert-todo-heading . 1)
  (org-speed-command-help . 1)
  (irony-install-server . 3)
- (flycheck-mode . 8)
+ (flycheck-mode . 13)
  (company-mode . 2)
  (compile . 2)
  (eshell . 7)
  (eshell-send-input . 4)
  (eshell-truncate-buffer . 1)
- (evil-normal-state . 1)
+ (evil-normal-state . 2)
  (python-mode . 2)
  (python-shell-send-buffer . 1)
  (py-execute-line . 10)
@@ -174,4 +174,31 @@
  (cider-test-run-tests . 22)
  (cider-repl-require-repl-utils . 1)
  (make-directory . 1)
+ (delete-file . 1)
+ (projectile-dired . 1)
+ (paredit-mode . 1)
+ (ivy-call . 1)
+ (projectile-find-file . 2)
+ (find-file . 2)
+ (ivy-mode . 2)
+ (swiper . 1)
+ (ibuffer . 2)
+ (ensime . 10)
+ (ensime-mode . 1)
+ (evil-line . 1)
+ (projectile-grep . 13)
+ (dired . 1)
+ (sbt-start . 2)
+ (ensime-import-type-at-point . 3)
+ (projectile-replace-regexp . 3)
+ (what-cursor-position . 3)
+ (customize-mode . 5)
+ (describe-face . 10)
+ (describe-text-properties . 1)
+ (ensime-inspector-backward-page . 1)
+ (ensime-inspect-by-path . 2)
+ (ensime-inspect-package-at-point . 1)
+ (ensime-inspect-type-at-point . 2)
+ (ensime-edit-definition . 3)
+ (indent-region . 1)
 )

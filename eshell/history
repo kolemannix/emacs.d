@@ -92,3 +92,32 @@ ls
 cp ../barrier/makefile .
 ls
 exit
+exit
+exit
+ls
+ls -al
+exit
+cd ../../
+cd ..
+lein midje
+lein test
+lein install
+cd ~/edu-/api
+lein midje
+lein midje
+lein midje
+lein midje
+lein midje
+lein midje
+:shipit:
+cd ../helmelib/
+ls
+./build.sh
+build.sh
+bash
+zsh
+exit
+ls
+rm SqlService.scala
+mv SqlService.scala\ copy SqlService.scala
+exit
