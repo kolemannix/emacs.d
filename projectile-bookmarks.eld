@@ -1,1 +1,1 @@
-("~/livesafe/jkn/lvsf-backend/" "~/edu-/" "~/.emacs.d/")
+("~/livesafe/jkn/lvsf-backend/" "~/edu-/" "~/.emacs.d/" "~/Desktop/wedding/" "~/Dropbox/uva/cs4730/my-little-saga/" "~/Dropbox/uva/cs4414/shared/cs4414/" "~/livesafe/lvsf-backend/")

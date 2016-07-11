@@ -2,7 +2,52 @@
 
 ;; ----- ido-last-directory-list -----
 (
- ("/Users/knix/livesafe/jkn/lvsf-backend/core/src/main/scala/com/livesafe/broadcast/" . "service/")
+ ("/Users/knix/livesafe/jkn/lvsf-backend/devops/mysql/" . "sql/")
+ ("/Users/knix/livesafe/jkn/lvsf-backend/devops/" . "mysql/")
+ ("/Users/knix/livesafe/jkn/lvsf-backend/core-api/src/main/scala/com/" . "livesafe/")
+ ("/Users/knix/livesafe/jkn/lvsf-backend/core-api/src/main/scala/" . "com/")
+ ("/Users/knix/livesafe/jkn/lvsf-backend/core-api/src/main/" . "scala/")
+ ("/Users/knix/livesafe/jkn/lvsf-backend/project/project/target/" . "config-classes/")
+ ("/Users/knix/livesafe/jkn/lvsf-backend/project/project/" . "target/")
+ ("/Users/knix/livesafe/jkn/lvsf-backend/project/" . "project/")
+ ("/Users/knix/gdrive/" . "Pyret Class/")
+ ("/Users/knix/edu-/tools/nginx/" . "sites-enabled/")
+ ("/Users/knix/livesafe/jkn/lvsf-backend/core/src/main/scala/com/livesafe/event/service/" . "entityhandler/")
+ ("/Users/knix/livesafe/jkn/lvsf-backend/core-api/src/" . "main/")
+ ("/Users/knix/livesafe/jkn/lvsf-backend/core-api/" . "src/")
+ ("/Users/knix/livesafe/jkn/lvsf-backend/core/src/test/scala/com/livesafe/data/" . "service/")
+ ("/Users/knix/livesafe/jkn/lvsf-backend/core-api/src/main/scala/com/livesafe/event/" . "work/")
+ ("/Users/knix/livesafe/jkn/lvsf-backend/core-api/src/main/scala/com/livesafe/" . "event/")
+ ("/Users/knix/livesafe/jkn/lvsf-backend/core/src/main/scala/com/livesafe/broadcast/distributedwork/aws/ses/" . "models/")
+ ("/Users/knix/livesafe/jkn/lvsf-backend/core/src/main/scala/com/livesafe/api/" . "user/")
+ ("/Users/knix/Dropbox/uva/cs4730/my-little-saga/resources/" . "hero/")
+ ("/Users/knix/Dropbox/uva/cs4730/my-little-saga/" . "resources/")
+ ("/Users/knix/livesafe/jkn/lvsf-backend/core/src/test/scala/com/livesafe/event/" . "work/")
+ ("/Users/knix/livesafe/jkn/lvsf-backend/core/src/test/scala/com/livesafe/" . "event/")
+ ("/Users/knix/livesafe/jkn/lvsf-backend/core/src/test/scala/com/" . "livesafe/")
+ ("/Users/knix/livesafe/jkn/lvsf-backend/core/src/test/scala/" . "com/")
+ ("/Users/knix/livesafe/jkn/lvsf-backend/core/src/test/" . "scala/")
+ ("/Users/knix/livesafe/jkn/lvsf-backend/core/src/main/scala/com/livesafe/broadcast/distributedwork/aws/" . "ses/")
+ ("/Users/knix/livesafe/jkn/lvsf-backend/core/src/main/scala/com/livesafe/broadcast/distributedwork/" . "aws/")
+ ("/Users/knix/livesafe/jkn/lvsf-backend/core/src/main/scala/com/livesafe/event/api/" . "authorization/")
+ ("/Users/knix/livesafe/jkn/lvsf-backend/core/src/main/scala/com/livesafe/event/" . "api/")
+ ("/Users/knix/livesafe/jkn/lvsf-backend/common/src/main/scala/com/livesafe/data/" . "slick/")
+ ("/Users/knix/livesafe/jkn/lvsf-backend/common/src/main/scala/com/livesafe/" . "service/")
+ ("/Users/knix/livesafe/jkn/lvsf-backend/common/src/main/" . "scala/")
+ ("/Users/knix/livesafe/jkn/lvsf-backend/common/src/" . "main/")
+ ("/Users/knix/livesafe/jkn/lvsf-backend/common/" . "src/")
+ ("/Users/knix/livesafe/lvsf-backend/core/src/main/scala/com/livesafe/data/" . "service/")
+ ("/Users/knix/livesafe/lvsf-backend/core/src/main/scala/com/livesafe/event/" . "service/")
+ ("/Users/knix/livesafe/lvsf-backend/core/src/main/scala/com/livesafe/" . "data/")
+ ("/Users/knix/livesafe/lvsf-backend/core/src/main/scala/com/" . "livesafe/")
+ ("/Users/knix/livesafe/lvsf-backend/core/src/main/scala/" . "com/")
+ ("/Users/knix/livesafe/lvsf-backend/core/src/main/" . "scala/")
+ ("/Users/knix/livesafe/lvsf-backend/core/src/" . "main/")
+ ("/Users/knix/livesafe/lvsf-backend/core/" . "src/")
+ ("/Users/knix/livesafe/lvsf-backend/" . "core/")
+ ("/Users/knix/livesafe/jkn/lvsf-backend/core/src/test/scala/com/livesafe/broadcast/" . "service/")
+ ("/Users/knix/Dropbox/uva/cs4730/my-little-saga/engine/" . "quests/")
+ ("/Users/knix/livesafe/jkn/lvsf-backend/core/src/main/scala/com/livesafe/broadcast/" . "distributedwork/")
  ("/Users/knix/livesafe/jkn/lvsf-backend/distributed-work/src/main/scala/com/livesafe/" . "distributedwork/")
  ("/Users/knix/livesafe/jkn/lvsf-backend/distributed-work/src/main/scala/com/" . "livesafe/")
  ("/Users/knix/livesafe/jkn/lvsf-backend/distributed-work/src/main/scala/" . "com/")
@@ -13,7 +58,7 @@
  ("/Users/knix/livesafe/jkn/lvsf-backend/common/src/main/scala/com/" . "livesafe/")
  ("/Users/knix/livesafe/jkn/lvsf-backend/common/src/main/scala/" . "com/")
  ("/Users/knix/livesafe/jkn/lvsf-backend/core/src/main/scala/com/livesafe/data/" . "service/")
- ("/Users/knix/livesafe/jkn/lvsf-backend/core/src/main/scala/com/livesafe/" . "broadcast/")
+ ("/Users/knix/livesafe/jkn/lvsf-backend/core/src/main/scala/com/livesafe/" . "data/")
  ("/Users/knix/livesafe/jkn/lvsf-backend/core/src/main/scala/com/" . "livesafe/")
  ("/Users/knix/livesafe/jkn/lvsf-backend/core/src/main/scala/" . "com/")
  ("/Users/knix/livesafe/jkn/lvsf-backend/core/src/main/" . "scala/")
@@ -26,9 +71,9 @@
  ("/Users/knix/game/my-little-saga/map-creator/app/" . "map-view/")
  ("/Users/knix/game/my-little-saga/map-creator/" . "app/")
  ("/Users/knix/game/my-little-saga/resources/" . "bg/")
- ("/Users/knix/game/my-little-saga/engine/" . "combat/")
+ ("/Users/knix/game/my-little-saga/engine/" . "display/")
  ("/Users/knix/game/my-little-saga/" . "engine/")
- ("/Users/knix/Dropbox/uva/cs4414/shared/cs4414/" . "sudoku/")
+ ("/Users/knix/Dropbox/uva/cs4414/shared/cs4414/" . "file/")
  ("/Users/knix/Dropbox/uva/cs4414/shared/" . "cs4414/")
  ("/Users/knix/Dropbox/uva/cs4414/" . "shared/")
  ("/Users/knix/Desktop/monger-test/src/" . "monger_test/")
@@ -39,7 +84,7 @@
  ("/Users/knix/Desktop/dan/" . "code-puzzle/")
  ("/Users/knix/Desktop/wedding/src/" . "wedding/")
  ("/Users/knix/Desktop/wedding/" . "src/")
- ("/Users/knix/Desktop/" . "dan/")
+ ("/Users/knix/Desktop/" . "wedding/")
  ("/Users/knix/game/engine/src/edu/virginia/engine/" . "display/")
  ("/Users/knix/game/engine/src/edu/virginia/" . "games/")
  ("/Users/knix/game/engine/src/edu/" . "virginia/")
@@ -93,15 +138,15 @@
  ("/Users/knix/Dropbox/uva/cs2150/lab6/" . "code/")
  ("/Users/knix/Dropbox/uva/cs2150/" . "lab3/")
  ("/Users/knix/Dropbox/uva/" . "cs4414/")
- ("/Users/knix/edu-/api/src/helme/" . "user/")
+ ("/Users/knix/edu-/api/src/helme/" . "session/")
  ("/Users/knix/edu-/helmelib/src/" . "helmelib/")
  ("/Users/knix/edu-/helmelib/test/" . "helmelib/")
- ("/Users/knix/edu-/helmelib/" . "src/")
+ ("/Users/knix/edu-/helmelib/" . "test/")
  ("/Users/knix/edu-/helmodel/target/" . "js/")
  ("/Users/knix/edu-/helmodel/src/helmodel/" . "projection/")
  ("/Users/knix/edu-/helmodel/src/" . "helmelib/")
  ("/Users/knix/edu-/helmodel/" . "src/")
- ("/Users/knix/edu-/frontend/app/js/" . "tour/")
+ ("/Users/knix/edu-/frontend/app/js/" . "dashboard/")
  ("/Users/knix/edu-/frontend/app/" . "js/")
  ("/Users/knix/edu-/plato/resources/public/js/compiled/" . "out/")
  ("/Users/knix/edu-/plato/resources/public/js/" . "compiled/")
@@ -128,225 +173,259 @@
  ("/Users/knix/res/" . "cs1/")
  ("/Users/" . "knix/")
  ("/Users/knix/.emacs.d/" . "knix/")
- ("/Users/knix/" . "edu-/")
+ ("/Users/knix/" . "Boehm/")
  ("/Users/knix/Dropbox/UVA/" . "cs6501/")
  ("/Users/knix/Dropbox/" . "uva/")
  ("/Users/knix/edu-/api/dev/" . "clj/")
- ("/Users/knix/edu-/tools/" . "demo_data/")
+ ("/Users/knix/edu-/tools/" . "nginx/")
  ("/Users/knix/edu-/api/src/" . "helme/")
  ("/Users/knix/edu-/api/" . "src/")
- ("/Users/knix/edu-/" . "helmelib/")
+ ("/Users/knix/edu-/" . "api/")
 )
 
 ;; ----- ido-work-directory-list -----
 (
- "/Users/knix/edu-/api/src/helme/user/"
- "/Users/knix/edu-/helmelib/src/helmelib/projection/"
- "/Users/knix/edu-/api/src/helme/export/"
- "/Users/knix/livesafe/jkn/lvsf-backend/core/src/main/scala/com/livesafe/data/service/"
- "/Users/knix/.emacs.d/"
- "/Users/knix/livesafe/jkn/lvsf-backend/core/src/main/scala/com/livesafe/broadcast/service/"
- "/Users/knix/livesafe/jkn/lvsf-backend/"
- "/Users/knix/livesafe/jkn/lvsf-backend/core/src/test/scala/com/livesafe/data/"
- "/Users/knix/livesafe/jkn/lvsf-backend/distributed-work/src/main/scala/com/livesafe/distributedwork/"
- "/Users/knix/livesafe/jkn/lvsf-backend/core/src/main/scala/com/livesafe/data/sql/"
  "/Users/knix/livesafe/jkn/lvsf-backend/core/src/main/scala/com/livesafe/data/"
- "/Users/knix/edu-/api/src/helme/"
- "/Users/knix/edu-/api/"
- "/Users/knix/edu-/helmelib/src/helmelib/"
- "/Users/knix/edu-/helmelib/src/helmelib/model/"
- "/Users/knix/livesafe/jkn/lvsf-backend/common/src/main/scala/com/livesafe/"
- "/Users/knix/edu-/api/src/helme/ledger/"
- "/Users/knix/edu-/api/src/helme/comparison/"
- "/Users/knix/.emacs.d/knix/"
- "/Users/knix/game/my-little-saga/engine/combat/"
- "/Users/knix/game/my-little-saga/"
- "/Users/knix/game/my-little-saga/map-creator/app/map-view/"
- "/Users/knix/game/my-little-saga/engine/maps/"
- "/Users/knix/game/my-little-saga/engine/display/"
- "/Users/knix/game/my-little-saga/engine/quests/"
- "/Users/knix/game/my-little-saga/maps/"
- "/Users/knix/game/my-little-saga/resources/"
- "/Users/knix/game/my-little-saga/engine/toast/"
- "/Users/knix/game/my-little-saga/engine/actions/"
- "/Users/knix/edu-/api/src/helme/budget/"
- "/Users/knix/edu-/api/src/helme/analytics/"
- "/Users/knix/edu-/api/src/helme/util/"
- "/Users/knix/game/my-little-saga/resources/bg/"
- "/Users/knix/game/my-little-saga/engine/events/"
- "/Users/knix/.lein/"
- "/Users/knix/edu-/helmelib/test/helmelib/"
- "/Users/knix/Dropbox/uva/cs4414/shared/cs4414/sudoku/"
- "/Users/knix/Dropbox/uva/cs4414/shared/cs4414/barrier/"
- "/Users/knix/edu-/api/src/"
- "/Users/knix/edu-/api/dev/clj/"
- "/Users/knix/edu-/"
- "/Users/knix/edu-/homepage/reset/"
+ "/Users/knix/livesafe/jkn/lvsf-backend/core/src/main/scala/com/livesafe/broadcast/distributedwork/"
  "/Users/knix/edu-/api/src/helme/session/"
+ "/Users/knix/edu-/api/src/helme/user/"
+ "/Users/knix/edu-/api/src/helme/budget/"
+ "/Users/knix/edu-/helmelib/src/helmelib/projection/"
+ "/Users/knix/edu-/helmelib/src/helmelib/model/"
+ "/Users/knix/edu-/api/src/helme/"
+ "/Users/knix/edu-/api/dev/clj/"
+ "/Users/knix/edu-/helmelib/test/helmelib/"
+ "/Users/knix/edu-/helmelib/src/helmelib/"
  "/Users/knix/edu-/api/src/helme/client/"
- "/Users/knix/edu-/api/src/helme/quickbooks/"
- "/Users/knix/edu-/helmelib/src/helmelib/analytics/"
- "/Users/knix/edu-/helmelib/src/helmelib/budget/"
- "/Users/knix/edu-/frontend/app/js/tour/"
  "/Users/knix/edu-/api/src/helme/server/"
- "/Users/knix/Dropbox/livesafe/"
+ "/Users/knix/edu-/api/src/helme/balance/"
+ "/Users/knix/edu-/api/src/helme/modules/"
+ "/Users/knix/edu-/api/src/helme/export/"
+ "/Users/knix/edu-/api/src/helme/util/"
+ "/Users/knix/livesafe/jkn/lvsf-backend/devops/mysql/sql/"
+ "/Users/knix/livesafe/jkn/lvsf-backend/data/"
+ "/Users/knix/livesafe/jkn/lvsf-backend/core/src/test/scala/com/livesafe/data/"
+ "/Users/knix/livesafe/jkn/lvsf-backend/core/src/main/scala/com/livesafe/event/api/"
+ "/Users/knix/livesafe/jkn/lvsf-backend/common/src/main/scala/com/livesafe/"
+ "/Users/knix/livesafe/jkn/lvsf-backend/"
+ "/Users/knix/livesafe/jkn/lvsf-backend/core/src/main/scala/com/livesafe/data/service/"
+ "/Users/knix/livesafe/jkn/lvsf-backend/core/src/main/scala/com/livesafe/event/service/"
+ "/Users/knix/livesafe/jkn/lvsf-backend/core/src/main/scala/com/livesafe/api/user/"
+ "/Users/knix/livesafe/jkn/lvsf-backend/core/src/main/scala/com/livesafe/data/dynamodb/"
+ "/Users/knix/.emacs.d/"
+ "/Users/knix/livesafe/jkn/lvsf-backend/core/src/main/scala/com/livesafe/broadcast/worker/"
+ "/Users/knix/livesafe/jkn/lvsf-backend/core/src/main/scala/com/livesafe/broadcast/service/"
+ "/Users/knix/.lein/"
+ "/Users/knix/edu-/helmelib/"
+ "/Users/knix/"
+ "/Users/knix/edu-/api/"
+ "/Users/knix/edu-/api/src/helme/quickbooks/"
+ "/Users/knix/edu-/frontend/app/js/dashboard/"
+ "/Users/knix/edu-/"
+ "/Users/knix/livesafe/jkn/lvsf-backend/core/src/test/scala/com/livesafe/event/work/"
+ "/Users/knix/livesafe/jkn/lvsf-backend/core/src/test/scala/com/livesafe/event/service/"
+ "/Users/knix/.bintray/"
+ "/Users/knix/livesafe/jkn/lvsf-backend/core/src/main/scala/com/livesafe/event/service/entityhandler/"
+ "/Users/knix/gdrive/Pyret Class/"
+ "/Users/knix/edu-/tools/"
+ "/Users/knix/livesafe/jkn/lvsf-backend/core/src/main/scala/com/livesafe/"
+ "/Users/knix/livesafe/jkn/lvsf-backend/core/src/main/scala/com/livesafe/event/work/"
+ "/Users/knix/Desktop/wedding/"
+ "/Users/knix/Desktop/wedding/src/wedding/"
+ "/Users/knix/livesafe/jkn/lvsf-backend/core/src/main/scala/com/livesafe/models/"
+ "/Users/knix/livesafe/jkn/lvsf-backend/core/src/test/scala/com/livesafe/event/api/"
+ "/Users/knix/livesafe/jkn/lvsf-backend/core/src/main/scala/com/livesafe/queue/"
 )
 
 ;; ----- ido-work-file-list -----
 (
- "database.clj"
+ "UserContactPhoneRepository.scala"
+ "SmsOMExecutor.scala"
+ "SmsOMWorkExecutor.scala"
  "routes.clj"
+ "database.clj"
+ "transform.cljc"
  "core.cljc"
- "core.clj"
- "SqlRepositoryService.scala"
- "init.el"
- "BroadcastProcessor.scala"
- "RepositoryService.scala"
- ".ensime"
- "SqlService.scala"
+ "old_tuition.cljc"
+ "util.clj"
+ "control.clj"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
- ("/Users/knix/edu-/api/src/helme/export/" (22286 26569 0 0) "routes.clj.bak" "routes.clj" "core.clj.bak" "core.clj" "../" "./")
+ ("/Users/knix/Boehm/" (22062 18634 0 0) "Versatile.v.d" "Versatile.v" "Value.v" "Tailorable.v.d" "Tailorable.v" "System.v" "Sustainable.v.d" "Sustainable.v" "Survivable.v.d" "Survivable.v" "SQ Context factors.docx" "Speed.v.d" "Speed.v" "Secure.v.d" "Secure.v" "Scalable.v.d" "Scalable.v.crashcoqide" "Scalable.v" "Satisfactory.v.d" "Satisfactory.v" "Safe.v.d" "Safe.v" "Robust.v.d" "Robust.v" "Resilient.v.d" "Resilient.v" "Reliable.v.d" "Reliable.v" "README.md" "Quality.v" "PhysicalCapable.v.d" "PhysicalCapable.v" "ParnasInformationHiding.v" "paper_draft/" "OtherScarceResources.v.d" "OtherScarceResources.v" "oldFiles/" "old/" "Modifiable.v.d" "Modifiable.v" "MissionEffective.v.d" "MissionEffective.v" "Manufacturable.v.d" "Manufacturable.v" "Maneuverable.v.d" "Maneuverable.v" "Makefile" "Maintainable.v.d" "Maintainable.v" "LibTactics.v" "KeyPersonnel.v.d" "KeyPersonnel.v" "Interoperable.v.d" "Interoperable.v" "index.html" "Impactful.v.d" "Impactful.v" "HumanUsable.v.d" "HumanUsable.v" "Flexible.v.d" "Flexible.v" "Example_Parnas_Shared_Info.v.d" "Example_Parnas_Shared_Info.v" "Example_Parnas_Information_Hiding_Changeable.v.d" "Example_Parnas_Information_Hiding_Changeable.v" "Example_Parnas_Information_Hiding.v.d" "Example_Parnas_Information_Hiding.v" "Example_Parnas_Functional_Decomposition_Changeable.v.d" "Example_Parnas_Functional_Decomposition_Changeable.v" "Example_Parnas_Functional_Decomposition.v.d" "Example_Parnas_Functional_Decomposition.v" "Example_Car_Modular.v" "Example_Car_Changeable.v" "Example_Car.v" "Endurable.v.d" "Endurable.v" "Efficient.v.d" "Efficient.v" "Duration.v.d" "Duration.v" "DesignStructureComp.v" "DesignStructure.v" "Dependable.v.d" "Dependable.v" "data.json" "d3.layout.js" "d3.js" "CyberCapable.v.d" "CyberCapable.v" "Cost.v.d" "Cost.v" "Changeable.v" "BoehmTactics.v" "Available.v.d" "Available.v" "Affordable.v.d" "Affordable.v" "Adaptable.v.d" "Adaptable.v" "Accurate.v.d" "Accurate.v" "Accurate.glob" "_CoqProject" ".Value.aux" ".System.aux" ".Quality.aux" ".ParnasInformationHiding.aux" ".LibTactics.aux" ".gitignore" ".git/" ".Example_Parnas_Functional_Decomposition.aux" ".Example_Parnas_Changeable.aux" ".Example_Parnas.aux" ".Example_Car_Modular.aux" ".Example_Car_Changeable.aux" ".Example_Car.aux" ".DS_Store" ".DesignStructure.aux" ".coq-native/" ".Changeable.aux" ".BoehmTactics.aux" ".Accurate.aux" "../" "./")
+
+ ("/Users/knix/" (22403 55027 0 0) "webility/" "VirtualBox VMs/" "tmp/" "target/" "Snapshots/" "shia-live/" "roomkey/" "reactive-kafka-scala/" "Public/" "Pictures/" "oplss2015/" "Music/" "Movies/" "livesafe/" "Library/" "lib/" "inst.txt" "IdeaProjects/" "ibcm-assembler/" "hotelibot/" "gdrive/" "edu-/" "Dropbox/" "Downloads/" "Documents/" "Desktop/" "data/" "cfg/" "Boehm/" "Applications/" "akka-stream-scala/" ".zshrc" ".zsh_history" ".zsh-update" ".zcompdump-knix-roomkey-5.0.8" ".zcompdump-knix-roomkey-5.0.5" ".zcompdump-knix-roomkey-5.0.2" ".yjp/" ".Xauthority" ".WPS.plist" ".wps.ini" ".WiD.ini" ".viminfo" ".Trash/" ".tmux.conf" ".swt/" ".subversion/" ".ssh/" ".smex-items" ".scala_history" ".sbt/" ".rnd" ".python27_compiled/" ".pentaho/" ".oracle_jre_usage/" ".opam/" ".oh-my-zsh/" ".ocamlinit" ".npm/" ".node_repl_history" ".node-gyp/" ".netrc" ".mysql_history" ".mongorc.js" ".matplotlib/" ".m2/" ".local/" ".lldb/" ".lesshst" ".lein/" ".kodi/" ".kettle/" ".jupyter/" ".ivy2/" ".ipython/" ".idris/" ".ido.last" ".ideavimrc" ".IdeaIC15/" ".IdeaIC14/" ".idea-build/" ".hgignore_global" ".heroku/" ".gradle/" ".gnupg/" ".gitignore_global" ".gitconfig" ".ghc/" ".gem/" ".emacs~" ".emacs.d/" ".emacs.a" ".DS_Store" ".dropbox/" ".docker/" ".dbshell" ".datastorage/" ".cups/" ".configprops/" ".config/" ".CFUserTextEncoding" ".cache/" ".cabal/" ".bintray/" ".bash_history" ".backup/" ".atom/" ".APKey.plist" ".AndroidStudio1.3/" ".android/" ".activator/" "../" "./")
+
+ ("/Users/knix/livesafe/jkn/lvsf-backend/core/src/main/scala/com/livesafe/broadcast/distributedwork/" (22403 46915 0 0) "TwitterWorkExecutor.scala" "TwitterConfig.scala" "SmsOMWorkExecutor.scala" "SmsOMExecutor.scala" "SmsOMDeliveryReceipts.scala" "PushNotificationAwsWorkExecutor.scala" "OpenMarketConfig.scala" "HttpClient.scala" "FacebookWorkExecutor.scala" "FacebookConfig.scala" "EmailAwsWorkExecutor.scala" "CloudWatchMetricsReporter.scala" "BroadcastProtocol.scala" "BroadcastMessageStatusTypes.scala" "BroadcastErrorTypes.scala" "AwsSnsConfig.scala" "AwsSesConfig.scala" "AwsCwConfig.scala" "aws/" ".#SmsOMExecutor.scala" "../" "./")
+
+ ("/Users/knix/livesafe/jkn/lvsf-backend/core/src/main/scala/com/livesafe/data/" (22403 46834 0 0) "UserRepository.scala" "UserPrivilegeRepository.scala" "UserLocationRepository.scala" "UserContactPhoneRepository.scala" "UserContactInfoChannelsRepository.scala" "UserContactEmail.scala" "UserContactDoNotEmailRepository.scala" "StatusRepository.scala" "SqlInterpolationJdbcExtension.scala" "PrivilegeRepository.scala" "OrganizationUserRepository.scala" "OrganizationRssInjestRepository.scala" "OrganizationRssInjestBroadcastRepository.scala" "OrganizationRssFeedRepository.scala" "OrganizationRepository.scala" "OrganizationChildRepository.scala" "NewsTypeRepository.scala" "NewsRepository.scala" "MobileOriginatedMessageRepository.scala" "Mappers.scala" "GroupUser.scala" "GroupRepository.scala" "GeofenceRepository.scala" "GeofenceCoordinateRepository.scala" "EventTypeRepository.scala" "EventRepository.scala" "EventAudienceRepository.scala" "dynamodb/" "DeviceRepository.scala" "DataRepository.scala" "DatabaseEncryptionSupport.scala" "Conversions.scala" "ChannelCredentialsRepository.scala" "BroadcastTargetAudienceRepository.scala" "BroadcastRepository.scala" "BroadcastChannelRepository.scala" "AppEncryptionKeysRepository.scala" ".DS_Store" "../" "./")
+
+ ("/Users/knix/livesafe/jkn/lvsf-backend/core/src/main/scala/com/livesafe/" (22403 46834 0 0) "models/" "IntervalTimer.scala" "DomainException.scala" "data/" "Config.scala" "ClusterListener.scala" "broadcast/" "api/" ".DS_Store" "../" "./")
+
+ ("/Users/knix/livesafe/jkn/lvsf-backend/core/" (22403 46834 0 0) "target/" "src/" "lib/" "build.sbt" "../" "./")
+
+ ("/Users/knix/livesafe/jkn/lvsf-backend/" (22403 46834 0 0) "target/" "sigar/" "sharedResource/" "scripts/" "root/" "README.md" "project/" "lvsf-system/" "log/" "link-shortner/" "LICENSE.md" "e2e-tests/" "docker/" "distributed-work/" "core-api/" "core/" "common/" "build.sbt" "broadcast/" "_scalastyle-config.xml" ".idea/" ".gitignore" ".git/" ".ensime_cache/" ".ensime" ".DS_Store" "../" "./")
+
+ ("/Users/knix/livesafe/" (22388 4435 0 0) "payment/" "lvsf-dev.spf" "lvsf-backend/" "keys/" "jkn/" "insert_events.sql" "AkkaInvestigation/" "Akka Concurrency.pdf" ".DS_Store" "../" "./")
+
+ ("/Users/knix/edu-/api/" (22388 40235 0 0) "test3.xlsx" "test2.xlsx" "test.pdf" "test/" "target/" "src/" "resources/" "README.md" "qa_process.md" "project.clj" "log/" "LICENSE" "helme_api.conf" "helme.iml" "dev-resources/" "dev/" "budget.xlsx" "backuptest/" "api-deploy.sh" ".nrepl-port" ".log/" ".gitignore" "../" "./")
+
+ ("/Users/knix/edu-/" (22388 36824 0 0) "tools/" "sync-tools.sh" "sync/" "secret/" "logo/" "interview-questions.txt" "homepage-deploy.sh" "homepage/" "helmelib/" "frontend/" "favicon.ico" "devops_readme.md" "deploy.sh" "business/" "archive/" "api/" "2016-01-04.tar.gz" "2015-12-25.tar.gz" ".tern-project" ".gitignore" ".git/" ".DS_Store" "../" "./")
+
+ ("/Users/knix/edu-/helmelib/src/helmelib/" (22389 29967 0 0) "projection/" "model/" "core.cljs" "core.clj" "constants.cljc" "analytics/" "age.cljc" ".DS_Store" "../" "./")
+
+ ("/Users/knix/edu-/api/src/helme/" (22388 41401 0 0) "util.clj" "util/" "user/" "system_instance.clj" "stripe.clj" "session/" "server/" "scenario/" "quickbooks/" "pricing.clj" "modules/" "main.clj" "mail.clj" "ledger/" "export/" "database.clj" "dashboard/" "crypto/" "config.clj" "comparison/" "client_data/" "client/" "budget/" "balance/" "analytics/" ".DS_Store" ".!23937!.DS_Store" "../" "./")
+
+ ("/Users/knix/edu-/api/dev/clj/" (22388 4078 0 0) "control.clj" "../" "./")
+
+ ("/Users/knix/edu-/api/src/helme/balance/" (22386 54413 0 0) "plaid.clj" "mock.clj" "core.clj" "../" "./")
+
+ ("/Users/knix/edu-/api/src/helme/client/" (22388 15058 0 0) "routes.clj" "database.clj" "../" "./")
+
+ ("/Users/knix/.m2/repository/abengoa/clj-stripe/1.0.4/" (22056 16110 0 0) "clj-stripe-1.0.4.pom.sha1" "clj-stripe-1.0.4.pom" "clj-stripe-1.0.4.jar.sha1" "clj-stripe-1.0.4.jar" "_maven.repositories" "../" "./")
 
  ("/Users/knix/edu-/helmelib/src/" (21974 27626 0 0) "helmelib/" "../" "./")
 
- ("/Users/knix/edu-/api/" (22286 25319 0 0) "test3.xlsx" "test2.xlsx" "test.pdf" "test/" "target/" "src/" "resources/" "README.md" "project.clj" "log/" "LICENSE" "helme.iml" "dev-resources/" "dev/" "budget.xlsx" "backuptest/" "api-deploy.sh" ".nrepl-port" ".gitignore" ".DS_Store" "../" "./")
+ ("/Users/knix/livesafe/jkn/lvsf-backend/core-api/src/main/scala/com/livesafe/broadcast/distributedwork/" (22381 24489 0 0) "TwitterWorkExecutor.scala" "TwitterConfig.scala" "SmsOMWorkExecutor.scala" "SmsOMExecutor.scala" "SmsOMDeliveryReceipts.scala" "PushNotificationAwsWorkExecutor.scala" "OpenMarketConfig.scala" "HttpClient.scala" "FacebookWorkExecutor.scala" "FacebookConfig.scala" "EmailAwsWorkExecutor.scala" "CloudWatchMetricsReporter.scala" "BroadcastProtocol.scala" "BroadcastMessageStatusTypes.scala" "BroadcastErrorTypes.scala" "AwsSnsConfig.scala" "AwsSesConfig.scala" "AwsCwConfig.scala" "aws/" "../" "./")
 
- ("/Users/knix/edu-/api/dev/" (21951 47343 0 0) "clj/" ".DS_Store" "../" "./")
+ ("/Users/knix/livesafe/jkn/lvsf-backend/core/src/main/scala/com/livesafe/queue/" (22381 24489 0 0) "QueueProducing.scala" "QueueProducerService.scala" "QueueInfo.scala" "QueueConsuming.scala" "QueueActor.scala" "KafkaQueueProducer.scala" "KafkaQueueConsumer.scala" "InMemoryQueueProducer.scala" "InMemoryQueueConsumer.scala" "CassandraJobAuditor.scala" "../" "./")
 
- ("/Users/knix/edu-/api/dev/clj/" (22286 26297 0 0) "control.clj" ".DS_Store" ".#control.clj" "../" "./")
+ ("/Users/knix/livesafe/jkn/lvsf-backend/core/src/test/scala/com/livesafe/event/api/" (22381 24521 0 0) "VerificationHttpServiceSpec.scala" "UserHttpServiceSpec.scala" "ReportHttpServiceSpec.scala" "OrganizationHttpServiceSpec.scala" "MediaHttpServiceSpec.scala" "EventTypeHttpServiceSpec.scala" "EventHttpServiceSpec.scala" "ChatMessageHttpServiceSpec.scala" "authorization/" "ApiTestData.scala" "../" "./")
 
- ("/Users/knix/edu-/helmelib/" (22286 24847 0 0) "test/" "target/" "src/" "resources/" "README.md" "project.clj" "pom.xml" "LICENSE" "doc/" "dev-resources/" "dev-build/" "build.sh" "build-dev.sh" ".nrepl-port" ".lein-failures" ".hgignore" ".gitignore" ".DS_Store" "../" "./")
+ ("/Users/knix/livesafe/jkn/lvsf-backend/core/src/main/scala/com/livesafe/models/" (22381 24489 0 0) "VendorUserPair.scala" "VendorUserAppUserPair.scala" "Source.scala" "SortOrder.scala" "RuntimeEnvironmentTypes.scala" "Publish.scala" "MobileOriginatedKeywords.scala" "BroadcastType.scala" "BroadcastResponse.scala" "BroadcastCheckinStatusCodeType.scala" "BroadcastChannelType.scala" "AggregateId.scala" "../" "./")
 
- ("/Users/knix/" (22286 24988 0 0) "webility/" "VirtualBox VMs/" "Snapshots/" "shia-live/" "russia/" "roomkey/" "Public/" "Pictures/" "philosophy/" "oplss2015/" "Music/" "Movies/" "livesafe/" "Library/" "lib/" "IdeaProjects/" "ibcm-assembler/" "hotelibot/" "gdrive/" "game/" "finance/" "edu-/" "Dropbox/" "Downloads/" "Documents/" "dna/" "Desktop/" "data/" "cfg/" "Boehm/" "Applications/" "agenda.org" ".zshrc" ".zsh_history" ".zsh-update" ".zcompdump-knix-roomkey-5.0.8" ".zcompdump-knix-roomkey-5.0.5" ".zcompdump-knix-roomkey-5.0.2" ".yjp/" ".Xauthority" ".WPS.plist" ".wps.ini" ".WiD.ini" ".viminfo" ".Trash/" ".tmux.conf" ".swt/" ".subversion/" ".ssh/" ".smex-items" ".scala_history" ".sbt/" ".rnd" ".python27_compiled/" ".pentaho/" ".oracle_jre_usage/" ".opam/" ".oh-my-zsh/" ".ocamlinit" ".npm/" ".node_repl_history" ".node-gyp/" ".netrc" ".mongorc.js" ".matplotlib/" ".m2/" ".lldb/" ".lesshst" ".lein/" ".kettle/" ".jupyter/" ".ivy2/" ".ipython/" ".idris/" ".ido.last" ".ideavimrc" ".IdeaIC15/" ".IdeaIC14/" ".idea-build/" ".hgignore_global" ".heroku/" ".gradle/" ".gnupg/" ".gitignore_global" ".gitconfig" ".ghc/" ".gem/" ".emacs~" ".emacs.d/" ".emacs.a" ".DS_Store" ".dropbox/" ".dbshell" ".datastorage/" ".cups/" ".configprops/" ".config/" ".CFUserTextEncoding" ".cache/" ".cabal/" ".bash_history" ".backup/" ".atom/" ".APKey.plist" ".AndroidStudio1.3/" ".android/" "../" "./")
+ ("/Users/knix/Desktop/wedding/src/wedding/" (22347 22379 0 0) "core.clj" "../" "./")
 
- ("/Users/knix/livesafe/jkn/lvsf-backend/core/src/main/scala/com/livesafe/data/" (22285 49743 0 0) "UserRepository.scala" "UserPrivilegeRepository.scala" "UserContactPhoneRepository.scala" "UserContactInfoChannelsRepository.scala" "UserContactEmail.scala" "UserContactDoNotEmailRepository.scala" "StatusRepository.scala" "SqlInterpolationJdbcExtension.scala" "sql/" "service/" "PrivilegeRepository.scala" "OrganizationUserRepository.scala" "OrganizationRssIngestRepository.scala" "OrganizationRssIngestBroadcastRepository.scala" "OrganizationRssFeedRepository.scala" "OrganizationRepository.scala" "OrganizationChildRepository.scala" "NewsTypeRepository.scala" "NewsRepository.scala" "MobileOriginatedMessageRepository.scala" "Mappers.scala" "GroupUser.scala" "GroupRepository.scala" "GeofenceRepository.scala" "GeofenceCoordinateRepository.scala" "EventTypeRepository.scala" "EventRepository.scala" "EventAudienceRepository.scala" "dynamodb/" "DeviceRepository.scala" "DataRepository.scala" "DatabaseEncryptionSupport.scala" "Conversions.scala" "ChannelCredentialsRepository.scala" "BroadcastTargetAudienceRepository.scala" "BroadcastRepository.scala" "BroadcastChannelRepository.scala" "AppEncryptionKeysRepository.scala" ".DS_Store" "../" "./")
+ ("/Users/knix/Desktop/wedding/" (22347 22379 0 0) "test/" "target/" "src/" "slide-01-new.jpg" "sat-256.jpg" "sat-255.jpg" "resources/" "README.md" "project.clj" "list.txt" "LICENSE" "Honeymoon Package Summary.pdf" "Honeymoon Confirmation.pdf" "doc/" "dev-resources/" "CHANGELOG.md" ".lein-repl-history" ".hgignore" ".gitignore" ".DS_Store" "../" "./")
 
- ("/Users/knix/livesafe/jkn/lvsf-backend/core/src/main/scala/com/livesafe/broadcast/worker/" (22285 49310 0 0) "WorkSubmitter.scala" "UserLocationUtility.scala" "TemplateKeyTypes.scala" "JobGeneratorImpl.scala" "JobDispatcher.scala" "EmailTemplateTypes.scala" "EmailTemplateProvider.scala" "DashboardPublisher.scala" "BroadcastResultsAccumulatorState.scala" "BroadcastResultsAccumulatorPriorityMailbox.scala" "BroadcastResultsAccumulatorDbPersister.scala" "BroadcastResultsAccumulator.scala" "BroadcastMetricsReporterActor.scala" "../" "./")
+ ("/Users/knix/livesafe/jkn/lvsf-backend/core/src/main/scala/com/livesafe/event/work/" (22385 23455 0 0) "Workers.scala" "WorkerProtocol.scala" "WorkerGuardian.scala" "SmsWorker.scala" "SmsOmAware.scala" "PushWorker.scala" "PublishWorker.scala" "JobStatusType.scala" "EmailWorker.scala" "../" "./")
 
- ("/Users/knix/livesafe/jkn/lvsf-backend/core/src/main/scala/com/livesafe/broadcast/service/" (22285 38481 0 0) "SmsOMKeywordResponder.scala" "HttpClientRequester.scala" "GoogleMapsApi.scala" "BroadcastProcessor.scala" "../" "./")
+ ("/Users/knix/livesafe/jkn/lvsf-backend/core/src/main/scala/com/livesafe/event/service/entityhandler/" (22381 24489 0 0) "VerificationEntityHandlerService.scala" "EventEntityHandlerService.scala" "EntityHandlerService.scala" "DummyEventEntityHandlerService.scala" "ChatEntityHandlerService.scala" "../" "./")
 
- ("/Users/knix/livesafe/jkn/lvsf-backend/core/src/main/scala/com/livesafe/data/service/" (22285 35633 0 0) "SqlRepositoryService.scala" "RepositoryService.scala" "../" "./")
+ ("/Users/knix/livesafe/jkn/lvsf-backend/core/src/test/scala/com/livesafe/event/service/" (22381 24489 0 0) "PersistenceSpec.scala" "OrchestratorStoreSpec.scala" "OrchestratorResurrectorSpec.scala" "MediaStorageProviderSpec.scala" "MediaProviderSpec.scala" "GeocodingServiceSpec.scala" "EventServiceIntegSpec.scala" "EventRetrierSpec.scala" "EventOrchestratorSpec.scala" "entityhandler/" "CompletedEventConsumerSpec.scala" "AkkaSpec.scala" "../" "./")
 
- ("/Users/knix/.emacs.d/" (22285 30585 0 0) "url/" "smex-items" "SessionDesktop.el" "recentf" "README.md" "projectile.cache" "projectile-bookmarks.eld" "knix/" "irony/" "init.el" "ido.last~" "ido.last" "eshell/" "ensime/" "elpa/" "auto-save-list/" ".mc-lists.el" ".gitignore" ".git/" ".DS_Store" "../" "./")
+ ("/Users/knix/livesafe/jkn/lvsf-backend/core/src/test/scala/com/livesafe/event/work/" (22381 24489 0 0) "SmsWorkerSpec.scala" "PushWorkerSpec.scala" "PublishWorkerSpec.scala" "EmailWorkerSpec.scala" "../" "./")
 
- ("/Users/" (22061 19695 0 0) "Shared/" "knix/" ".localized" "../" "./")
+ ("/Users/knix/edu-/frontend/app/js/dashboard/" (22380 57276 0 0) "tile.html" "tile-directive.js" "service.js" "series-edit.html" "master.html" "edit-dashboard-modal.html" "edit-dashboard-controller.js" "dashboard.html" "create-modal.html" "create-dashboard-modal.html" "create-dashboard-controller.js" "create-controller.js" "controller.js" "../" "./")
 
- ("/Users/knix/livesafe/jkn/lvsf-backend/core/src/main/scala/com/livesafe/broadcast/api/" (22285 26353 0 0) "BroadcastOpenMarketFormats.scala" "BroadcastOpenMarketApi.scala" "BroadcastFormats.scala" "BroadcastAwsStatusFormats.scala" "BroadcastAwsStatusApi.scala" "BroadcastApi.scala" "authorization/" "authentication/" "Api.scala" "../" "./")
+ ("/Users/knix/edu-/api/src/helme/quickbooks/" (22381 43523 0 0) "routes.clj" "qb_online.clj" "qb_excel.clj" "../" "./")
 
- ("/Users/knix/livesafe/jkn/lvsf-backend/core/src/main/scala/com/livesafe/broadcast/distributedwork/" (22277 39627 0 0) "TwitterWorkExecutor.scala" "TwitterConfig.scala" "SmsOMWorkExecutor.scala" "SmsOMExecutor.scala" "SmsOMDeliveryReceipts.scala" "PushNotificationAwsWorkExecutor.scala" "OpenMarketConfig.scala" "HttpClient.scala" "FacebookWorkExecutor.scala" "FacebookConfig.scala" "EmailAwsWorkExecutor.scala" "CloudWatchMetricsReporter.scala" "BroadcastProtocol.scala" "BroadcastMessageStatusTypes.scala" "BroadcastErrorTypes.scala" "AwsSnsConfig.scala" "AwsSesConfig.scala" "AwsCwConfig.scala" "aws/" "../" "./")
+ ("/Users/knix/.emacs.d/" (22385 54262 0 0) "url/" "smex-items" "SessionDesktop.el" "recentf" "README.md" "projectile.cache" "projectile-bookmarks.eld" "knix/" "irony/" "init.el" "ido.last~" "ido.last" "eshell/" "ensime/" "elpa/" "auto-save-list/" ".mc-lists.el" ".gitignore" ".git/" ".DS_Store" "../" "./")
 
- ("/Users/knix/livesafe/jkn/lvsf-backend/" (22285 20036 0 0) "target/" "sigar/" "scripts/" "root/" "README.md" "project/" "lvsf-system/" "link-shortner/" "LICENSE.md" "e2e-tests/" "docker/" "distributed-work/" "core/" "common/" "build.sbt" "broadcast/" "_scalastyle-config.xml" ".idea/" ".gitignore" ".git/" ".ensime_cache/" ".ensime" "../" "./")
+ ("/Users/knix/livesafe/jkn/lvsf-backend/core/src/main/scala/com/livesafe/broadcast/service/" (22381 24489 0 0) "SmsOMKeywordResponder.scala" "PubNubPublishService.scala" "PublishService.scala" "HttpClientRequester.scala" "GoogleMapsApi.scala" "BroadcastProcessor.scala" "../" "./")
 
- ("/Users/knix/livesafe/jkn/lvsf-backend/core/" (22285 25446 0 0) "target/" "src/" "project/" "lib/" "build.sbt" "../" "./")
+ ("/Users/knix/livesafe/jkn/lvsf-backend/core/src/main/scala/com/livesafe/broadcast/worker/" (22381 24489 0 0) "WorkSubmitter.scala" "UserLocationUtility.scala" "TemplateKeyTypes.scala" "JobGeneratorImpl.scala" "JobDispatcher.scala" "EmailTemplateTypes.scala" "EmailTemplateProvider.scala" "DashboardPublisher.scala" "BroadcastResultsAccumulatorState.scala" "BroadcastResultsAccumulatorPriorityMailbox.scala" "BroadcastResultsAccumulatorDbPersister.scala" "BroadcastResultsAccumulator.scala" "BroadcastMetricsReporterActor.scala" "../" "./")
 
- ("/Users/knix/livesafe/jkn/lvsf-backend/lvsf-system/api/src/main/scala/com/livesafe/api/" (22285 29839 0 0) "Boot.scala" ".#Boot.scala" "../" "./")
+ ("/Users/knix/livesafe/jkn/lvsf-backend/core/src/main/scala/com/livesafe/data/dynamodb/" (22381 24489 0 0) "UserLocation.scala" "SystemAuditLog.scala" "DynamoHighThroughputRepository.scala" "DynamoDbRepository.scala" "BroadcastUserCheckinResponse.scala" "BroadcastJobAuditLog.scala" "AwsDynamoDbConfig.scala" "AdminAuditLog.scala" ".DS_Store" "../" "./")
 
- ("/Users/knix/livesafe/jkn/lvsf-backend/lvsf-system/backend/src/main/scala/com/livesafe/backend/" (22285 25413 0 0) "Boot.scala" "../" "./")
+ ("/Users/knix/livesafe/jkn/lvsf-backend/core/src/main/scala/com/livesafe/api/user/" (22381 24489 0 0) "VerificationHttpService.scala" "UserHttpService.scala" "../" "./")
 
- ("/Users/knix/livesafe/jkn/lvsf-backend/core/src/main/scala/com/livesafe/api/authentication/" (22285 23485 0 0) "TokenAuthenticator.scala" "package.scala" "CustomTokenAuthentication.scala" "CustomToken.scala" "CustomAuthenticator.scala" ".#CustomAuthenticator.scala" "../" "./")
+ ("/Users/knix/livesafe/jkn/lvsf-backend/core/src/main/scala/com/livesafe/event/service/" (22381 24521 0 0) "statushandler/" "OrchestratorStore.scala" "OrchestratorStarter.scala" "OrchestratorResurrector.scala" "Orchestrator.scala" "MediaStorageProvider.scala" "JobHandler.scala" "EventRetrier.scala" "EventData.scala" "EntityService.scala" "entityhandler/" "DummyEntityService.scala" "DefaultEntityService.scala" "CompletedEventConsumer.scala" "behavior/" "../" "./")
 
- ("/Users/knix/livesafe/jkn/lvsf-backend/core/src/test/scala/com/livesafe/broadcast/worker/" (22285 9384 0 0) "UserLocationUtilitySpec.scala" "TestSmsWorkExecutor.scala" "TestPubNubConfig.scala" "TestEmailWorkExecutor.scala" "JobGeneratorSpec.scala" "JobDispatcherToDistributedWorkersToConsumersSpec.scala" "DashboardPublisherSpec.scala" "BroadcastResultsAccumulatorStateSpec.scala" "BroadcastResultsAccumulatorSpec.scala" "BroadcastMetricsReportActorSpec.scala" "../" "./")
+ ("/Users/knix/livesafe/jkn/lvsf-backend/core/src/main/scala/com/livesafe/data/service/" (22381 24521 0 0) "SqlRepositoryService.scala" "RepositoryService.scala" "JobAuditService.scala" "HighThroughputRepository.scala" "DummyJobAuditService.scala" "DummyHighThroughputRepository.scala" "../" "./")
 
- ("/Users/knix/livesafe/jkn/lvsf-backend/common/src/main/scala/com/livesafe/data/" (22285 822 0 0) "sql/" "Profile.scala" "EntityRepository.scala" "Entity.scala" "DatabaseSupport.scala" "CompositeEntityRepository.scala" "CompositeEntity.scala" "aws/" ".DS_Store" "../" "./")
+ ("/Users/knix/livesafe/jkn/lvsf-backend/common/src/main/scala/com/livesafe/" (22381 24489 0 0) "Utilities.scala" "test/" "service/" "RegexUtils.scala" "Passivation.scala" "package.scala" "Messages.scala" "Helpers.scala" "GeoHash.scala" "domain/" "data/" "crypto/" "config/" "concurrent/" "api/" "alg/" "../" "./")
 
- ("/Users/knix/livesafe/jkn/lvsf-backend/core/src/test/scala/com/livesafe/data/" (22285 9367 0 0) "UserRepositorySpec.scala" "UserContactInfoRepositorySpec.scala" "TestDatabaseSupport.scala" "OrganizationRssRepositorySpec.scala" "GroupUserRepositorySpec.scala" "GeofenceRepositorySpec.scala" "dynamodb/" "DataSpec.scala" "DataSeedSpec.scala" "BroadcastRepositorySpec.scala" "../" "./")
+ ("/Users/knix/livesafe/jkn/lvsf-backend/core/src/main/scala/com/livesafe/event/api/" (22381 24521 0 0) "UserResponse.scala" "UserRequest.scala" "UserCreateVerificationResponse.scala" "ReportResponse.scala" "ReportRequest.scala" "ReportHttpService.scala" "ReportApi.scala" "OrganizationResponse.scala" "OrganizationHttpService.scala" "OrganizationApi.scala" "MediaResponse.scala" "MediaRequest.scala" "MediaHttpService.scala" "MediaApi.scala" "Filters.scala" "EventTypeResponse.scala" "EventTypeHttpService.scala" "EventTypeApi.scala" "EventResponse.scala" "EventHttpService.scala" "EventFormats.scala" "EventApiSegments.scala" "EventApi.scala" "Errors.scala" "CreateRequest.scala" "ChatMessageResponse.scala" "ChatMessageHttpService.scala" "ChatMessageApi.scala" "authorization/" "../" "./")
 
- ("/Users/knix/livesafe/jkn/lvsf-backend/core/src/test/scala/com/livesafe/data/dynamodb/" (22273 26138 0 0) "TestDynamoDbSupport.scala" "DynamoDbSpec.scala" "DynamoDbRepositorySpec.scala" "DummyDynamoDbRepository.scala" "BaseDynamoDbRepositoryImplSpec.scala" "../" "./")
+ ("/Users/knix/livesafe/jkn/lvsf-backend/core/src/test/scala/com/livesafe/data/" (22381 24489 0 0) "UserRepositorySpec.scala" "UserContactInfoRepositorySpec.scala" "TestDatabaseSupport.scala" "TestDatabaseEncryptionSupport.scala" "service/" "OrganizationRssRepositorySpec.scala" "MySQLCryptoSpec.scala" "GroupUserRepositorySpec.scala" "GeofenceRepositorySpec.scala" "dynamodb/" "DataSpec.scala" "DataSeedSpec.scala" "cassandra/" "BroadcastRepositorySpec.scala" "../" "./")
 
- ("/Users/knix/livesafe/jkn/lvsf-backend/core/src/main/scala/com/livesafe/api/" (22285 8077 0 0) "PingApi.scala" "Marshalling.scala" "DefaultTimeout.scala" "CustomErrorHandling.scala" "CORSSupport.scala" "Core.scala" "authentication/" "ApiServiceActor.scala" "Api.scala" "../" "./")
+ ("/Users/knix/livesafe/jkn/lvsf-backend/data/" (22381 24521 0 0) "lvsf_test_schema.sql" "lvsf_test_db_schema_user_setup.sql" "lvsf_test_data_seed.sql" "Cassandra_JobStatus_Schema.csql" "Cassandra_Akka_Persistence_Schema.csql" "../" "./")
 
- ("/Users/knix/game/engine/src/edu/virginia/engine/" (22228 61139 0 0) "util/" "tween/" "SoundManager.js" "QuestManager.js" "event/" "display/" "CollisionManager.js" ".DS_Store" "../" "./")
+ ("/Users/knix/livesafe/jkn/lvsf-backend/devops/mysql/sql/" (22381 24521 0 0) "003 - lvsf_test_data_seed.sql" "002 - lvsf_test_schema.sql" "001 - lvsf_test_db_schema_user_setup.sql" "../" "./")
 
- ("/Users/knix/game/engine/src/edu/virginia/games/" (22228 61386 0 0) "LabTwoGame.js" "LabThreeGame.js" "LabSixGame.js" "LabFourGame.js" "LabFiveGame.js" "../" "./")
+ ("/Users/knix/edu-/api/src/helme/export/" (22381 42435 0 0) "routes.clj" "core.clj" ".#core.clj" "../" "./")
 
- ("/Users/knix/game/engine/" (22228 61422 0 0) "src/" "resources/" "readme.txt" "index.html" ".DS_Store" "../" "./")
+ ("/Users/knix/edu-/api/src/helme/budget/" (22381 41764 0 0) "routes.clj" "database.clj" "core.clj" "../" "./")
 
- ("/Users/knix/Dropbox/livesafe/" (22247 34204 0 0) "signed/" "LiveSafe.v" "LiveSafe.pptx" "LIVESAFE, INC_Employee Group Health Plan Contribution Report_03-2016.pdf" "LIVESAFE, INC_BaaG_Freedom Choice_03-2016.pdf" "LiveSafe Conflict of Interest Policy.pdf" "LiveSafe Benefits Summary.pdf" "Koleman Nix LiveSafe Offer Letter.pdf" "Koleman Nix LiveSafe Consulting Agreement.pdf" "Employee PIIA.pdf" ".DS_Store" "../" "./")
+ ("/Users/knix/edu-/helmelib/src/helmelib/model/" (22381 24008 0 0) "tuition.cljc" "old_tuition.cljc" "budget.cljc" "accounts.clj" ".DS_Store" "../" "./")
 
- ("/Users/knix/edu-/frontend/app/js/tour/" (22253 30979 0 0) "tour.js" "tour-step.html" "intro.html" "controller.js" "../" "./")
+ ("/Users/knix/edu-/api/src/helme/server/" (22381 41861 0 0) "util.clj" "misc_routes.clj" "core.clj" ".!23973!.DS_Store" "../" "./")
 
- ("/Users/knix/edu-/helmelib/src/helmelib/analytics/" (22255 19800 0 0) "old.cljc" "ism.cljc" "../" "./")
+ ("/Users/knix/edu-/api/src/helme/ledger/" (22352 17620 0 0) "routes.clj" "database.clj" "core.clj" ".!23959!.DS_Store" "../" "./")
 
- ("/Users/knix/edu-/homepage/reset/" (22284 25697 0 0) "main.js" "main.css" "index.html" "../" "./")
+ ("/Users/knix/edu-/api/src/helme/modules/" (22352 17620 0 0) "school.clj" ".!23965!.DS_Store" "../" "./")
 
- ("/Users/knix/edu-/api/src/helme/util/" (22284 24820 0 0) "schema.clj.bak" "schema.clj" "schedule.clj.bak" "schedule.clj" "excel.clj.bak" "excel.clj" "demo.clj.bak" "demo.clj" "../" "./")
+ ("/Users/knix/.m2/repository/helmelib/helmelib/1.1.0/" (22284 23776 0 0) "helmelib-1.1.0.pom" "helmelib-1.1.0.jar" "_maven.repositories" "../" "./")
 
- ("/Users/knix/edu-/api/src/helme/analytics/" (22284 24060 0 0) "tag.clj.bak" "tag.clj" "routes.clj.bak" "routes.clj" "core.clj.bak" "core.clj" "../" "./")
+ ("/Users/knix/edu-/api/dev/" (22352 17620 0 0) "clj/" "../" "./")
 
- ("/Users/knix/.emacs.d/knix/" (22283 48081 0 0) "knix-smex.el" "knix-python.el" "knix-paredit.el" "knix-js.el" "knix-ido.el" "knix-clojure.el" "cider-eval-sexp-fu.el" "../" "./")
+ ("/Users/knix/edu-/api/src/" (22352 34944 0 0) "log4j.properties" "helme/" ".!24037!.DS_Store" ".!23936!.DS_Store" "../" "./")
 
- ("/Users/knix/edu-/api/src/helme/comparison/" (22284 24076 0 0) "routes.clj.bak" "routes.clj" "core.clj.bak" "core.clj" "../" "./")
+ ("/Users/knix/livesafe/jkn/lvsf-backend/devops/mysql/" (22380 17083 0 0) "sql/" "Dockerfile" "docker-compose.yml" "deploy_mysql.sh" "conf/" "../" "./")
 
- ("/Users/knix/edu-/helmelib/src/helmelib/model/" (22284 25364 0 0) "tuition.cljc" "old_tuition.cljc" "budget.cljc" "accounts.clj" ".DS_Store" "../" "./")
-
- ("/Users/knix/edu-/helmelib/src/helmelib/projection/" (22255 20073 0 0) "transform.cljc" "core.cljc" "../" "./")
-
- ("/Users/knix/livesafe/jkn/lvsf-backend/distributed-work/src/main/scala/com/livesafe/distributedwork/" (22273 26180 0 0) "WorkState.scala" "WorkerExecutorProtocol.scala" "Worker.scala" "Work.scala" "ThrottlingConfiguration.scala" "MetricsReporter.scala" "Metrics.scala" "MasterWorkerProtocol.scala" "Master.scala" "FrontEndProtocol.scala" "Example/" "Boot.scala" "../" "./")
-
- ("/Users/knix/livesafe/jkn/lvsf-backend/distributed-work/src/main/scala/com/livesafe/" (22273 26138 0 0) "distributedwork/" "../" "./")
-
- ("/Users/knix/livesafe/jkn/lvsf-backend/distributed-work/src/main/scala/com/" (22273 26138 0 0) "livesafe/" "../" "./")
-
- ("/Users/knix/livesafe/jkn/lvsf-backend/distributed-work/src/main/scala/" (22273 26138 0 0) "com/" "../" "./")
-
- ("/Users/knix/livesafe/jkn/lvsf-backend/distributed-work/src/main/" (22273 26138 0 0) "scala/" "../" "./")
-
- ("/Users/knix/livesafe/jkn/lvsf-backend/distributed-work/src/" (22273 26138 0 0) "test/" "main/" "../" "./")
-
- ("/Users/knix/livesafe/jkn/lvsf-backend/distributed-work/" (22273 27867 0 0) "target/" "src/" "documents/" "built.sbt" "../" "./")
-
- ("/Users/knix/livesafe/jkn/lvsf-backend/core/src/test/" (22273 26138 0 0) "scala/" "resources/" "../" "./")
-
- ("/Users/knix/livesafe/jkn/lvsf-backend/core/src/test/scala/" (22273 26138 0 0) "com/" "../" "./")
-
- ("/Users/knix/livesafe/jkn/lvsf-backend/core/src/test/scala/com/" (22273 26138 0 0) "livesafe/" "../" "./")
-
- ("/Users/knix/livesafe/jkn/lvsf-backend/core/src/test/scala/com/livesafe/" (22273 26138 0 0) "IntervalTimerSpec.scala" "Ignore-LibSpec.scala" "data/" "ConfigSpec.scala" "broadcast/" "aws/" "api/" "../" "./")
-
- ("/Users/knix/livesafe/jkn/lvsf-backend/core/src/test/scala/com/livesafe/broadcast/" (22273 26138 0 0) "worker/" "service/" "rss/" "distributedwork/" "api/" "../" "./")
-
- ("/Users/knix/livesafe/jkn/lvsf-backend/core/src/main/scala/com/livesafe/data/sql/" (22285 822 0 0) "../" "./")
+ ("/Users/knix/livesafe/jkn/lvsf-backend/devops/" (22380 17083 0 0) "test.sh" "swarm/" "readme.md" "mysql/" "livesafe_apps/" "livesafe.sh" "livesafe.conf" "livesafe-staging.sh" "livesafe-init.sh" "livesafe-dev.sh" "livesafe-default.sh" "kafka/" "haproxy/" "consul/" "common/" "cleanup.sh" "ci/" "cassandra/" "../" "./")
 
  ("/Users/knix/livesafe/jkn/lvsf-backend/core/src/main/scala/com/livesafe/broadcast/" (22273 26138 0 0) "worker/" "service/" "rss/" "distributedwork/" "api/" "../" "./")
 
- ("/Users/knix/edu-/api/test/unit/" (21994 18918 0 0) "helme/" "../" "./")
+ ("/Users/knix/livesafe/jkn/lvsf-backend/core-api/src/main/scala/com/livesafe/" (22380 17071 0 0) "util/" "serializer/" "queue/" "models/" "IntervalTimer.scala" "event/" "DomainException.scala" "data/" "Config.scala" "ClusterListener.scala" "broadcast/" "api/" "../" "./")
 
- ("/Users/knix/edu-/api/test/" (21994 19102 0 0) "unit/" ".DS_Store" "../" "./")
+ ("/Users/knix/livesafe/jkn/lvsf-backend/core-api/src/main/scala/com/" (22380 17071 0 0) "livesafe/" "../" "./")
 
- ("/Users/knix/edu-/api/src/helme/quickbooks/" (22284 24106 0 0) "routes.clj.bak" "routes.clj" "qb_online.clj.bak" "qb_online.clj" "qb_excel.clj.bak" "qb_excel.clj" "../" "./")
+ ("/Users/knix/livesafe/jkn/lvsf-backend/core-api/src/main/scala/" (22380 17071 0 0) "com/" "../" "./")
 
- ("/Users/knix/edu-/api/test/unit/helme/" (22211 26724 0 0) "util.clj" "token.clj" "stripe.clj" "session.clj" "import/" "crypto/" "client.clj" ".DS_Store" "../" "./")
+ ("/Users/knix/livesafe/jkn/lvsf-backend/core-api/src/main/resources/" (22380 17071 0 0) "MySql-Trigger-Geofence-Fix.sql" "MySql-Trigger-Event.sql" "akka-persistence-mysql.sql" "../" "./")
 
- ("/Users/knix/edu-/helmelib/src/helmelib/" (22284 23759 0 0) "projection/" "model/" "core.cljs" "core.clj" "constants.cljc" "analytics/" "age.cljc" ".DS_Store" "../" "./")
+ ("/Users/knix/livesafe/jkn/lvsf-backend/core-api/src/main/" (22380 17071 0 0) "scala/" "resources/" "../" "./")
 
- ("/Users/knix/edu-/helmelib/test/helmelib/" (22284 23658 0 0) "tuition_test.cljc" "budget_test.clj" ".DS_Store" "../" "./")
+ ("/Users/knix/livesafe/jkn/lvsf-backend/core-api/src/" (22380 17071 0 0) "main/" "../" "./")
 
- ("/Users/knix/livesafe/jkn/lvsf-backend/common/src/main/scala/com/livesafe/" (22273 26138 0 0) "Utilities.scala" "test/" "service/" "RegexUtils.scala" "Passivation.scala" "Messages.scala" "Helpers.scala" "GeoHash.scala" "domain/" "data/" "config/" "api/" "alg/" "../" "./")
+ ("/Users/knix/livesafe/jkn/lvsf-backend/core-api/" (22380 17071 0 0) "target/" "src/" "../" "./")
+
+ ("/Users/knix/livesafe/jkn/lvsf-backend/common/src/main/scala/util/" (22380 17071 0 0) "Cache.scala" "../" "./")
 
  ("/Users/knix/livesafe/jkn/lvsf-backend/common/src/main/scala/com/" (22273 26138 0 0) "livesafe/" "../" "./")
 
- ("/Users/knix/livesafe/jkn/lvsf-backend/common/" (22273 27867 0 0) "target/" "src/" "built.sbt" "../" "./")
-
- ("/Users/knix/livesafe/jkn/lvsf-backend/common/src/" (22273 26138 0 0) "test/" "main/" "../" "./")
+ ("/Users/knix/livesafe/jkn/lvsf-backend/common/src/main/scala/" (22273 26138 0 0) "util/" "com/" "../" "./")
 
  ("/Users/knix/livesafe/jkn/lvsf-backend/common/src/main/" (22273 26138 0 0) "scala/" "../" "./")
 
- ("/Users/knix/livesafe/jkn/lvsf-backend/common/src/main/scala/" (22273 26138 0 0) "util/" "com/" "../" "./")
+ ("/Users/knix/livesafe/jkn/lvsf-backend/common/src/" (22273 26138 0 0) "test/" "main/" "../" "./")
 
- ("/Users/knix/livesafe/jkn/lvsf-backend/common/src/main/scala/util/" (22283 59270 0 0) "Cache.scala" "../" "./")
+ ("/Users/knix/livesafe/jkn/lvsf-backend/common/" (22380 17071 0 0) "target/" "src/" "../" "./")
 
- ("/Users/knix/edu-/logo/" (21992 54328 0 0) "Logo.sketch" "logo.png" "logo-light.png" "logo-icon.png" "logo-dark.png" "Logo Copy.png" "blue-white.png" "../" "./")
+ ("/Users/knix/livesafe/jkn/lvsf-backend/project/project/target/config-classes/" (22380 18185 0 0) "$ec92eac4d54f3368da7c.class" "$ec92eac4d54f3368da7c.cache" "$ec92eac4d54f3368da7c$.class" "$def603d9a0220426715c.class" "$def603d9a0220426715c.cache" "$def603d9a0220426715c$.class" "$caf4973986552e264d24.class" "$caf4973986552e264d24.cache" "$caf4973986552e264d24$.class" "$c55a3be2746924271896.class" "$c55a3be2746924271896.cache" "$c55a3be2746924271896$.class" "$b1ed4e02e34c9dcf21e8.class" "$b1ed4e02e34c9dcf21e8.cache" "$b1ed4e02e34c9dcf21e8$.class" "$8fc48a3793a840e6c15d.class" "$8fc48a3793a840e6c15d.cache" "$8fc48a3793a840e6c15d$.class" "$7b3c658a82d471b93bc9.class" "$7b3c658a82d471b93bc9.cache" "$7b3c658a82d471b93bc9$.class" "$7b3c658a82d471b93bc9$$anonfun$$sbtdef$1.class" "$775e263ecb51081b768f.class" "$775e263ecb51081b768f.cache" "$775e263ecb51081b768f$.class" "$5b422d75fd8301194f2d.class" "$5b422d75fd8301194f2d.cache" "$5b422d75fd8301194f2d$.class" "$56b988eba15bd9454db1.class" "$56b988eba15bd9454db1.cache" "$56b988eba15bd9454db1$.class" "$185a6e40c89971087175.class" "$185a6e40c89971087175.cache" "$185a6e40c89971087175$.class" "$049b0342ab6f477dbcd0.class" "$049b0342ab6f477dbcd0.cache" "$049b0342ab6f477dbcd0$.class" "../" "./")
 
- ("/Users/knix/livesafe/jkn/lvsf-backend/core/src/main/scala/com/livesafe/" (22278 53361 0 0) "models/" "IntervalTimer.scala" "DomainException.scala" "data/" "Config.scala" "ClusterListener.scala" "broadcast/" "api/" ".DS_Store" "../" "./")
+ ("/Users/knix/livesafe/jkn/lvsf-backend/project/project/target/" (22273 27820 0 0) "config-classes/" "../" "./")
+
+ ("/Users/knix/livesafe/jkn/lvsf-backend/project/project/" (22273 27820 0 0) "target/" "../" "./")
+
+ ("/Users/knix/livesafe/jkn/lvsf-backend/project/" (22380 17072 0 0) "target/" "project/" "plugins.sbt" "LiveSafeSettings.scala" "E2EConfig.scala" "Dependencies.scala" "CommonDockerSettingsPlugin.scala" "build.properties" ".ensime" "../" "./")
+
+ ("/Users/knix/livesafe/jkn/lvsf-backend/core/src/main/scala/com/livesafe/services/" (22380 17083 0 0) "GoogleMapsGeocodingService.scala" "DeviceTokenService.scala" "../" "./")
+
+ ("/Users/knix/livesafe/jkn/lvsf-backend/core/src/main/scala/com/livesafe/event/" (22380 17071 0 0) "work/" "service/" "api/" "../" "./")
+
+ ("/Users/knix/livesafe/jkn/lvsf-backend/common/src/main/scala/com/livesafe/data/" (22380 17071 0 0) "Profile.scala" "EntityRepository.scala" "Entity.scala" "DatabaseSupport.scala" "CompositeEntityRepository.scala" "CompositeEntity.scala" "aws/" ".DS_Store" "../" "./")
+
+ ("/Users/knix/livesafe/jkn/lvsf-backend/core/src/main/scala/com/livesafe/api/broadcast/" (22380 17071 0 0) "BroadcastOpenMarketHttpService.scala" "BroadcastAwsStatusApiHttpService.scala" "BroadcastApiHttpService.scala" "../" "./")
+
+ ("/Users/knix/livesafe/jkn/lvsf-backend/core/src/main/scala/com/livesafe/api/util/" (22380 17083 0 0) "Protocol.scala" "PagingDirectives.scala" "Conversations.scala" "../" "./")
+
+ ("/Users/knix/livesafe/jkn/lvsf-backend/core/src/main/scala/com/livesafe/api/" (22380 17071 0 0) "util/" "user/" "rss/" "ping/" "model/" "jobs/" "http/" "directives/" "DefaultTimeout.scala" "Core.scala" "broadcast/" "base/" "authentication/" "auth/" "../" "./")
+
+ ("/Users/knix/livesafe/jkn/lvsf-backend/core/src/main/scala/com/livesafe/data/cassandra/" (22380 17083 0 0) "JobAuditRepository.scala" "CassandraJobAuditService.scala" "../" "./")
+
+ ("/Users/knix/livesafe/jkn/lvsf-backend/core-api/src/main/scala/com/livesafe/event/work/" (22380 17071 0 0) "WorkerProtocol.scala" "EmailWorker.scala" "../" "./")
+
+ ("/Users/knix/livesafe/jkn/lvsf-backend/core/src/test/scala/com/livesafe/data/service/" (22380 17083 0 0) "SqlDataServiceIntegSpec.scala" "MockRepositoryService.scala" "MockMediaProvider.scala" "EmailTemplateProviderSpec.scala" "../" "./")
+
+ ("/Users/knix/livesafe/jkn/lvsf-backend/core/src/main/scala/com/livesafe/broadcast/distributedwork/aws/ses/" (22376 23931 0 0) "SESClient.scala" "package.scala" "models/" "../" "./")
+
+ ("/Users/knix/livesafe/jkn/lvsf-backend/core/src/main/scala/com/livesafe/broadcast/distributedwork/aws/ses/models/" (22376 23931 0 0) "Models.scala" "../" "./")
+
+ ("/Users/knix/edu-/helmelib/src/helmelib/projection/" (22376 21595 0 0) "transform.cljc" "core.cljc" "../" "./")
+
+ ("/Users/knix/edu-/api/src/helme/session/" (22376 18818 0 0) "routes.clj" "database.clj" ".!23977!.DS_Store" "../" "./")
+
+ ("/Users/knix/edu-/helmelib/test/helmelib/" (22376 23190 0 0) "tuition_test.cljc" "budget_test.clj" ".DS_Store" "../" "./")
+
+ ("/Users/knix/livesafe/jkn/lvsf-backend/core/src/main/scala/com/livesafe/broadcast/api/" (22376 23931 0 0) "BroadcastOpenMarketFormats.scala" "BroadcastOpenMarketApi.scala" "BroadcastFormats.scala" "BroadcastAwsStatusFormats.scala" "BroadcastAwsStatusApi.scala" "BroadcastApi.scala" "authorization/" "authentication/" "Api.scala" "../" "./")
 
  ("/Users/knix/livesafe/jkn/lvsf-backend/core/src/main/scala/com/" (22273 26138 0 0) "livesafe/" "../" "./")
 
  ("/Users/knix/livesafe/jkn/lvsf-backend/core/src/main/scala/" (22273 26138 0 0) "com/" "../" "./")
-
- ("/Users/knix/livesafe/jkn/lvsf-backend/core/src/main/resources/" (22273 26138 0 0) "MySql-Trigger-Geofence-Fix.sql" "MySql-Trigger-Event.sql" "akka-persistence-mysql.sql" "../" "./")
 
  ("/Users/knix/livesafe/jkn/lvsf-backend/core/src/main/" (22273 26138 0 0) "scala/" "resources/" "../" "./")
 
@@ -354,59 +433,25 @@
 
  ("/Users/knix/livesafe/jkn/" (22273 26136 0 0) "lvsf-backend/" "../" "./")
 
- ("/Users/knix/livesafe/" (22281 21143 0 0) "payment/" "lvsf-backend/" "keys/" "jkn/" "AkkaInvestigation/" "Akka Concurrency.pdf" ".DS_Store" "../" "./")
+ ("/Users/knix/edu-/helmelib/" (22376 23152 0 0) "test/" "target/" "src/" "resources/" "README.md" "project.clj" "pom.xml" "LICENSE" "doc/" "dev-resources/" "dev-build/" "build.sh" "build-dev.sh" ".nrepl-port" ".lein-failures" ".hgignore" ".gitignore" ".DS_Store" "../" "./")
 
- ("/Users/knix/edu-/api/src/helme/ledger/" (22275 5656 0 0) "routes.clj.bak" "routes.clj" "database.clj.bak" "database.clj" "core.clj.bak" "core.clj" ".DS_Store" ".!23959!.DS_Store" "../" "./")
+ ("/Users/knix/.lein/" (22265 15134 0 0) "self-installs/" "repl-port" "profiles.clj" "copterj-key" "../" "./")
 
- ("/Users/knix/Desktop/" (22277 49213 0 0) "wolf.jpeg" "wedding/" "veritas_dashboard.tiff" "UV_SSR_TSRPT.pdf" "they_know.tiff" "Subnautica.app/" "reproduced2.tiff" "reproduced.tiff" "Provider Recruitment Request Form.pdf" "portrait.jpg" "part2.tiff" "part1.tiff" "misc.rtf" "matts_dashboard.tiff" "logoyorkadmin.rtf" "Koleman Nix Employment Application.pdf" "job search.rtf" "ISM-Theory-for-Consortium.pdf" "helme_small.png" "helme_frontend.tiff" "helme.png" "Galantis-Gold-Dust-Illenium-Remix.mp3" "Edudash Pilot Demo (July 29) 7-29-15, 3.45 PM.mp4" "Edudash Pilot Demo (July 29) 7-29-15, 2.58 PM.mp4" "Ecll notes.rtf" "doc.txt" "bear.tiff" "An-Overview-of-ISM-Stability-Markers.pdf" "6e900a4083949baf5710/" "2844.jpeg" "1637 - Pokemon Leaf Green (U)(Independent).gba" ".localized" ".DS_Store" "../" "./")
+ ("/Users/knix/edu-/helmelib/test/" (21974 27709 0 0) "helmelib/" "../" "./")
 
- ("/Users/knix/edu-/api/src/helme/server/" (22275 5657 0 0) "util.clj.bak" "util.clj" "misc_routes.clj.bak" "misc_routes.clj" "core.clj.bak" "core.clj" ".DS_Store" ".!23973!.DS_Store" "../" "./")
+ ("/Users/knix/edu-/helmelib/dev-resources/" (22163 57160 0 0) "../" "./")
 
- ("/Users/knix/edu-/api/src/helme/client/" (22275 5656 0 0) "routes.clj.bak" "routes.clj" "database.clj.bak" "database.clj" "../" "./")
+ ("/Users/knix/Dropbox/uva/cs4730/my-little-saga/resources/hero/" (22314 49787 0 0) "up/" "right/" "left.png" "left/" "hero2.json" "hero.tps" "hero.png" "hero.json" "down/" ".DS_Store" "../" "./")
 
- ("/Users/knix/edu-/api/src/helme/session/" (22275 5657 0 0) "routes.clj.bak" "routes.clj" "database.clj.bak" "database.clj" ".DS_Store" ".!23977!.DS_Store" "../" "./")
+ ("/Users/knix/Dropbox/uva/cs4730/my-little-saga/engine/display/" (22314 40437 0 0) "Sprite.js" "ImageCache.js" "HeroSheet.js" "Game.js" "DisplayObjectContainer.js" "DisplayObject.js" "AnimatedSprite.js" "../" "./")
 
- ("/Users/knix/edu-/api/src/" (22275 5801 0 0) "log4j.properties.bak" "log4j.properties" "helme/" ".DS_Store" ".!24037!.DS_Store" ".!23936!.DS_Store" "../" "./")
+ ("/Users/knix/livesafe/jkn/lvsf-backend/core/src/test/scala/com/livesafe/queue/" (22356 30831 0 0) "MockQueueProducer.scala" "MockQueueConsumer.scala" "KafkaQueueProducerSpec.scala" "KafkaQueueConsumerSpec.scala" "../" "./")
 
- ("/Users/knix/game/my-little-saga/resources/bg/" (22277 51016 0 0) "water.png" "sand.png" "grass.png" ".DS_Store" "../" "./")
+ ("/Users/knix/edu-/tools/" (22364 14988 0 0) "backup-script.sh" "backup-prod.sh" ".DS_Store" "../" "./")
 
- ("/Users/knix/edu-/api/src/helme/user/" (22275 5657 0 0) "token.clj.bak" "token.clj" "routes.clj.bak" "routes.clj" "database.clj.bak" "database.clj" "../" "./")
+ ("/Users/knix/gdrive/Pyret Class/" (22358 61454 0 0) "puzzle_one_small.png" "puzzle_one.png" "Image Puzzles.gdoc" "Course Outline.gdoc" "../" "./")
 
- ("/Users/knix/edu-/api/src/helme/" (22275 5657 0 0) "util.clj.bak" "util.clj" "util/" "user/" "system_instance.clj.bak" "system_instance.clj" "stripe.clj.bak" "stripe.clj" "session/" "server/" "scenario/" "quickbooks/" "modules/" "main.clj.bak" "main.clj" "mail.clj.bak" "mail.clj" "ledger/" "export/" "database.clj.bak" "database.clj" "dashboard/" "crypto/" "comparison/" "client_data/" "client/" "budget/" "analytics/" ".DS_Store" ".!23937!.DS_Store" "../" "./")
-
- ("/Users/knix/edu-/api/src/helme/budget/" (22281 30378 0 0) "routes.clj.bak" "routes.clj" "database.clj.bak" "database.clj" "core.clj.bak" "core.clj" "../" "./")
-
- ("/Users/knix/game/my-little-saga/engine/actions/" (22277 51016 0 0) "ActionManager.js" "../" "./")
-
- ("/Users/knix/game/my-little-saga/engine/toast/" (22277 51016 0 0) "ToastManager.js" "Toast.js" "../" "./")
-
- ("/Users/knix/game/my-little-saga/engine/display/" (22279 48912 0 0) "Sprite.js" "Game.js" "DisplayObjectContainer.js" "DisplayObject.js" "AnimatedSprite.js" "../" "./")
-
- ("/Users/knix/game/my-little-saga/engine/maps/" (22279 50963 0 0) "TileMappingReader.js" "MapReader.js" "MapGenerator.js" "AjaxReader.js" "../" "./")
-
- ("/Users/knix/edu-/" (22275 5792 0 0) "tools/" "sync-tools.sh" "sync/" "secret/" "plato/" "logo/" "interview-questions.txt" "homepage-deploy.sh" "homepage/" "helmelib/" "frontend/" "devops_readme.txt" "deploy.sh" "archive/" "api/" "2016-01-04.tar.gz" "2015-12-25.tar.gz" ".gitignore" ".git/" ".DS_Store" "../" "./")
-
- ("/Users/knix/game/my-little-saga/engine/combat/" (22277 51016 0 0) "CombatManager.js" "../" "./")
-
- ("/Users/knix/game/my-little-saga/" (22279 50963 0 0) "underscore-min.map" "server.js" "resources/" "PrototypeWriteup.pdf" "Prototype.js" "package.json" "MarioGame.js" "maps/" "map-creator/" "index.html" "iceland/" "engine/" "bower.json" ".gitignore" ".git/" ".DS_Store" ".bowerrc" "../" "./")
-
- ("/Users/knix/game/my-little-saga/map-creator/app/map-view/" (22277 55139 0 0) "map-view.js" "map-view.html" "../" "./")
-
- ("/Users/knix/game/my-little-saga/engine/quests/" (22277 51016 0 0) "QuestManager.js" "../" "./")
-
- ("/Users/knix/game/" (22277 55309 0 0) "test.js" "sprite.jpg" "my-little-saga.zip" "my-little-saga-prototype.zip" "my-little-saga/" "lab_1.docx" "jkn3wn_lab6.zip" "jack_sparrow_game.pdf" "jack_sparrow_game.docx" "engine/" "data.json" "22.pdf" "15.pdf" ".DS_Store" "../" "./")
-
- ("/Users/knix/game/my-little-saga/maps/" (22277 55126 0 0) "tile-mapping.json" "level1.json" "custom.json" "berserkerforest.json" ".DS_Store" "../" "./")
-
- ("/Users/knix/game/my-little-saga/map-creator/app/components/version/" (22270 34137 0 0) "version_test.js" "version.js" "version-directive_test.js" "version-directive.js" "interpolate-filter_test.js" "interpolate-filter.js" "../" "./")
-
- ("/Users/knix/game/my-little-saga/map-creator/app/components/" (22270 34137 0 0) "version/" "../" "./")
-
- ("/Users/knix/game/my-little-saga/map-creator/app/resources/" (22277 50633 0 0) "main.js" "main.css" "../" "./")
-
- ("/Users/knix/game/my-little-saga/map-creator/app/" (22270 34137 0 0) "view1/" "tile-menu/" "resources/" "map-view/" "index.html" "index-async.html" "components/" "../" "./")
-
- ("/Users/knix/game/my-little-saga/map-creator/" (22270 34137 0 0) "README.md" "package.json" "LICENSE" "karma.conf.js" "e2e-tests/" "bower.json" "app/" ".travis.yml" ".jshintrc" ".gitignore" ".bowerrc" "../" "./")
+ ("/Users/knix/.bintray/" (22356 39130 0 0) ".credentials" "../" "./")
 )
 
 ;; ----- ido-unc-hosts-cache -----

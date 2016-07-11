@@ -27,7 +27,7 @@
   (define-key keymap-to key (lookup-key keymap-from key))
   (define-key keymap-from key nil))
 
-;; (use-package dash)
+(global-auto-revert-mode t)
 
 (use-package flx-ido
   :init
@@ -56,7 +56,11 @@
   :config
   (projectile-global-mode))
 
-(use-package company)
+
+
+(use-package company
+  :config
+  (add-to-list 'completion-styles 'initials t))
 
 (defun auto-indent-buffer () (interactive) (indent-region (point-min) (point-max)))
 
@@ -214,7 +218,7 @@
 (remove-hook 'find-file-hooks 'vc-find-file-hook)
 (tool-bar-mode -1)
 (setq inhibit-startup-message t)
-(set-frame-font "Source Code Pro 10")
+(set-face-attribute 'default nil :font "Source Code Pro 12")
 (setq sml/no-confirm-load-theme t)
 (when window-system (set-frame-size (selected-frame) 200 56))
 
@@ -253,7 +257,6 @@
 
 ;; Scala
 
-
 (use-package ensime
   :commands ensime ensime-mode
   :init
@@ -263,11 +266,13 @@
      ;; scala-indent:indent-value-expression t
      ;; scala-indent:align-forms t
      ;; scala-indent:default-run-on-strategy "operators"
-     ;; scala-indent:align-parameters t
+     scala-indent:align-parameters t
      max-lisp-eval-depth 50000
      max-specpdl-size 5000)
     )
+  (add-to-list 'company-backends 'company-capf)
   (define-key evil-normal-state-map (kbd "<SPC>") 'ensime-type-at-point)
+  (evil-leader/set-key "e" 'ensime-print-errors-at-point)
   (define-key evil-normal-state-map (kbd "<DEL>") 'ensime-pop-find-definition-stack)
   (define-key evil-normal-state-map (kbd "<RET>") 'ensime-edit-definition)
   ;; (define-key evil-insert-state-map (kbd "<RET>") 'newline-and-indent)
@@ -275,12 +280,13 @@
   (add-hook 'scala-mode-hook 'ensime-mode)
   (add-hook 'ensime-inspector-mode-hook
 	    (lambda ()
-	      (evil-set-initial-state 'eshell-mode 'insert)
 	      ;; (bind-key* "q" 'ensime-close-popup-window)
 	      ;; (bind-key* "C-j" 'ensime-inspector-backward-page)
 	      ;; (bind-key* "C-k" 'ensime-inspector-forward-page)
 	      ))
   )
+
+(evil-set-initial-state 'eshell-mode 'insert)
 
 ;; Coq - with Clement's coq-company mode
 (add-hook 'coq-mode-hook (lambda ()
@@ -371,13 +377,15 @@ by using nxml's indentation rules."
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(ensime-auto-generate-config nil)
  '(ensime-implicit-gutter-icons t)
+ '(ensime-tooltip-hints nil)
  '(ensime-typecheck-idle-interval 0.1)
- '(ensime-typecheck-interval 5))
+ '(ensime-typecheck-interval 5)
+ '(js2-basic-offset 4))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(ensime-implicit-highlight ((t nil)))
- )
+ '(ensime-implicit-highlight ((t nil))))
