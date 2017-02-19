@@ -1,6 +1,7 @@
 ;; Bootstrap
 (require 'package)
 (setq package-enable-at-startup nil)
+;; (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
 (add-to-list 'package-archives '("melpa-stable" . "https://stable.melpa.org/packages/") t)
 (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
 (package-initialize)
@@ -47,6 +48,14 @@
   (ido-everywhere 1)
   (flx-ido-mode 1)
   )
+
+(use-package highlight-symbol
+  :diminish highlight-symbol-mode
+  :commands highlight-symbol
+  :bind ("<f3>" . highlight-symbol)
+  :config
+  (define-key evil-normal-state-map (kbd "<f4>") 'highlight-symbol-next)
+  (define-key evil-normal-state-map (kbd "<f2>") 'highlight-symbol-prev))
 
 (use-package projectile
   :init
@@ -252,16 +261,22 @@
 ;; Backups to home folder, no autosave
 (setq backup-directory-alist `(("." . "~/.backup")))
 (setq auto-save-default nil)
+(global-linum-mode)
 
 (setq ring-bell-function 'ignore)
+
+;; Quick jump to config file
+(evil-leader/set-key "`" (lambda () (interactive) (find-file "~/.emacs.d/init.el")))
 
 ;; Scala
 
 (use-package ensime
-  :commands ensime ensime-mode
+  :pin melpa-stable
+  ;; :commands ensime ensime-mode
   :init
-  (use-package scala-mode2
+  (use-package scala-mode
     :config
+    (electric-pair-mode)
     (setq
      ;; scala-indent:indent-value-expression t
      ;; scala-indent:align-forms t
@@ -275,6 +290,7 @@
   (evil-leader/set-key "e" 'ensime-print-errors-at-point)
   (define-key evil-normal-state-map (kbd "<DEL>") 'ensime-pop-find-definition-stack)
   (define-key evil-normal-state-map (kbd "<RET>") 'ensime-edit-definition)
+  (define-key evil-normal-state-map (kbd "C-c f") 'ensime-format-source)
   ;; (define-key evil-insert-state-map (kbd "<RET>") 'newline-and-indent)
   (evil-set-initial-state 'ensime- 'insert)
   (add-hook 'scala-mode-hook 'ensime-mode)
@@ -285,6 +301,8 @@
 	      ;; (bind-key* "C-k" 'ensime-inspector-forward-page)
 	      ))
   )
+
+(define-key evil-normal-state-map (kbd "C-c e") 'ensime)
 
 (evil-set-initial-state 'eshell-mode 'insert)
 

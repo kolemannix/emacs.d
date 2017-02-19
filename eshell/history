@@ -1,6 +1,3 @@
-ls
-exit
-exit
 exit
 asdf
 ls
@@ -120,4 +117,12 @@ exit
 ls
 rm SqlService.scala
 mv SqlService.scala\ copy SqlService.scala
+exit
+sbt compile
+exit
+rm -r /Users/kolemannix/.emacs.d/elpa/ensime-20160710.951/
+exit
+ls
+exit
+exit
 exit

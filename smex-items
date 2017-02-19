@@ -1,18 +1,18 @@
 
 ;; ----- smex-history -----
 (
- ensime
+ scala-mode
+ json-pretty-print
+ json-mode
+ docker-mode
+ package-list-packages
  eldoc-mode
- mkdir
- projectile-grep
- projectile-invalidate-cache
  evil-line
- load-theme
 )
 
 ;; ----- smex-data -----
 (
- (package-list-packages . 40)
+ (package-list-packages . 44)
  (proof-mode . 7)
  (proof-goals-mode . 4)
  (proof-cd . 1)
@@ -69,7 +69,7 @@
  (magit-status . 3)
  (magit-diff . 2)
  (magit-diff-mode . 3)
- (cider-restart . 32)
+ (cider-restart . 34)
  (magit-show . 1)
  (powerline-reset . 1)
  (magit-pull . 2)
@@ -83,7 +83,7 @@
  (switch-to-dark-theme . 6)
  (magit-commit . 2)
  (company-coq-end-of-proof . 1)
- (eldoc-mode . 144)
+ (eldoc-mode . 156)
  (cider-repl-return . 5)
  (cider-mode . 1)
  (split-window-right . 2)
@@ -115,7 +115,7 @@
  (auto-revert-mode . 10)
  (doc-view-scale-adjust . 3)
  (clojure-mode . 4)
- (cider-interrupt . 3)
+ (cider-interrupt . 5)
  (todo-mode . 2)
  (org-goto . 2)
  (org-mode-restart . 1)
@@ -128,7 +128,7 @@
  (eshell . 7)
  (eshell-send-input . 4)
  (eshell-truncate-buffer . 1)
- (evil-normal-state . 3)
+ (evil-normal-state . 5)
  (python-mode . 2)
  (python-shell-send-buffer . 1)
  (py-execute-line . 10)
@@ -147,7 +147,7 @@
  (left-char . 1)
  (conf-mode . 1)
  (eudc-query-form . 2)
- (js2-mode . 7)
+ (js2-mode . 10)
  (javascript-mode . 2)
  (js-eval . 1)
  (js-load-file . 1)
@@ -176,17 +176,17 @@
  (make-directory . 4)
  (delete-file . 5)
  (projectile-dired . 1)
- (paredit-mode . 1)
+ (paredit-mode . 3)
  (ivy-call . 1)
  (projectile-find-file . 2)
  (find-file . 2)
  (ivy-mode . 2)
  (swiper . 1)
  (ibuffer . 2)
- (ensime . 70)
- (ensime-mode . 1)
- (evil-line . 2)
- (projectile-grep . 44)
+ (ensime . 77)
+ (ensime-mode . 2)
+ (evil-line . 4)
+ (projectile-grep . 74)
  (dired . 1)
  (sbt-start . 2)
  (ensime-import-type-at-point . 3)
@@ -204,11 +204,11 @@
  (rename-buffer . 2)
  (scala-indent:fixup-whitespace . 1)
  (scala-indent:rotate-run-on-strategy . 1)
- (ensime-reload . 10)
+ (ensime-reload . 13)
  (revert-buffer . 1)
  (ensime-print-errors-at-point . 2)
  (ensime-db-quit . 1)
- (ensime-shutdown . 18)
+ (ensime-shutdown . 55)
  (projectile-project-info . 2)
  (ensime-sbt . 1)
  (ensime-sbt-do-gen-ensime . 1)
@@ -221,6 +221,18 @@
  (ensime-typecheck-all . 1)
  (customize . 2)
  (company-capf . 5)
- (describe-variable . 1)
- (projectile-invalidate-cache . 4)
+ (describe-variable . 2)
+ (projectile-invalidate-cache . 9)
+ (ensime-server-update . 2)
+ (ensime-edit-definition-other-window . 1)
+ (ensime-troubleshooting . 1)
+ (ensime-disconnect . 1)
+ (ensime-format-source . 1)
+ (electric-pair-mode . 1)
+ (list-buffers . 3)
+ (pretty-print-xml-region . 3)
+ (scala-mode . 2)
+ (json-pretty-print . 17)
+ (docker-mode . 1)
+ (json-mode . 1)
 )
