@@ -307,20 +307,16 @@
 (evil-set-initial-state 'eshell-mode 'insert)
 
 ;; Coq - with Clement's coq-company mode
-(add-hook 'coq-mode-hook (lambda ()
-			   ;; (interactive)
-			   (load-file "~/lib/ProofGeneral/generic/proof-site.el")
-			   (require 'proof-site)
-			   (setq proof-splash-enable nil)
-			   (set-fontset-font t 'greek (font-spec :name "DejaVu Sans Mono") nil)
-			   (use-package company-coq
-			     :config
-			     (company-coq-initialize)
-			     (define-key evil-normal-state-map
-			       (kbd "<SPC>") 'company-coq-proof-goto-point)
-			     (setq show-paren-mode nil)
-			     )
-			   ))
+;; (load "~/.emacs.d/lisp/PG/generic/proof-site")
+(use-package company-coq
+  :config
+  (company-coq-initialize)
+  (setq proof-splash-enable nil)
+  (set-fontset-font t 'greek (font-spec :name "DejaVu Sans Mono") nil)
+  (define-key evil-normal-state-map
+    (kbd "<SPC>") 'company-coq-proof-goto-point)
+  (setq show-paren-mode nil)
+  )
 
 ;; JS
 (use-package js2-mode

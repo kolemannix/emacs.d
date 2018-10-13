@@ -2,3 +2,7 @@
 .DS_Store
 tmp/*
 elpa/*
+ido.last
+projectile-bookmarks.eld
+projectile.cache
+smex-items
