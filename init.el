@@ -49,6 +49,14 @@
   (flx-ido-mode 1)
   )
 
+(use-package markdown-mode
+  :pin melpa-stable
+  :commands (markdown-mode gfm-mode)
+  :mode (("README\\.md\\'" . gfm-mode)
+         ("\\.md\\'" . markdown-mode)
+         ("\\.markdown\\'" . markdown-mode))
+  :init (setq markdown-command "markdown"))
+
 (use-package highlight-symbol
   :diminish highlight-symbol-mode
   :commands highlight-symbol
