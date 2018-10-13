@@ -1,13 +1,13 @@
 
 ;; ----- smex-history -----
 (
- scala-mode
  json-pretty-print
- json-mode
- docker-mode
- package-list-packages
- eldoc-mode
- evil-line
+ package-refresh-contents
+ whitespace-mode
+ diff-mode
+ dired
+ sql-mode
+ highlight-compare-buffers
 )
 
 ;; ----- smex-data -----
@@ -143,7 +143,7 @@
  (outline-mode . 2)
  (line-number-mode . 2)
  (whitespace-toggle-options . 1)
- (whitespace-mode . 11)
+ (whitespace-mode . 18)
  (left-char . 1)
  (conf-mode . 1)
  (eudc-query-form . 2)
@@ -187,7 +187,7 @@
  (ensime-mode . 2)
  (evil-line . 4)
  (projectile-grep . 74)
- (dired . 1)
+ (dired . 2)
  (sbt-start . 2)
  (ensime-import-type-at-point . 3)
  (projectile-replace-regexp . 3)
@@ -231,8 +231,13 @@
  (electric-pair-mode . 1)
  (list-buffers . 3)
  (pretty-print-xml-region . 3)
- (scala-mode . 2)
- (json-pretty-print . 17)
+ (scala-mode . 4)
+ (json-pretty-print . 35)
  (docker-mode . 1)
  (json-mode . 1)
+ (compare-windows . 1)
+ (highlight-compare-buffers . 6)
+ (sql-mode . 1)
+ (diff-mode . 5)
+ (package-refresh-contents . 2)
 )
