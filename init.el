@@ -1,9 +1,9 @@
 ;; Bootstrap
 (require 'package)
 (setq package-enable-at-startup nil)
-;; (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
-(add-to-list 'package-archives '("melpa-stable" . "https://stable.melpa.org/packages/") t)
 (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
+(add-to-list 'package-archives '("melpa-stable" . "https://stable.melpa.org/packages/") t)
+;; (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
 (package-initialize)
 (unless (package-installed-p 'use-package)
   (package-refresh-contents)
@@ -73,11 +73,22 @@
   :config
   (projectile-global-mode))
 
+(use-package rust-mode)
+(use-package lsp-mode
+  :commands lsp
+  :init
+  (setq lsp-enable-snippet t))
+(add-hook 'rust-mode-hook #'lsp)
 
+(use-package lsp-ui :commands lsp-ui-mode)
 
 (use-package company
   :config
   (add-to-list 'completion-styles 'initials t))
+
+(use-package company-lsp
+  :commands company-lsp
+  :init (push 'company-lsp company-backends))
 
 (defun auto-indent-buffer () (interactive) (indent-region (point-min) (point-max)))
 
@@ -122,6 +133,7 @@
   :config
   (global-flycheck-mode)
   )
+(use-package flycheck-rust)
 
 (use-package company
   :config
@@ -131,13 +143,6 @@
 
 (use-package restclient
   :commands restclient-mode)
-
-;; (use-package golden-ratio
-;;   :ensure t
-;;   :diminish golden-ratio-mode
-;;   :init
-;;   (golden-ratio-mode 1)
-;;   (setq golden-ratio-auto-scale t))
 
 (use-package key-chord
   :config
@@ -171,7 +176,7 @@
   (smex-initialize)
   (global-set-key (kbd "M-x") 'smex))
 
-;; TOOD needed?
+;; TODO needed?
 (use-package highlight)
 
 ;; Languages and Modes
@@ -235,7 +240,7 @@
 (remove-hook 'find-file-hooks 'vc-find-file-hook)
 (tool-bar-mode -1)
 (setq inhibit-startup-message t)
-(set-face-attribute 'default nil :font "Source Code Pro 12")
+(set-face-attribute 'default nil :font "Hack")
 (setq sml/no-confirm-load-theme t)
 (when window-system (set-frame-size (selected-frame) 200 56))
 
@@ -309,67 +314,65 @@
 	      ;; (bind-key* "C-k" 'ensime-inspector-forward-page)
 	      ))
   )
-
 (define-key evil-normal-state-map (kbd "C-c e") 'ensime)
-
 (evil-set-initial-state 'eshell-mode 'insert)
 
 ;; Coq - with Clement's coq-company mode
 ;; (load "~/.emacs.d/lisp/PG/generic/proof-site")
-(use-package company-coq
-  :config
-  (company-coq-initialize)
-  (setq proof-splash-enable nil)
-  (set-fontset-font t 'greek (font-spec :name "DejaVu Sans Mono") nil)
-  (define-key evil-normal-state-map
-    (kbd "<SPC>") 'company-coq-proof-goto-point)
-  (setq show-paren-mode nil)
-  )
+;; (use-package company-coq
+;;   :config
+;;   (company-coq-initialize)
+;;   (setq proof-splash-enable nil)
+;;   (set-fontset-font t 'greek (font-spec :name "DejaVu Sans Mono") nil)
+;;   (define-key evil-normal-state-map
+;;     (kbd "<SPC>") 'company-coq-proof-goto-point)
+;;   (setq show-paren-mode nil)
+;;   )
 
 ;; JS
-(use-package js2-mode
-  :mode (("\\.json$" . js2-mode)
-	 ("\\.js$" . js2-mode))
-  :config 
-  (message "Config js2")
-  (setq-default js2-allow-rhino-new-expr-initializer nil)
-  (setq-default js2-enter-indents-newline nil)
-  (setq-default js2-idle-timer-delay 0.1)
-  (setq-default js2-indent-on-enter-key t)
-  (setq-default js2-mirror-mode nil)
-  (setq-default js2-strict-inconsistent-return-warning nil)
-  (setq-default js2-auto-indent-p t)
-  (setq-default js2-include-rhino-externs nil)
-  (setq-default js2-include-gears-externs nil)
-  (setq-default js2-concat-multiline-strings 'eol)
-  (setq-default js2-rebind-eol-bol-keys nil)
-  (setq-default js2-include-browser-externs t)
-  ;; Let flycheck handle parse errors
-  (setq-default js2-show-parse-errors nil)
-  (setq-default js2-highlight-undeclared-vars nil)
-  (setq-default js2-strict-missing-semi-warning nil)
-  (setq-default js2-strict-trailing-comma-warning t) ;; jshint does not warn about this now for some reason
-
-  (use-package js2-highlight-vars)
-  )
+;; (use-package js2-mode
+;;   :mode (("\\.json$" . js2-mode)
+;; 	 ("\\.js$" . js2-mode))
+;;   :config 
+;;   (message "Config js2")
+;;   (setq-default js2-allow-rhino-new-expr-initializer nil)
+;;   (setq-default js2-enter-indents-newline nil)
+;;   (setq-default js2-idle-timer-delay 0.1)
+;;   (setq-default js2-indent-on-enter-key t)
+;;   (setq-default js2-mirror-mode nil)
+;;   (setq-default js2-strict-inconsistent-return-warning nil)
+;;   (setq-default js2-auto-indent-p t)
+;;   (setq-default js2-include-rhino-externs nil)
+;;   (setq-default js2-include-gears-externs nil)
+;;   (setq-default js2-concat-multiline-strings 'eol)
+;;   (setq-default js2-rebind-eol-bol-keys nil)
+;;   (setq-default js2-include-browser-externs t)
+;;   ;; Let flycheck handle parse errors
+;;   (setq-default js2-show-parse-errors nil)
+;;   (setq-default js2-highlight-undeclared-vars nil)
+;;   (setq-default js2-strict-missing-semi-warning nil)
+;;   (setq-default js2-strict-trailing-comma-warning t) ;; jshint does not warn about this now for some reason
+;; 
+;;   (use-package js2-highlight-vars)
+;;   )
 
 ;; C/C++
 
-(use-package irony 
-  :init
-  (defun my-irony-mode-hook ()
-    (define-key irony-mode-map [remap completion-at-point]
-      'irony-completion-at-point-async)
-    (define-key irony-mode-map [remap complete-symbol]
-      'irony-completion-at-point-async))
-
-  (add-hook 'irony-mode-hook 'my-irony-mode-hook)
-  (add-hook 'irony-mode-hook 'irony-cdb-autosetup-compile-options)
-  (add-hook 'irony-mode-hook 'flycheck-mode))
-
-(add-hook 'c++-mode-hook 'irony-mode)
-(add-hook 'c-mode-hook 'irony-mode)
-(add-hook 'objc-mode-hook 'irony-mode)
+;; (use-package irony 
+;;   :init
+;;   (defun my-irony-mode-hook ()
+;;     (define-key irony-mode-map [remap completion-at-point]
+;;       'irony-completion-at-point-async)
+;;     (define-key irony-mode-map [remap complete-symbol]
+;;       'irony-completion-at-point-async))
+;; 
+;;   (add-hook 'irony-mode-hook 'my-irony-mode-hook)
+;;   (add-hook 'irony-mode-hook 'irony-cdb-autosetup-compile-options)
+;;   (add-hook 'irony-mode-hook 'flycheck-mode))
+;; 
+;; (add-hook 'c++-mode-hook 'irony-mode)
+;; (add-hook 'c-mode-hook 'irony-mode)
+;; (add-hook 'objc-mode-hook 'irony-mode)
 
 ;; Idris
 (use-package idris-mode
@@ -404,7 +407,10 @@ by using nxml's indentation rules."
  '(ensime-tooltip-hints nil)
  '(ensime-typecheck-idle-interval 0.1)
  '(ensime-typecheck-interval 5)
- '(js2-basic-offset 4))
+ '(js2-basic-offset 4)
+ '(package-selected-packages
+   (quote
+    (company-lsp lsp-ui flycheck-rust rust-mode lsp-mode idris-mode ensime smart-mode-line solarized-theme highlight restclient use-package smex rainbow-delimiters projectile paredit markdown-mode key-chord highlight-symbol flycheck flx-ido exec-path-from-shell evil-nerd-commenter evil-leader diminish company clojure-mode))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
