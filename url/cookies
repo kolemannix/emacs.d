@@ -4,7 +4,9 @@
 (setq url-cookie-storage
  'nil)
 (setq url-cookie-secure-storage
- 'nil)
+ '((".is.gd"
+  [url-cookie "__cfduid" "db040353e7689ecbebbb11f392322ebde1554214822" "Wed, 01-Apr-20 14:20:22 GMT" "/" ".is.gd" t]))
+)
 
 ;; Local Variables:
 ;; version-control: never
