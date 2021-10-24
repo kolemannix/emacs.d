@@ -1,9 +1,8 @@
 ;; Bootstrap
 (require 'package)
 (setq package-enable-at-startup nil)
-(add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
-(add-to-list 'package-archives '("melpa-stable" . "https://stable.melpa.org/packages/") t)
-;; (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
+(setq package-archives '(("melpa" . "http://melpa.org/packages/")
+                         ("gnu" . "http://elpa.gnu.org/packages/")))
 (package-initialize)
 (unless (package-installed-p 'use-package)
   (package-refresh-contents)
@@ -11,6 +10,9 @@
 
 (eval-when-compile
   (require 'use-package))
+
+(use-package diminish :ensure)
+(use-package bind-key :ensure)
 
 (require 'diminish)
 (require 'bind-key)
@@ -78,6 +80,7 @@
   
   (define-key evil-normal-state-map (kbd "C-u") 'evil-scroll-page-up)
   (define-key evil-normal-state-map (kbd "C-d") 'evil-scroll-page-down)
+  (define-key evil-normal-state-map (kbd "C-<tab>") 'ido-switch-buffer)
   (define-key evil-normal-state-map (kbd "TAB") 'auto-indent-buffer)
   (define-key evil-normal-state-map "0" 'evil-first-non-blank)
 
@@ -122,7 +125,6 @@
 
 
 (use-package markdown-mode
-  :pin melpa-stable
   :commands (markdown-mode gfm-mode)
   :mode (("README\\.md\\'" . gfm-mode)
          ("\\.md\\'" . markdown-mode)
@@ -164,8 +166,6 @@
 
 (use-package yasnippet)
 
-(defun disable-flymake-mode () (flymake-mode 0))
-
 (use-package lsp-mode
   :commands lsp
   :init
@@ -174,7 +174,12 @@
 	      (define-key evil-normal-state-map (kbd "<RET>") 'xref-find-definitions)
 	      (define-key evil-normal-state-map (kbd "<DEL>") 'xref-pop-marker-stack)
 	      ()))
-  ;; (add-hook 'lsp-mode-hook 'disable-flymake-mode)
+  :custom
+  ;; (lsp-eldoc-render-all t)
+  (lsp-idle-delay 0.6)
+  :config
+  (add-hook 'lsp-mode-hook 'lsp-ui-mode)
+  (evil-leader/set-key "r" 'lsp-rename)
   )
 
 (use-package lsp-ui
@@ -183,36 +188,47 @@
   (setq
    ;; By setting this to 'nil' we get updates without changing line
    ;; lsp-ui-sideline-update-mode "line"
+   lsp-ui-peek-always-show t
    lsp-ui-doc-enable nil
+   lsp-ui-doc-position 'at-point
    lsp-ui-sideline-update-mode nil
-   lsp-ui-sideline-show-hover t 
+   lsp-ui-sideline-show-hover nil
    lsp-ui-sideline-show-symbol nil 
    lsp-ui-sideline-show-diagnostics t 
-   lsp-ui-sideline-show-hover t
-   lsp-ui-sideline-delay 0.5
+   lsp-ui-sideline-delay 0.2
    lsp-ui-sideline-show-code-actions nil 
+   lsp-lens-enable t
    lsp-ui-sideline-code-actions-prefix "✏"
    )
-  (define-key evil-normal-state-map (kbd "C-c <RET>") 'lsp-execute-code-action))
+  (define-key evil-normal-state-map (kbd "C-c <RET>") 'lsp-execute-code-action)
+  (evil-leader/set-key "d" 'lsp-ui-doc-glance)
+  )
 
 (use-package company
   :config
   (add-to-list 'completion-styles 'initials t))
 
-(use-package company-lsp
-  :commands company-lsp
-  :init (push 'company-lsp company-backends))
-
 ;; RUST 
-(use-package flycheck-rust)
-(use-package rust-mode
+(use-package rustic
   :init
   (define-key evil-normal-state-map (kbd "SPC") 'next-error)
+  :custom
+  (lsp-rust-analyzer-server-display-inlay-hints nil)
+  (lsp-rust-analyzer-cargo-watch-command "clippy")
   :config
-  (add-hook 'rust-mode-hook #'lsp)
-  (add-hook 'rust-mode-hook #'disable-flymake-mode)
-  (add-hook 'rust-mode-hook 'electric-pair-mode)
+  (setq rustic-format-on-save nil)
+  (add-hook 'rustic-mode-hook 'rk/rustic-mode-hook)
+  (add-hook 'rustic-mode-hook 'electric-pair-mode)
+  (yas-minor-mode-on)
   )
+
+(defun rk/rustic-mode-hook ()
+  ;; so that run C-c C-c C-r works without having to confirm, but don't try to
+  ;; save rust buffers that are not file visiting. Once
+  ;; https://github.com/brotzeit/rustic/issues/253 has been resolved this should
+  ;; no longer be necessary.
+  (when buffer-file-name
+    (setq-local buffer-save-without-query t)))
 
 (defun auto-indent-buffer () (interactive) (indent-region (point-min) (point-max)))
 (use-package company
@@ -252,85 +268,6 @@
   :config
   (winum-mode))
 
-(use-package treemacs
-  :ensure t
-  :defer t
-  ;; :init
-  ;; (with-eval-after-load 'winum
-  ;;   (define-key winum-keymap (kbd "M-0") #'treemacs-select-window))
-  ;; :config
-  ;; (progn
-  ;;   (setq treemacs-collapse-dirs                 (if (executable-find "python3") 3 0)
-  ;;         treemacs-deferred-git-apply-delay      0.5
-  ;;         treemacs-display-in-side-window        t
-  ;;         treemacs-eldoc-display                 t
-  ;;         treemacs-file-event-delay              5000
-  ;;         treemacs-file-follow-delay             0.2
-  ;;         treemacs-follow-after-init             t
-  ;;         treemacs-git-command-pipe              ""
-  ;;         treemacs-goto-tag-strategy             'refetch-index
-  ;;         treemacs-indentation                   2
-  ;;         treemacs-indentation-string            " "
-  ;;         treemacs-is-never-other-window         nil
-  ;;         treemacs-max-git-entries               5000
-  ;;         treemacs-missing-project-action        'ask
-  ;;         treemacs-no-png-images                 nil
-  ;;         treemacs-no-delete-other-windows       t
-  ;;         treemacs-project-follow-cleanup        nil
-  ;;         treemacs-persist-file                  (expand-file-name ".cache/treemacs-persist" user-emacs-directory)
-  ;;         treemacs-recenter-distance             0.1
-  ;;         treemacs-recenter-after-file-follow    nil
-  ;;         treemacs-recenter-after-tag-follow     nil
-  ;;         treemacs-recenter-after-project-jump   'always
-  ;;         treemacs-recenter-after-project-expand 'on-distance
-  ;;         treemacs-show-cursor                   nil
-  ;;         treemacs-show-hidden-files             t
-  ;;         treemacs-silent-filewatch              nil
-  ;;         treemacs-silent-refresh                nil
-  ;;         treemacs-sorting                       'alphabetic-desc
-  ;;         treemacs-space-between-root-nodes      t
-  ;;         treemacs-tag-follow-cleanup            t
-  ;;         treemacs-tag-follow-delay              1.5
-  ;;         treemacs-width                         35)
-
-  ;;   ;; The default width and height of the icons is 22 pixels. If you are
-  ;;   ;; using a Hi-DPI display, uncomment this to double the icon size.
-  ;;   ;;(treemacs-resize-icons 44)
-
-  ;;   (treemacs-follow-mode t)
-  ;;   (treemacs-filewatch-mode t)
-  ;;   (treemacs-fringe-indicator-mode t)
-  ;;   (pcase (cons (not (null (executable-find "git")))
-  ;;                (not (null (executable-find "python3"))))
-  ;;     (`(t . t)
-  ;;      (treemacs-git-mode 'deferred))
-  ;;     (`(t . _)
-  ;;      (treemacs-git-mode 'simple))))
-  ;; :bind
-  ;; (:map global-map
-  ;;       ("M-0"       . treemacs-select-window)
-  ;;       ("C-x t 1"   . treemacs-delete-other-windows)
-  ;;       ("C-x t t"   . treemacs)
-  ;;       ("C-x t B"   . treemacs-bookmark)
-  ;;       ("C-x t C-t" . treemacs-find-file)
-  ;;       ("C-x t M-t" . treemacs-find-tag))
-  )
-
-(use-package treemacs-evil
-  :after treemacs evil
-  :ensure t)
-
-(use-package treemacs-projectile
-  :after treemacs projectile
-  :ensure t)
-
-(use-package treemacs-icons-dired
-  :after treemacs dired
-  :ensure t
-  :config (treemacs-icons-dired-mode))
-
-(use-package lsp-treemacs :commands lsp-treemacs-errors-list)
-
 (use-package rainbow-delimiters
   :config (add-hook 'prog-mode-hook 'rainbow-delimiters-mode) ;; Rainbow delimiters in all programming-related files
   (show-paren-mode))
@@ -357,7 +294,6 @@
   (message "Config Clojure / hook cider")
   (define-key evil-normal-state-map (kbd "C-c j") 'cider-jack-in)
   (use-package cider
-    :pin melpa-stable
     :config
     (message "Config Cider")
     (show-paren-mode 1)
@@ -404,7 +340,7 @@
 (tool-bar-mode -1)
 (setq inhibit-startup-message t)
 
-(set-face-attribute 'default nil :font "Hack" :height 160)
+(set-face-attribute 'default nil :font "Hack" :height 140)
 ;; Emoji support
 (set-fontset-font t 'unicode "Apple Color Emoji" nil 'prepend)
 ;; (set-fontset-font t 'unicode "Symbola" nil 'prepend)
@@ -533,22 +469,3 @@ by using nxml's indentation rules."
     (indent-region begin end))
   (message "Ah, much better!"))
 
-
-(custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(custom-safe-themes
-   (quote
-    ("cabc32838ccceea97404f6fcb7ce791c6e38491fd19baa0fcfb336dcc5f6e23c" "16dd114a84d0aeccc5ad6fd64752a11ea2e841e3853234f19dc02a7b91f5d661" "ffac21ab88a0f4603969a24b96993bd73a13fe0989db7ed76d94c305891fad64" "fc7fd2530b82a722ceb5b211f9e732d15ad41d5306c011253a0ba43aaf93dccc" "c968804189e0fc963c641f5c9ad64bca431d41af2fb7e1d01a2a6666376f819c" "3c83b3676d796422704082049fc38b6966bcad960f896669dfc21a7a37a748fa" "542e6fee85eea8e47243a5647358c344111aa9c04510394720a3108803c8ddd1" default)))
- '(js2-basic-offset 4)
- '(package-selected-packages
-   (quote
-    (lsp-ui-flycheck cider treemacs-icons-dired treemacs-projectile treemacs-evil winum lsp-treemacs protobuf-mode git-gutter-fringe git-gutter base16-theme zenburn-theme emacs-emojify company-lsp lsp-ui flycheck-rust rust-mode lsp-mode idris-mode smart-mode-line solarized-theme highlight restclient use-package smex rainbow-delimiters projectile paredit markdown-mode key-chord highlight-symbol flycheck flx-ido exec-path-from-shell evil-nerd-commenter evil-leader diminish company clojure-mode))))
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- )
